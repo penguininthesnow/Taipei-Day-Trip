@@ -1,0 +1,91 @@
+INFO:     Started server process [24610]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     36.239.120.196:64669 - "GET / HTTP/1.1" 404 Not Found
+INFO:     36.239.120.196:64669 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     36.239.120.196:63387 - "GET /api/attractions?page=1 HTTP/1.1" 200 OK
+INFO:     36.239.120.196:58351 - "GET /api/attractions?page=0&keyword=%E5%8A%8D%E6%BD%AD HTTP/1.1" 200 OK
+INFO:     36.239.120.196:52988 - "GET /api/attractions?page=0&keyword=%E5%8C%97 HTTP/1.1" 200 OK
+INFO:     36.239.120.196:56745 - "GET /api/attractions?page=1&keyword=%E5%8C%97 HTTP/1.1" 200 OK
+INFO:     36.239.120.196:61601 - "GET /api/attractions?page=0&category=%E8%97%9D%E6%96%87%E9%A4%A8%E6%89%80 HTTP/1.1" 200 OK
+INFO:     36.239.120.196:65394 - "GET /api/attractions?page=0&category=%E8%97%9D%E6%96%87%E9%A4%A8%E6%89%80&keyword=%E5%8C%97 HTTP/1.1" 200 OK
+INFO:     36.239.120.196:57256 - "GET /api/attraction10 HTTP/1.1" 404 Not Found
+INFO:     36.239.120.196:53549 - "GET /api/attraction/10 HTTP/1.1" 200 OK
+INFO:     36.239.120.196:64117 - "GET /api/attraction/mrt HTTP/1.1" 422 Unprocessable Entity
+INFO:     36.239.120.196:61481 - "GET /api/mrt HTTP/1.1" 404 Not Found
+INFO:     36.239.120.196:62399 - "GET /api/mrts HTTP/1.1" 200 OK
+INFO:     36.239.120.196:54107 - "GET /api/categories HTTP/1.1" 200 OK
+INFO:     36.239.120.196:60757 - "GET /api/categories HTTP/1.1" 200 OK
+INFO:     36.239.120.196:58394 - "GET /api/categories HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     36.239.120.196:59486 - "GET /api/categories HTTP/1.1" 200 OK
+INFO:     36.239.120.196:59486 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     36.239.120.196:52570 - "GET /api/mrts HTTP/1.1" 200 OK
+INFO:     180.177.108.46:58948 - "GET /api/attractions?page=1 HTTP/1.1" 200 OK
+INFO:     180.177.108.46:58948 - "GET /api/attractions?page=0&keyword=%E5%8A%8D%E6%BD%AD HTTP/1.1" 200 OK
+INFO:     180.177.108.46:62067 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     180.177.108.46:62067 - "GET /api/attractions?page=0&keyword=%E5%8C%97 HTTP/1.1" 200 OK
+INFO:     180.177.108.46:62067 - "GET /api/attractions?page=0&category=%E8%97%9D%E6%96%87%E9%A4%A8%E6%89%80 HTTP/1.1" 200 OK
+INFO:     180.177.108.46:62067 - "GET /api/attractions?page=0&category=%E8%97%9D%E6%96%87%E9%A4%A8%E6%89%80&keyword=%E5%8C%97 HTTP/1.1" 200 OK
+INFO:     180.177.108.46:62067 - "GET /api/attraction/10 HTTP/1.1" 200 OK
+INFO:     180.177.108.46:62067 - "GET /api/mrts HTTP/1.1" 200 OK
+INFO:     180.177.108.46:62067 - "GET /api/categories HTTP/1.1" 200 OK
+INFO:     180.177.108.46:63890 - "GET /api/attractions?page=6 HTTP/1.1" 200 OK
+INFO:     180.177.108.46:63239 - "GET /api/attractions?page=7 HTTP/1.1" 200 OK
+INFO:     180.177.108.46:59119 - "GET /api/attractions?page=3 HTTP/1.1" 200 OK
+INFO:     180.177.108.46:62526 - "GET /api/attractions?page=1&keyword=%E5%8C%97 HTTP/1.1" 200 OK
+INFO:     180.177.108.46:62526 - "GET /api/attractions?page=2&keyword=%E5%8C%97 HTTP/1.1" 200 OK
+INFO:     180.177.108.46:60576 - "GET /api/attractions?page=1&category=%E8%97%9D%E6%96%87%E9%A4%A8%E6%89%80 HTTP/1.1" 200 OK
+INFO:     180.177.108.46:60576 - "GET /api/attractions?page=2&category=%E8%97%9D%E6%96%87%E9%A4%A8%E6%89%80 HTTP/1.1" 200 OK
+INFO:     180.177.108.46:62900 - "GET /api/attractions?page=3&category=%E8%97%9D%E6%96%87%E9%A4%A8%E6%89%80 HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     159.138.98.197:28660 - "GET /404/search_children.js HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     47.250.82.45:31060 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     79.127.221.66:43644 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     146.190.255.213:54408 - "GET / HTTP/1.1" 404 Not Found
+INFO:     146.190.255.213:54422 - "GET /login HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     66.132.153.121:46242 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     66.132.153.121:49418 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     66.132.153.121:20590 - "GET /sitemap.xml HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     173.244.42.5:11732 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     152.32.207.134:47680 - "GET / HTTP/1.1" 404 Not Found
+INFO:     20.14.73.63:53364 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     3.149.59.26:36368 - "GET / HTTP/1.1" 404 Not Found
+INFO:     3.149.59.26:41940 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     104.248.32.92:57570 - "GET / HTTP/1.1" 404 Not Found
+INFO:     104.248.32.92:57584 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     36.239.113.49:60574 - "GET /api/mrts HTTP/1.1" 200 OK
+INFO:     36.239.113.49:60574 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     36.239.113.49:58213 - "GET /api/attractions?page=0&category=%E8%97%9D%E6%96%87%E9%A4%A8%E6%89%80 HTTP/1.1" 200 OK
+INFO:     36.239.113.49:53974 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     36.239.113.49:63152 - "GET /api/categories HTTP/1.1" 200 OK
+INFO:     36.239.113.49:61995 - "GET /api/attractions?keyword=%E9%A4%8A%E7%94%9F%E6%BA%AB%E6%B3%89 HTTP/1.1" 200 OK
+INFO:     36.239.113.49:59549 - "GET /api/attractions HTTP/1.1" 200 OK
+INFO:     36.239.113.49:58821 - "GET /api/attractions?page=0&keyword= HTTP/1.1" 200 OK
+INFO:     36.239.113.49:53967 - "GET /api/attractions?keyword=%E6%BA%AB%E6%B3%89 HTTP/1.1" 200 OK
