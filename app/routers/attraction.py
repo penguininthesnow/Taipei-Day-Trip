@@ -12,45 +12,55 @@ def get_attractions(page: int=0, keyword: str=None):
     conn = get_connection()
     cursor= conn.cursor(dictionary=True)
 
-    # 搜尋條件
+    # 搜尋條件,(使用COALESCE進行搜尋)
     if keyword:
         query = """
-            SELECT * FROM attraction WHERE name LIKE %s OR mrt LIKE %s OR category LIKE %s LIMIT %s OFFSET %s
+            SELECT * FROM attraction WHERE name LIKE %s OR COALESCE(mrt, '') LIKE %s OR category LIKE %s LIMIT %s OFFSET %s
         """
-        cursor.execute(query, (f"%{keyword}%", f"%{keyword}%", f"%{keyword}%", PAGE_SIZE +1, start))
+        cursor.execute(query, (f"%{keyword}%", f"%{keyword}%", f"%{keyword}%", PAGE_SIZE + 1, start
+        ))
     else:
         query = """
             SELECT * FROM attraction LIMIT %s OFFSET %s
         """
         cursor.execute(query, (PAGE_SIZE +1, start))
     
-    rows = cursor.fetchall()
+    # (先抓 Attraction)
+    attractions = cursor.fetchall()
 
     # 判斷如果超過8筆，是否到下一頁
-    if len(rows)>PAGE_SIZE:
-        next_page = page+1
+    if len(rows) > PAGE_SIZE:
+        next_page = page + 1
         rows = rows[:PAGE_SIZE]
     else:
         next_page = None
 
-    # 取出 Attraction IDs 用於查詢圖片
-    attraction_ids = [row["id"] for row in rows]
+    # 取出 Attraction IDs 用於查詢圖片 (attractions)
+    attraction_ids = [row["id"] for row in attractions]
     if attraction_ids:
         cursor.execute(
             "SELECT attraction_id, url FROM image WHERE attraction_id IN (%s)" % ",".join (["%s"] * len(attraction_ids)),
             attraction_ids
         )
-        image_rows = cursor.fetchall()
-
+        image_attractions = cursor.fetchall()
+        # //
         images_map = {}
-        for img in image_rows:
+        if attraction_ids:
+            format_strings = ",".join(["%s"] * len(attraction_ids))
+            cursor.execute(f"""
+                SELECT attraction_id, url
+                FROM image
+                WHERE attraction_id IN ({format_strings})
+            """, attraction_ids)
+
+        for img in cursor.fetchall():
             images_map.setdefault(img["attraction_id"], []).append(img["url"])
     else:
         images_map = {}
 
-    # 組回傳資料
+    # 組回傳資料 //
     data = []
-    for row in rows:
+    for row in attractions[:PAGE_SIZE]:
         data.append({
             "id": row["id"],
             "name": row["name"],
