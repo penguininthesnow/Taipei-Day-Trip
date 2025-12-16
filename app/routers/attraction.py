@@ -5,19 +5,17 @@ router = APIRouter()
 PAGE_SIZE=8
 
 @router.get("/api/attractions")
-def get_attractions(page: int = 0, keyword: str | None = None, category: str | None = None):
+def get_attractions(page: int = 0,
+                    keyword: str | None = None, 
+                    category: str | None = None
+):
     start = page * PAGE_SIZE
 
     conn = get_connection()
     cursor = conn.cursor(dictionary=True)
 
     # 對於 category 給予篩選
-    if category:
-        cursor.execute("""
-            SELECT * FROM attraction WHERE category = %s LIMIT %s OFFSET %s
-        """, (category, PAGE_SIZE + 1, start))
-
-     # 對於 keyword 給予篩選
+    # 對於 keyword 給予篩選
     if keyword:
         cursor.execute("""
             SELECT *
@@ -33,12 +31,18 @@ def get_attractions(page: int = 0, keyword: str | None = None, category: str | N
             PAGE_SIZE + 1,
             start
         ))
+    elif category:
+        cursor.execute("""
+            SELECT * FROM attraction WHERE category = %s LIMIT %s OFFSET %s
+        """, (category, PAGE_SIZE + 1, start
+        ))
     else:
         cursor.execute("""
             SELECT *
             FROM attraction
             LIMIT %s OFFSET %s
-        """, (PAGE_SIZE + 1, start))
+        """, (PAGE_SIZE + 1, start
+        ))
 
     rows = cursor.fetchall()   #  rows
 
