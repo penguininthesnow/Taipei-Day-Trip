@@ -89,3 +89,1515 @@ INFO:     36.239.113.49:61995 - "GET /api/attractions?keyword=%E9%A4%8A%E7%94%9F
 INFO:     36.239.113.49:59549 - "GET /api/attractions HTTP/1.1" 200 OK
 INFO:     36.239.113.49:58821 - "GET /api/attractions?page=0&keyword= HTTP/1.1" 200 OK
 INFO:     36.239.113.49:53967 - "GET /api/attractions?keyword=%E6%BA%AB%E6%B3%89 HTTP/1.1" 200 OK
+INFO:     36.239.113.49:61005 - "GET /api/attractions?keyword=%E6%BA%AB%E6%B3%89 HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     64.225.36.71:47070 - "GET / HTTP/1.1" 404 Not Found
+INFO:     64.225.36.71:47072 - "GET /login HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     204.76.203.18:59362 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     204.76.203.18:50614 - "GET /bins/ HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     204.76.203.18:39556 - "GET /bin/ HTTP/1.1" 404 Not Found
+INFO:     45.79.181.94:23266 - "GET / HTTP/1.1" 404 Not Found
+INFO:     45.33.80.243:46648 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     204.76.203.18:54766 - "GET /backup/ HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     139.144.52.241:59362 - "GET / HTTP/1.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     139.144.52.241:59946 - "GET /nice%20ports%2C/Trinity.txt.bak HTTP/1.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     139.144.52.241:60852 - "OPTIONS / HTTP/1.0" 404 Not Found
+INFO:     139.144.52.241:32860 - "OPTIONS / HTTP/1.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     139.144.52.241:35600 - "GET /devicedesc.xml HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     139.144.52.241:42192 - "POST /sdk HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     139.144.52.241:42210 - "GET /inicio.jsp HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:42222 - "GET /server-status HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:42180 - "GET / HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:42224 - "GET /.git/HEAD HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:42188 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:42190 - "GET /cgi-mod/header_logo.cgi?size=big HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:42194 - "GET /Portal/Portal.mwsl HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:42214 - "GET /qEq5 HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:42196 - "GET /rest/applinks/1.0/manifest HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:42200 - "GET /Portal0000.htm HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:42220 - "GET /CSS/Miniweb.css HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:42560 - "GET /docs/cplugError.html/ HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:42566 - "GET /__Additional HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:42562 - "GET /confluence/rest/applinks/1.0/manifest HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     139.144.52.241:42564 - "GET / HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:42572 - "GET /menu.shtml HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:42642 - "GET /api/v2/about HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:42634 - "GET /CFIDE/componentutils/ HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:42636 - "GET /human.aspx?arg12=infotech HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:42646 - "GET /%2BCSCOE%2B/logon.html HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:42644 - "GET /webui HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:42648 - "GET /?=PHPE9568F36-D428-11d2-A769-00AA001ACF42 HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:42632 - "GET /login.php HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:42638 - "GET /dana-cached/hc/HostCheckerInstaller.osx HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:42640 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:42772 - "GET /dana-na/nc/nc_gina_ver.txt HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     139.144.52.241:42860 - "GET /menu.jsa HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:42912 - "GET /user HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:42914 - "GET /dniapi/userInfos HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:42910 - "GET /nmaplowercheck1765766305 HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:42906 - "GET /?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000 HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:42994 - "GET /webui HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:42986 - "GET / HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:43116 - "GET /geoserver/index.html HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:43114 - "GET /index.cfm HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:43186 - "GET /HNAP1 HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:43246 - "GET /geoserver/ HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:43244 - "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.AboutGeoServerPage HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:43350 - "GET /inicio.jsa HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:43352 - "GET /Account/Login HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:43354 - "GET /cgi-bin/info.cgi HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:43440 - "GET /ise/img/rm-logo_small.png HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:43496 - "GET /magento_version HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:43494 - "GET /xml/info.xml HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:43654 - "GET /default.php HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:43656 - "GET /api/v1/check-version HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:43712 - "GET / HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:43818 - "GET /dashboard/ HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:43816 - "GET /helpdesk/WebObjects/Helpdesk.woa HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:43820 - "GET /fog/management/index.php?node=client&sub=logininfo HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:43918 - "GET /index.html HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:44032 - "GET /cluster/list.query HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:44206 - "GET /api/server/version HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:44204 - "GET /apps/zxtm/login.cgi HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:44272 - "GET /images/logo.png HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:44274 - "GET /menu.asp HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:44416 - "GET /administrator/manifests/files/joomla.xml HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:44418 - "GET /language/en-GB/en-GB.xml HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:44530 - "GET /index.pl HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:44532 - "GET /owa/ HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:44620 - "GET /login.html HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:44622 - "GET /p/login/ HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:44624 - "GET /versa/login HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:44678 - "GET /webui/index.html HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:44778 - "GET /api/version HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:44852 - "GET /base.html HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:44896 - "GET /portal/ HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:45046 - "GET /phoenix/favicon.ico HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:45050 - "GET /status HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:45058 - "GET /info.asp HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:45122 - "GET /home.php HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:45194 - "GET /cgi-bin/param.cgi?get_device_conf HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:45196 - "GET /lms/db HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:45270 - "GET /owa/ HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:45338 - "GET /ext-js/app/common/zld_product_spec.js HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:45408 - "GET /readme.txt HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:45458 - "GET /login/login.html HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:45628 - "GET /allversions HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:45626 - "GET /versions HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:45698 - "GET /start.asp HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:45772 - "GET /assets/png/favicon-abe32304.png HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:45862 - "GET /api/vip/i18n/api/v2/translation/products/vRNIUI/versions/1 HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:45860 - "GET /r-seenet/index.php HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:46016 - "GET /base.aspx HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:46080 - "GET /WebApp/js/UI_String.js HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:46084 - "GET /c/login HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:46082 - "GET /tos/index.php?user/login HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:46296 - "GET /officescan/console/html/localization.js HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:46292 - "GET /login.aspx HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:46294 - "GET /start.html HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:46478 - "GET /officescan/console/cgi/cgiChkMasterPwd.exe HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:46480 - "GET /IPCamDesc.xml HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:46472 - "GET /App_Themes/Default/Images/favicon.ico HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:46592 - "GET /home.aspx HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:46680 - "GET /api/v1.0/environment HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:47465 - "GET /kylin/ HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:46952 - "GET /admin.asp HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:46960 - "GET /cslu/v1/core/conf HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:46954 - "GET /config HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:46962 - "GET /CHANGELOG.txt HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:47106 - "GET /images/logo.gif HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:47108 - "GET /admin/reports/status HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:47104 - "GET /admin/reports/updates HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:47250 - "GET /default.asp HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:47314 - "GET /javascript/validation/OEM.js HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:47316 - "GET /pom.xml HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:47490 - "GET /admin.aspx HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:47496 - "GET /webportal.cgi HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:47492 - "GET /build.gradle HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:47494 - "GET /workplace/home.action HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:47628 - "GET /pandora_console/ HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:47630 - "GET /css/eonweb.css HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:47718 - "GET /assets/img/favicon.ico HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:47758 - "GET /admin.cfm HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:47874 - "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:47876 - "GET /centreon/api/latest/platform/versions HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:48024 - "GET /api/v3/meta HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:48026 - "GET /css/elfinder.min.css HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:48076 - "GET /admin.php HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:48212 - "GET /am_bin/amlogin HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:48214 - "GET /system/version/current HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:48216 - "GET /geoserver/web/ HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:48372 - "GET /inicio.php HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:48370 - "GET /themes/admin/default/build/assets/favicon-19fbef86.svg HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:48442 - "GET /i18n/component/JS HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:48440 - "GET /hx/api/about HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:56194 - "GET /api/v1/version HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:48710 - "GET /login/?next=/ HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:48708 - "GET /admin.jsp HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:48712 - "GET /MagicInfo/config.js HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:48706 - "GET /app/ui/login.jsp HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:48876 - "GET /plugin/webs_model_cfg.js HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:48878 - "GET /Main_Login.asp HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:48990 - "GET /indice.aspx HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:48988 - "GET /dashboard/favicon.ico HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:49076 - "GET /cap.js HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:49074 - "GET /cgi-bin/luci HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:49298 - "GET /json/login_session HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:46415 - "GET /photo/webapi/query.php?api=SYNO.API.Info&method=query&version=1 HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:49300 - "GET /main.pl HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:49442 - "GET /nidp/app/login HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:49440 - "GET /rs/application-about HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:49606 - "GET /base.pl HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:49684 - "GET /metrics HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:49680 - "GET /kubepi/fav.png HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:49682 - "GET /about HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:49894 - "GET /start.aspx HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:49892 - "GET /api/v2/hoverfly/version HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:49896 - "GET /main/main.html HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:50110 - "GET /ui/login.action HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:50112 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:50114 - "GET /core/auth/login/ HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:50304 - "GET /localstart.html HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:50378 - "GET /public/static/favicon.png HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:50380 - "GET /admin/config.php HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:50376 - "GET /api/v1/info HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:42992 - "GET / HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:50510 - "GET /api/status HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:50596 - "GET /main.jsa HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:50730 - "GET /~login HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:50732 - "GET /mailinspector/login.php HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:50728 - "GET /config_dump HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:50862 - "GET /start.jsp HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:50864 - "GET /agent/vicidial.php HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:50858 - "GET /agc/vicidial.php HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:50976 - "GET /index.do HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:50978 - "GET /AppsHome.do HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:51184 - "GET /system/gwinfo HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:51190 - "GET /admin.cgi HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:51340 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     139.144.52.241:51338 - "GET /decisioncenter-api/v1/about HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:51488 - "GET /base.php HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:51560 - "GET /nifi-api/flow/about HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:51556 - "GET /jtcgi/wte.pyc HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:51558 - "GET /nifi/ HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:51754 - "GET /info.htm HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:51760 - "GET /main.shtml HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:51762 - "GET /api-description HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:51756 - "GET /index.lua HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:51940 - "GET /v2 HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:51938 - "GET /cgi-bin/meteobridge.cgi HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:52086 - "GET /admin.pl HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:52166 - "GET /monitor/index.php/auth/login HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:52168 - "GET /wp-content/plugins/post-smtp/readme.txt HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:52170 - "GET /sys/en/neoclassic/login/login HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:52348 - "GET /management/v1/cluster/state HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:52354 - "GET /sap/bc/ui2/flp HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:52352 - "GET /home.cfm HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:52350 - "GET /ignite?cmd=version HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:52504 - "GET /browser/index.html HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:52506 - "GET /help/en_US/Content/utm/utmAdminGuide/WebAdmin.htm HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:52508 - "GET /api/v2.0/systeminfo HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:52672 - "GET /base.shtml HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:52742 - "GET /api/v1/cluster/summary HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:52744 - "GET /cgi-bin/getagent.cgi?type=s HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:52944 - "GET /ScadaBR/login.htm HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:52942 - "GET /index.php HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:52936 - "GET /nmc/rss/server HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:52938 - "GET /api/system/status HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:52946 - "GET /download/python/ HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:53240 - "GET /admin.jhtml HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:53534 - "GET /default.cgi HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:53792 - "GET /base.jsp HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:54086 - "GET /localstart.cfm HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:54398 - "GET /indice.cfm HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:54710 - "GET /indice.html HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:54972 - "GET /base.cgi HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:55248 - "GET /index.jsp HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:55612 - "GET /menu.aspx HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:55866 - "GET /inicio.pl HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:56206 - "GET /base.jhtml HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:56542 - "GET /inicio.jhtml HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:56846 - "GET /main.cfm HTTP/1.1" 404 Not Found
+INFO:     139.144.52.241:57172 - "GET /index.jsa HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     139.144.52.241:57620 - "GET / HTTP/1.0" 404 Not Found
+INFO:     139.144.52.241:57862 - "GET / HTTP/1.1" 404 Not Found
+INFO:     36.239.113.49:62855 - "GET /api/attractions?keyword=%E6%BA%AB%E6%B3%89 HTTP/1.1" 200 OK
+INFO:     36.239.113.49:52417 - "GET /api/attractions?keyword=%E6%BA%AB%E6%B3%89 HTTP/1.1" 200 OK
+INFO:     36.239.113.49:52417 - "GET /api/attractions?keyword=%E6%BA%AB%E6%B3%89 HTTP/1.1" 200 OK
+INFO:     36.239.113.49:51860 - "GET /api/attractions?keyword=%E9%A4%8A%E7%94%9F HTTP/1.1" 200 OK
+INFO:     36.239.113.49:49579 - "GET /api/attractions?keyword=%E9%A4%8A%E7%94%9F HTTP/1.1" 200 OK
+INFO:     36.239.113.49:56310 - "GET /api/attractions HTTP/1.1" 200 OK
+INFO:     64.62.156.66:30766 - "GET / HTTP/1.1" 404 Not Found
+INFO:     64.62.156.68:55091 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     64.62.156.74:31739 - "GET /?format=json HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     36.239.113.49:54654 - "GET /api/attractions HTTP/1.1" 200 OK
+INFO:     36.239.113.49:54654 - "GET /api/attractions HTTP/1.1" 200 OK
+INFO:     36.239.113.49:57940 - "GET /api/attractions?=0 HTTP/1.1" 200 OK
+INFO:     36.239.113.49:63329 - "GET /api/attractions?pages=0 HTTP/1.1" 200 OK
+INFO:     36.239.113.49:58902 - "GET /api/attractions?pages=0 HTTP/1.1" 200 OK
+INFO:     36.239.113.49:58902 - "GET /api/attractions?pages=0 HTTP/1.1" 200 OK
+INFO:     36.239.113.49:62157 - "GET /api/attractions?pages=0 HTTP/1.1" 200 OK
+INFO:     36.239.113.49:62157 - "GET /api/attractions?pages=0 HTTP/1.1" 200 OK
+INFO:     36.239.113.49:49522 - "GET /api/attractions?page=0&category=%E8%97%9D%E6%96%87%E9%A4%A8%E6%89%80 HTTP/1.1" 200 OK
+INFO:     111.243.99.212:50147 - "GET /api/attractions?page=0&category=%E8%97%9D%E6%96%87%E9%A4%A8%E6%89%80 HTTP/1.1" 200 OK
+INFO:     111.243.99.212:50147 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     64.227.99.138:37659 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     66.132.153.118:16220 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     66.132.153.118:16372 - "GET /security.txt HTTP/1.1" 404 Not Found
+INFO:     Started server process [31019]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     3.149.59.26:58348 - "GET / HTTP/1.1" 404 Not Found
+INFO:     3.149.59.26:58356 - "GET / HTTP/1.1" 404 Not Found
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [24610]
+INFO:     Started server process [31036]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     36.239.113.49:65155 - "GET / HTTP/1.1" 404 Not Found
+INFO:     36.239.113.49:59881 - "GET /api/categories HTTP/1.1" 200 OK
+INFO:     36.239.113.49:57838 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     36.239.113.49:61705 - "GET /api/attractions HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/applications.py", line 1139, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 106, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 430, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 318, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/to_thread.py", line 61, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2525, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/Taipei-Day-Trip/app/routers/attraction.py", line 32, in get_attractions
+    if len(rows) > PAGE_SIZE:
+           ^^^^
+UnboundLocalError: cannot access local variable 'rows' where it is not associated with a value
+INFO:     36.239.113.49:49383 - "GET /api/attractions?keyword=%E6%BA%AB%E6%B3%89 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/applications.py", line 1139, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 106, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 430, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 318, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/to_thread.py", line 61, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2525, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/Taipei-Day-Trip/app/routers/attraction.py", line 32, in get_attractions
+    if len(rows) > PAGE_SIZE:
+           ^^^^
+UnboundLocalError: cannot access local variable 'rows' where it is not associated with a value
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [31036]
+INFO:     Started server process [31166]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     36.239.113.49:51819 - "GET /api/attractions?keyword=%E6%BA%AB%E6%B3%89 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/applications.py", line 1139, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 106, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 430, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 318, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/to_thread.py", line 61, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2525, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/Taipei-Day-Trip/app/routers/attraction.py", line 32, in get_attractions
+    if len(rows) > PAGE_SIZE:
+           ^^^^
+UnboundLocalError: cannot access local variable 'rows' where it is not associated with a value
+INFO:     36.239.113.49:57478 - "GET /api/attractions?keyword=%E6%BA%AB%E6%B3%89 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/applications.py", line 1139, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 106, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 430, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 318, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/to_thread.py", line 61, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2525, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/Taipei-Day-Trip/app/routers/attraction.py", line 32, in get_attractions
+    if len(rows) > PAGE_SIZE:
+           ^^^^
+UnboundLocalError: cannot access local variable 'rows' where it is not associated with a value
+INFO:     36.239.113.49:62273 - "GET /api/attractions?pages=0 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/applications.py", line 1139, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 106, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 430, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 318, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/to_thread.py", line 61, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2525, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/Taipei-Day-Trip/app/routers/attraction.py", line 32, in get_attractions
+    if len(rows) > PAGE_SIZE:
+           ^^^^
+UnboundLocalError: cannot access local variable 'rows' where it is not associated with a value
+INFO:     36.239.113.49:52542 - "GET /api/attractions?page=0 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/applications.py", line 1139, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 106, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 430, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 318, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/to_thread.py", line 61, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2525, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/Taipei-Day-Trip/app/routers/attraction.py", line 32, in get_attractions
+    if len(rows) > PAGE_SIZE:
+           ^^^^
+UnboundLocalError: cannot access local variable 'rows' where it is not associated with a value
+INFO:     36.239.113.49:63234 - "GET /api/attractions?page=0 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/applications.py", line 1139, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 106, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 430, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 318, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/to_thread.py", line 61, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2525, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/Taipei-Day-Trip/app/routers/attraction.py", line 32, in get_attractions
+    if len(rows) > PAGE_SIZE:
+           ^^^^
+UnboundLocalError: cannot access local variable 'rows' where it is not associated with a value
+INFO:     36.239.113.49:59719 - "GET /api/attractions?page=0&keyword=%E6%BA%AB%E6%B3%89 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 654, in get_connection
+    cnx = self._cnx_queue.get(block=False)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/applications.py", line 1139, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 106, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 430, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 318, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/to_thread.py", line 61, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2525, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/Taipei-Day-Trip/app/routers/attraction.py", line 12, in get_attractions
+    conn = get_connection()
+           ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/Taipei-Day-Trip/app/db_connect.py", line 18, in get_connection
+    return connection_pool.get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 656, in get_connection
+    raise PoolError("Failed getting connection; pool exhausted") from err
+mysql.connector.errors.PoolError: Failed getting connection; pool exhausted
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [31166]
+INFO:     Started server process [31218]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     36.239.113.49:57260 - "GET /api/attractions?page=0&keyword=%E6%BA%AB%E6%B3%89 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/applications.py", line 1139, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 106, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 430, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 318, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/to_thread.py", line 61, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2525, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/Taipei-Day-Trip/app/routers/attraction.py", line 32, in get_attractions
+    if len(rows) > PAGE_SIZE:
+           ^^^^
+UnboundLocalError: cannot access local variable 'rows' where it is not associated with a value
+INFO:     36.239.113.49:54772 - "GET /api/attractions?page=0&keyword=%E6%BA%AB%E6%B3%89 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/applications.py", line 1139, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 106, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 430, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 318, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/to_thread.py", line 61, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2525, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/Taipei-Day-Trip/app/routers/attraction.py", line 32, in get_attractions
+    if len(rows) > PAGE_SIZE:
+           ^^^^
+UnboundLocalError: cannot access local variable 'rows' where it is not associated with a value
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [31218]
+INFO:     Started server process [31235]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     36.239.113.49:63980 - "GET /api/attractions?page=0&keyword=%E6%BA%AB%E6%B3%89 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/applications.py", line 1139, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 106, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 430, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 318, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/to_thread.py", line 61, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2525, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/Taipei-Day-Trip/app/routers/attraction.py", line 32, in get_attractions
+    if len(rows) > PAGE_SIZE:
+           ^^^^
+UnboundLocalError: cannot access local variable 'rows' where it is not associated with a value
+INFO:     36.239.113.49:49872 - "GET /api/attractions?page=0 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/applications.py", line 1139, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 106, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 430, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 318, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/to_thread.py", line 61, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2525, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/Taipei-Day-Trip/app/routers/attraction.py", line 32, in get_attractions
+    if len(rows) > PAGE_SIZE:
+           ^^^^
+UnboundLocalError: cannot access local variable 'rows' where it is not associated with a value
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [31235]
+INFO:     Started server process [31270]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     36.239.113.49:55959 - "GET /api/attractions?page=0 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/applications.py", line 1139, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 106, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 430, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 318, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/to_thread.py", line 61, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2525, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/Taipei-Day-Trip/app/routers/attraction.py", line 32, in get_attractions
+    if len(rows) > PAGE_SIZE:
+           ^^^^
+UnboundLocalError: cannot access local variable 'rows' where it is not associated with a value
+INFO:     36.239.113.49:60124 - "GET /api/attractions?page=0&keyword=%E5%8A%8D%E6%BD%AD HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/applications.py", line 1139, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 106, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 430, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 318, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/to_thread.py", line 61, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2525, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/Taipei-Day-Trip/app/routers/attraction.py", line 32, in get_attractions
+    if len(rows) > PAGE_SIZE:
+           ^^^^
+UnboundLocalError: cannot access local variable 'rows' where it is not associated with a value
+INFO:     36.239.113.49:56074 - "GET /api/attractions?page=1 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/applications.py", line 1139, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 106, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 430, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 318, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/to_thread.py", line 61, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2525, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/Taipei-Day-Trip/app/routers/attraction.py", line 32, in get_attractions
+    if len(rows) > PAGE_SIZE:
+           ^^^^
+UnboundLocalError: cannot access local variable 'rows' where it is not associated with a value
+INFO:     36.239.113.49:50458 - "GET /api/mrts HTTP/1.1" 200 OK
+INFO:     36.239.113.49:59643 - "GET /api/categories HTTP/1.1" 200 OK
+INFO:     36.239.113.49:53031 - "GET /api/attraction/10 HTTP/1.1" 200 OK
+INFO:     36.239.113.49:49440 - "GET /api/attractions?page=0&category=%E8%97%9D%E6%96%87%E9%A4%A8%E6%89%80&keyword=%E5%8C%97 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/applications.py", line 1139, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 106, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 430, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/fastapi/routing.py", line 318, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/to_thread.py", line 61, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2525, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/Taipei-Day-Trip/app/routers/attraction.py", line 32, in get_attractions
+    if len(rows) > PAGE_SIZE:
+           ^^^^
+UnboundLocalError: cannot access local variable 'rows' where it is not associated with a value
+INFO:     35.167.115.158:53570 - "GET / HTTP/1.1" 404 Not Found
+INFO:     16.146.192.116:39012 - "GET / HTTP/1.0" 404 Not Found
+INFO:     Started server process [31428]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     36.239.113.49:50131 - "GET /api/attractions?page=0 HTTP/1.1" 200 OK
+INFO:     36.239.113.49:59903 - "GET /api/attractions?page=0&category=%E8%97%9D%E6%96%87%E9%A4%A8%E6%89%80 HTTP/1.1" 200 OK
+INFO:     36.239.113.49:53264 - "GET /api/attractions?page=0&category=%E8%97%9D%E6%96%87%E9%A4%A8%E6%89%80&keyword=%E5%8C%97 HTTP/1.1" 200 OK
+INFO:     36.239.113.49:58273 - "GET /api/attraction/10 HTTP/1.1" 404 Not Found
+INFO:     36.239.113.49:50815 - "GET /api/attractions HTTP/1.1" 200 OK
+INFO:     36.239.113.49:63270 - "GET /api/attractions?page=0&keyword=%E5%8A%8D%E6%BD%AD HTTP/1.1" 200 OK
+INFO:     36.239.113.49:60939 - "GET /api/attractions?page=0&keyword=%E6%BA%AB%E6%B3%89 HTTP/1.1" 200 OK
+INFO:     36.239.113.49:53003 - "GET /api/categories HTTP/1.1" 200 OK
+INFO:     36.239.113.49:53508 - "GET /api/categories?keyword=%E6%B3%89 HTTP/1.1" 200 OK
+INFO:     36.239.113.49:61034 - "GET /api/category HTTP/1.1" 404 Not Found
+INFO:     36.239.113.49:49183 - "GET /api/mrts HTTP/1.1" 200 OK
+INFO:     36.239.113.49:59865 - "GET /api/mrt HTTP/1.1" 404 Not Found
+INFO:     36.239.113.49:65227 - "GET /api/attractions?category=%E8%97%9D%E6%96%87%E9%A4%A8%E6%89%80 HTTP/1.1" 200 OK
+INFO:     36.239.113.49:49790 - "GET /api/attractions?category=%E8%97%9D%E6%96%87%E9%A4%A8%E6%89%80 HTTP/1.1" 200 OK
+INFO:     111.243.99.212:56764 - "GET /api/attractions?category=%E8%97%9D%E6%96%87%E9%A4%A8%E6%89%80 HTTP/1.1" 200 OK
+INFO:     111.243.99.212:53592 - "GET /api/attractions?category=%E8%97%9D%E6%96%87%E9%A4%A8%E6%89%80 HTTP/1.1" 200 OK
+INFO:     111.243.99.212:57722 - "GET /api/attractions?category=%E8%97%9D%E6%96%87%E9%A4%A8%E6%89%80 HTTP/1.1" 200 OK
+INFO:     111.243.99.212:51726 - "GET /api/attractions?page=1 HTTP/1.1" 200 OK
+INFO:     111.243.99.212:51726 - "GET /api/attractions?page=0&keyword=%E5%8A%8D%E6%BD%AD HTTP/1.1" 200 OK
+INFO:     111.243.99.212:51726 - "GET /api/attractions?page=0&keyword=%E5%8C%97 HTTP/1.1" 200 OK
+INFO:     111.243.99.212:51726 - "GET /api/attractions?page=0&category=%E8%97%9D%E6%96%87%E9%A4%A8%E6%89%80 HTTP/1.1" 200 OK
+INFO:     111.243.99.212:51726 - "GET /api/attractions?page=0&category=%E8%97%9D%E6%96%87%E9%A4%A8%E6%89%80&keyword=%E5%8C%97 HTTP/1.1" 200 OK
+INFO:     111.243.99.212:60105 - "GET /api/attractions?page=0 HTTP/1.1" 200 OK
+INFO:     111.243.99.212:60105 - "GET /api/attractions?page=7 HTTP/1.1" 200 OK
+INFO:     111.243.99.212:53899 - "GET /api/attractions?page=0 HTTP/1.1" 200 OK
+INFO:     111.243.99.212:57218 - "GET /api/attractions?page=1&keyword=%E5%8A%8D%E6%BD%AD HTTP/1.1" 200 OK
+INFO:     111.243.99.212:50838 - "GET /api/attractions?page=2&keyword=%E5%8C%97 HTTP/1.1" 200 OK
+INFO:     111.243.99.212:59600 - "GET /api/attractions?page=3&keyword=%E5%8C%97 HTTP/1.1" 200 OK
+INFO:     111.243.99.212:63588 - "GET /api/attractions?page=1&category=%E8%97%9D%E6%96%87%E9%A4%A8%E6%89%80&keyword=%E5%8C%97 HTTP/1.1" 200 OK
+INFO:     111.243.99.212:63588 - "GET /api/attractions?page=2&category=%E8%97%9D%E6%96%87%E9%A4%A8%E6%89%80&keyword=%E5%8C%97 HTTP/1.1" 200 OK
+INFO:     111.243.99.212:57712 - "GET /api/mrts HTTP/1.1" 200 OK
+INFO:     111.243.99.212:57712 - "GET /api/attraction/10 HTTP/1.1" 404 Not Found
+INFO:     111.243.99.212:57712 - "GET /api/categories HTTP/1.1" 200 OK
+INFO:     111.243.99.212:63341 - "GET /api/attraction/180 HTTP/1.1" 404 Not Found
+INFO:     111.243.99.212:55662 - "GET /api/attractions?page=1 HTTP/1.1" 200 OK
+INFO:     111.243.99.212:55662 - "GET /api/attraction/183 HTTP/1.1" 404 Not Found
+INFO:     111.243.99.212:57505 - "GET /api/attractions/183 HTTP/1.1" 404 Not Found
+INFO:     36.239.113.49:57150 - "GET /api/attractions?category=%E8%97%9D%E6%96%87%E9%A4%A8%E6%89%80 HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     192.81.208.11:55210 - "GET / HTTP/1.1" 404 Not Found
+INFO:     192.81.208.11:55216 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     103.203.57.20:40226 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     87.121.84.180:55920 - "GET /ip HTTP/1.1" 404 Not Found
+INFO:     185.189.182.234:59764 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [31428]
+Usage: uvicorn [OPTIONS] APP
+Try 'uvicorn --help' for help.
+
+Error: No such option: -p
+INFO:     Started server process [33943]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+WARNING:  Invalid HTTP request received.
+INFO:     114.140.144.178:3537 - "GET /api/attractions?page=0&category=%E8%97%9D%E6%96%87%E9%A4%A8%E6%89%80 HTTP/1.1" 200 OK
+INFO:     114.140.144.178:3537 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     35.171.116.71:59108 - "GET /api/attractions HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     114.140.144.178:3551 - "GET /api/attractions?category=%E8%97%9D%E6%96%87%E9%A4%A8%E6%89%80 HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [33943]
+INFO:     Started server process [33972]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     114.140.144.178:3588 - "GET /api/attractions?category=%E8%97%9D%E6%96%87%E9%A4%A8%E6%89%80 HTTP/1.1" 200 OK
+INFO:     204.76.203.18:33124 - "GET / HTTP/1.1" 404 Not Found
+INFO:     204.76.203.18:53212 - "GET /bins/ HTTP/1.1" 404 Not Found
+INFO:     204.76.203.18:60006 - "GET /bin/ HTTP/1.1" 404 Not Found
+INFO:     204.76.203.18:44228 - "GET /backup/ HTTP/1.1" 404 Not Found
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [33972]
+Traceback (most recent call last):
+  File "/home/ubuntu/taipeiproject/venv/bin/uvicorn", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/click/core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/click/core.py", line 1406, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/click/core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/click/core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/main.py", line 423, in main
+    run(
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/main.py", line 593, in run
+    server.run()
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/server.py", line 67, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/server.py", line 71, in serve
+    await self._serve(sockets)
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/server.py", line 78, in _serve
+    config.load()
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/config.py", line 439, in load
+    self.loaded_app = import_from_string(self.app)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/taipeiproject/venv/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/taipeiproject/Taipei-Day-Trip/app/main.py", line 2, in <module>
+    from app.routers import attraction, mrt, categories
+  File "/home/ubuntu/taipeiproject/Taipei-Day-Trip/app/routers/attraction.py", line 14
+    if category:
+TabError: inconsistent use of tabs and spaces in indentation

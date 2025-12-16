@@ -12,7 +12,9 @@ def get_attractions(page: int = 0,
     start = page * PAGE_SIZE
 
     conn = get_connection()
-    cursor = conn.cursor(dictionary=True)
+    cursor = conn.cursor(dictionary = True)
+
+
 
     # 對於 category 給予篩選
     # 對於 keyword 給予篩選
@@ -20,7 +22,7 @@ def get_attractions(page: int = 0,
         cursor.execute("""
             SELECT *
             FROM attraction
-            WHERE name LIKE %s
+            WHEE name LIKE %s
                OR COALESCE(mrt, '') LIKE %s
                OR category LIKE %s
             LIMIT %s OFFSET %s
