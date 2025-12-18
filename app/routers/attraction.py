@@ -100,10 +100,8 @@ def get_attractions(page: int = 0,
 
 
 # 判斷方式: 有category 就用 category篩選; 沒有就用keyword; 兩者都沒有指定就顯示全部; 兩個條件都出現就一起篩選
-<<<<<<< HEAD
-=======
 
-@router.get("/api/attraction/{attractionId}")
+@router.get("/api/attraction/{attraction_id}")
 def get_attraction(attraction_id: int):
     conn = get_connection()
     cursor = conn.cursor(dictionary=True)
@@ -147,4 +145,3 @@ def get_attraction(attraction_id: int):
             "images": images
         }
     }
->>>>>>> 00f52a7 (Fix Attraction API by id)
