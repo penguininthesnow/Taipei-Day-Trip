@@ -100,3 +100,51 @@ def get_attractions(page: int = 0,
 
 
 # 判斷方式: 有category 就用 category篩選; 沒有就用keyword; 兩者都沒有指定就顯示全部; 兩個條件都出現就一起篩選
+<<<<<<< HEAD
+=======
+
+@router.get("/api/attraction/{attractionId}")
+def get_attraction(attraction_id: int):
+    conn = get_connection()
+    cursor = conn.cursor(dictionary=True)
+
+    # 查詢景點
+    cursor.execute("""
+        SELECT id, name, category, description, address, transport, mrt, latitude, longitude FROM attraction WHERE id = %s
+    """, (attraction_id,))
+
+    row = cursor.fetchone()
+
+    if not row:
+        cursor.close()
+        conn.close()
+        return{
+            "error":True,
+            "message":"景點編號不正確"
+        }
+    
+    # 查詢圖片
+    cursor.execute("""
+        SELECT url FROM image WHERE attraction_id = %s
+    """, (attraction_id,))
+
+    images = [img["url"] for img in cursor.fetchall()]
+
+    cursor.close()
+    conn.close()
+
+    return{
+        "data": {
+            "id": row["id"],
+            "name": row["name"],
+            "category": row["category"],
+            "description": row["description"],
+            "address": row["address"],
+            "transport": row["transport"],
+            "mrt": row["mrt"],
+            "latitude": row["latitude"],
+            "longitude": row["longitude"],
+            "images": images
+        }
+    }
+>>>>>>> 00f52a7 (Fix Attraction API by id)
