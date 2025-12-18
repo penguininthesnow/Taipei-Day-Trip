@@ -65,15 +65,17 @@ def get_attractions(page: int = 0,
 
     images_map = {}
     if attraction_ids:
+        image_cursor =  conn.cursor(dictionary=True)
         format_strings = ",".join(["%s"] * len(attraction_ids))
-        cursor.execute(f"""
+        image_cursor.execute(f"""
             SELECT attraction_id, url
             FROM image
             WHERE attraction_id IN ({format_strings})
         """, attraction_ids)
 
-        for img in cursor.fetchall():
+        for img in image_cursor.fetchall():
             images_map.setdefault(img["attraction_id"], []).append(img["url"])
+        image_cursor.close()
 
     data = []
     for row in rows:
