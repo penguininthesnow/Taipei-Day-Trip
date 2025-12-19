@@ -1,3 +1,4 @@
+
 from fastapi import APIRouter
 from app.db_connect import get_connection
 
@@ -147,3 +148,5 @@ def get_attraction(attraction_id: int):
             "images": images
         }
     }
+
+
