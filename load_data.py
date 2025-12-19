@@ -17,8 +17,12 @@ with open("data/taipei-attractions.json", "r", encoding="utf-8") as file:
 
 # 過濾JPG/PNG的圖片 url
 def filter_image_urls(file_str):
-    urls =re.findall(r'(https://.*?\.(?:jpg|png|JPG|PNG))', file_str)
-    return [url for url in urls if url.lower().endswith(("jpg", "png"))]
+    urls =re.findall(r'https://[^"]+?\.(?:jpg|png|JPG|PNG)', file_str)
+    return [url for url in urls if url.lower().endswith(("jpg", "png", "JPG", "PNG"))]
+
+# urls = filter_image_urls(item["file"])
+# if not urls:
+#     urls = ["empty"]
 
 # 匯入資料
 for item in data:
