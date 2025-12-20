@@ -29,7 +29,7 @@
 /* 背景101圖片設計 */
 .banner{
     height: 320px;
-    background-image: url("images/101.png");
+    background-image: url("static/images/101.png");
     background-size: cover;
     background-position: center;
 }
