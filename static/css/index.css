@@ -1,0 +1,158 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 54px;
+
+    background-color: white;
+    border-bottom: 1px solid #e8e8e8;
+    z-index: 1000;
+}
+.main{
+    padding-top: 54px;
+}
+
+.header__logo{
+    color:#448899; 
+    font-weight: bold;
+    font-size: 30px;
+    
+}
+
+.header__right{
+    display: flex;
+    justify-content: space-between;
+    color: #666666
+}
+
+/* 背景101圖片設計 */
+.banner{
+    height: 320px;
+    background-image: url("images/101.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.welcomeboard__line1{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 28px;
+}
+.welcomeboard__line2{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.search__input{
+    color:#666666;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.hidden{
+  display: none;
+}
+
+.banner__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.category__btn{
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+/* 捷運區塊 */
+.mrt {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.mrt__list-wrapper {
+  overflow: hidden;
+  flex: 1;
+}
+
+.mrt__list {
+  display: flex;
+  gap: 16px;
+  white-space: nowrap;
+}
+/* attraction區塊 */
+.attractions__grid {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 15px;
+
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.attraction-card {
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  overflow: hidden;
+  background: white;
+}
+.attraction-card__image {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+.attraction-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.attraction-card__name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+
+  background: rgba(0, 0, 0, 0.6);
+}
+.attraction-card__info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px;
+  font-size: 14px;
+  color: #757575;
+}
+
+/* 平板尺寸: 601~1200px */
+@media (max-width: 1200px) {
+  .attractions__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* 手機尺寸: < 600px */
+@media (max-width: 600px) {
+  .attractions__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* footer */
+.footer {
+  height: 100px;
+  background: #757575;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
