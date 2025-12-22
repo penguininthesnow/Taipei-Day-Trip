@@ -1,6 +1,7 @@
 from fastapi import APIRouter
 from api.db_connect import get_connection
 
+
 router = APIRouter()
 
 @router.get("/api/mrts")

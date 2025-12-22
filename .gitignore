@@ -140,4 +140,6 @@ cython_debug/
 # macOS
 .DS_Store
 
-nohup.out
+nohup.outnohup.out
+*.log
+*.log*
