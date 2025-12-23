@@ -43,7 +43,11 @@
     background-size: cover;
     background-position: center top;
 }
-
+.welcomeboard {
+  align-content: center;
+  align-items: center;
+  padding-left: 20px;
+}
 .welcomeboard__line1{
     color: #FFFFFF;
     font-weight: bold;
