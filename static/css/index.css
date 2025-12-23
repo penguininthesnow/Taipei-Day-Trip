@@ -128,10 +128,11 @@
   padding: 8px 0;
   cursor: pointer;
   border-radius: 4px;
+  color: #000000;
 }
 .category__popup div:hover{
   background-color: #e8f4f5;
-  color: black;
+  /* color: black; */
 }
 .search__input {
   height: 46px;
