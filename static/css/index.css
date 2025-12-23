@@ -1,4 +1,6 @@
 .header{
+    display: flex;
+    justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -9,6 +11,12 @@
     border-bottom: 1px solid #e8e8e8;
     z-index: 1000;
 }
+.header__container{
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .main{
     padding-top: 54px;
 }
@@ -16,22 +24,24 @@
 .header__logo{
     color:#448899; 
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
     
 }
 
 .header__right{
     display: flex;
+    gap: 20px;
+    font-size: 16px;
     justify-content: space-between;
     color: #666666
 }
 
 /* 背景101圖片設計 */
 .banner{
-    height: 320px;
+    height: 480px;
     background-image: url("/static/images/101.png");
     background-size: cover;
-    background-position: center;
+    background-position: center top;
 }
 
 .welcomeboard__line1{
@@ -51,9 +61,9 @@
     font-size: 16px;
 }
 
-.hidden{
-  display: none;
-}
+/* .hidden{
+      display:none
+} */
 
 .banner__content {
   height: 100%;
@@ -67,6 +77,36 @@
     font-weight: bold;
     font-size: 16px;
 }
+
+.category__popup{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #FFFFFF;
+  border-radius: 6px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  padding:  12px;
+  width: 360px;
+  z-index: 20;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+.category__popup.active{
+  display: grid;
+}
+.category__popup div{
+  text-align: center;
+  padding: 8px 0;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.category__popup div:hover{
+  background-color: #e8f4f5;
+}
+
 /* 捷運區塊 */
 .mrt {
   display: flex;
@@ -75,14 +115,19 @@
 }
 
 .mrt__list-wrapper {
-  overflow: hidden;
-  flex: 1;
+  overflow-x: auto;
+  scroll-behavior: smooth;
 }
 
 .mrt__list {
   display: flex;
-  gap: 16px;
+  gap: 20px;
   white-space: nowrap;
+}
+.mrt__arrow{
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 /* attraction區塊 */
 .attractions__grid {

@@ -6,6 +6,7 @@ const searchBtn = document.querySelector(".search__btn");
 const categoryBtn = document.querySelector(".category__btn");
 const categoryPopup = document.querySelector(".category__popup");
 const mrtList = document.querySelector(".mrt__list");
+const mrtWrapper = document.querySelector(".mrt__list-wrapper");
 
 // 建立一些會用到的變數
 let nextPage = 0;
@@ -123,7 +124,13 @@ searchInput.addEventListener("keydown", e => {
 
 // 點選分類按鍵跳出
 categoryBtn.addEventListener("click", () => {
-    categoryPopup.classList.toggle("hidden");
+    categoryPopup.classList.toggle("active");
+});
+
+document.addEventListener("click", (e) => {
+    if (!categoryBtn.contains(e.target) && !categoryPopup.contains(e.target)) {
+        categoryPopup.classList.remove("active");
+    }
 });
 
 // 載入category
@@ -177,3 +184,10 @@ mrtList.addEventListener("click", e => {
         category: currentCategory
     });
 });
+
+document.querySelector(".mrt__arrow--left").onclick = () => {
+    mrtWrapper.scrollLeft -= 200;
+};
+document.querySelector(".mrt__arrow--right").onclick = () => {
+    mrtWrapper.scrollRight += 200;
+};
