@@ -13,6 +13,7 @@
 }
 .header__container{
   width: 1200px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,15 +39,18 @@
 
 /* 背景101圖片設計 */
 .banner{
-    height: 480px;
+    height: 320px;
     background-image: url("/static/images/101.png");
     background-size: cover;
-    background-position: center top;
+    background-position: top;
 }
 .welcomeboard {
+  width: 1200px;
+  margin:0 auto;
   align-content: center;
   align-items: center;
-  padding-left: 20px;
+  padding-top: 80px;
+  color: white;
 }
 .welcomeboard__line1{
     color: #FFFFFF;
@@ -59,10 +63,19 @@
     font-size: 16px;
 }
 
+.searchbar {
+    position: relative;
+    display: flex;
+    height: 46px;
+}
+
 .search__input{
     color:#666666;
     font-weight: bold;
     font-size: 16px;
+    width: 400px;
+    border: none;
+    padding: 0 10px;
 }
 
 /* .hidden{
@@ -80,6 +93,10 @@
     color: black;
     font-weight: bold;
     font-size: 16px;
+    width: 120px;
+    border: none;
+    background: #FFFFFF;
+    cursor: pointer;
 }
 
 .category__popup{
@@ -90,8 +107,9 @@
   background: #FFFFFF;
   border-radius: 6px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-  padding:  12px;
+  padding:  10px;
   width: 360px;
+  height: 46px;
   z-index: 20;
 
   display: grid;
@@ -110,6 +128,16 @@
 .category__popup div:hover{
   background-color: #e8f4f5;
 }
+.search__input {
+  height: 46px;
+  width: 300px;
+}
+.search__btn {
+  background-color: #448899;
+  height: 46px;
+  width: 60px;
+  border: none;
+}
 
 /* 捷運區塊 */
 .mrt {
@@ -119,7 +147,7 @@
 }
 
 .mrt__list-wrapper {
-  overflow-x: auto;
+  overflow: hidden;
   scroll-behavior: smooth;
 }
 
@@ -187,13 +215,21 @@
   .attractions__grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .header__logo{
+    padding-left: 10px;
+  }
 }
+
 /* 手機尺寸: < 600px */
 @media (max-width: 600px) {
   .attractions__grid {
     grid-template-columns: 1fr;
   }
+  .header__logo{
+    padding-left: 10px;
+  }
 }
+
 
 /* footer */
 .footer {

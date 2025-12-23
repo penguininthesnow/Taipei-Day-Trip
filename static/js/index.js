@@ -123,14 +123,15 @@ searchInput.addEventListener("keydown", e => {
 });
 
 // 點選分類按鍵跳出
-categoryBtn.addEventListener("click", () => {
+categoryBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
     categoryPopup.classList.toggle("active");
 });
 
-document.addEventListener("click", (e) => {
-    if (!categoryBtn.contains(e.target) && !categoryPopup.contains(e.target)) {
+document.addEventListener("click", () => {
+    // if (!categoryBtn.contains(e.target) && !categoryPopup.contains(e.target)) {
         categoryPopup.classList.remove("active");
-    }
+    // }
 });
 
 // 載入category
@@ -185,9 +186,9 @@ mrtList.addEventListener("click", e => {
     });
 });
 
-document.querySelector(".mrt__arrow--left").onclick = () => {
+document.querySelector(".mrt__arrow--left").addEventListener("click", () => {
     mrtWrapper.scrollLeft -= 200;
-};
-document.querySelector(".mrt__arrow--right").onclick = () => {
-    mrtWrapper.scrollRight += 200;
-};
+});
+document.querySelector(".mrt__arrow--right").addEventListener("click",  () => {
+    mrtWrapper.scrollLeft += 200;
+});
