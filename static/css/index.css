@@ -115,7 +115,6 @@
   box-shadow: 0 4px 20px rgba(0,0,0,0.2);
   padding:  10px;
   width: 360px;
-  height: 46px;
   z-index: 20;
 
   grid-template-columns: repeat(3, 1fr);

@@ -7,6 +7,7 @@ const categoryBtn = document.querySelector(".category__btn");
 const categoryPopup = document.querySelector(".category__popup");
 const mrtList = document.querySelector(".mrt__list");
 const mrtWrapper = document.querySelector(".mrt__list-wrapper");
+const SCROLL_AMOUNT = 300;
 
 // 建立一些會用到的變數
 let nextPage = 0;
