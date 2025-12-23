@@ -127,9 +127,11 @@ categoryBtn.addEventListener("click", (e) => {
     e.stopPropagation();
     categoryPopup.classList.toggle("active");
 });
-
+categoryPopup.addEventListener("click", () => {
+    e.stopPropagation();
+});
 document.addEventListener("click", () => {
-        categoryPopup.classList.remove("active");
+    categoryPopup.classList.remove("active");
 });
 
 // 載入category
@@ -185,8 +187,8 @@ mrtList.addEventListener("click", e => {
 });
 
 document.querySelector(".mrt__arrow--left").addEventListener("click", () => {
-    mrtWrapper.scrollLeft -= 300;
+    mrtWrapper.scrollLeft -= SCROLL_AMOUNT;
 });
 document.querySelector(".mrt__arrow--right").addEventListener("click", () => {
-    mrtWrapper.scrollLeft += 300;
+    mrtWrapper.scrollLeft += SCROLL_AMOUNT;
 });

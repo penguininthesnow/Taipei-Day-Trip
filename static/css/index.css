@@ -42,10 +42,11 @@
     height: 320px;
     background-image: url("/static/images/101.png");
     background-size: cover;
-    background-position: center 40%;
+    background-position: center 10%;
 
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .welcomeboard {
   width: 1200px;
@@ -53,8 +54,8 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  align-content: center;
-  align-items: center;
+  /* align-content: center;
+  align-items: center; */
   color: white;
 }
 .welcomeboard__line1{
@@ -168,6 +169,7 @@
   margin: 0;
   white-space: nowrap;
   cursor: pointer;
+  width: max-content;
 }
 .mrt__arrow{
   background: none;
@@ -177,8 +179,8 @@
 .mrt__item{
   min-width: 90px;
   text-align: center;
-  white-space: nowrap;
   cursor: pointer;
+  flex-shrink: 0;
 }
 /* attraction區塊 */
 .attractions__grid {
@@ -231,6 +233,10 @@
 
 /* 平板尺寸: 601~1200px */
 @media (max-width: 1200px) {
+  .welcomeboard {
+    width: 100%;
+    padding: 0 20px;
+  }
   .attractions__grid {
     grid-template-columns: repeat(2, 1fr);
   }
