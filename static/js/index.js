@@ -111,7 +111,7 @@ function searchAttractions({ keyword = "", category = ""}) {
 
 searchBtn.addEventListener("click", () => {
     searchAttractions({
-        keyword: searchInput.ariaValueMax.trim(),
+        keyword: searchInput.value.trim(),
         category: currentCategory
     });
 });
@@ -150,7 +150,7 @@ categoryPopup.addEventListener("click", e => {
 
     const selectedCategory = e.target.textContent;
 
-    categoryPopup.classList.add("hidden");
+    categoryPopup.classList.add("active");
 
     searchAttractions({
         keyword: currentKeyword,
@@ -185,8 +185,8 @@ mrtList.addEventListener("click", e => {
 });
 
 document.querySelector(".mrt__arrow--left").addEventListener("click", () => {
-    mrtWrapper.scrollLeft -= 200;
+    mrtWrapper.scrollLeft -= 300;
 });
 document.querySelector(".mrt__arrow--right").addEventListener("click", () => {
-    mrtWrapper.scrollLeft += 200;
+    mrtWrapper.scrollLeft += 300;
 });
