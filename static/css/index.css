@@ -167,7 +167,9 @@
   height: 50px;
   width: 100%;
   max-width: 1200px;
-  margin: 10px 10px;
+  margin: 10px;
+  margin-left: -20px;
+  margin-right: auto;
   padding: 13px 10px;
   text-align: center;
   justify-items: center;
