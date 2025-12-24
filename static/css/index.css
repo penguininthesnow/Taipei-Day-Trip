@@ -35,7 +35,8 @@
     gap: 20px;
     font-size: 16px;
     justify-content: space-between;
-    color: #666666
+    color: #666666;
+    padding-right: 10px;
 }
 
 /* 背景101圖片設計 */
@@ -165,7 +166,7 @@
   width: 100%;
   max-width: 1200px;
   margin: 10px auto;
-  padding: 0 15px;
+  padding: 13px 10px;
 }
 
 .mrt__list-wrapper {
