@@ -17,6 +17,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
 }
 .main{
     padding-top: 12px;
@@ -26,8 +27,7 @@
 .header__logo{
     color:#448899; 
     font-weight: bold;
-    font-size: 20px;
-    
+    font-size: 20px;   
 }
 
 .header__right{
@@ -36,7 +36,6 @@
     font-size: 16px;
     justify-content: space-between;
     color: #666666;
-    padding-right: 10px;
 }
 
 /* 背景101圖片設計 */
@@ -44,7 +43,7 @@
     height: 320px;
     background-image: url("/static/images/101.png");
     background-size: cover;
-    background-position: center -10%;
+    background-position: center -30%;
 
     display: flex;
     align-items: center;
@@ -177,7 +176,8 @@
 .mrt__list-wrapper {
   overflow: hidden;
   scroll-behavior: smooth;
-  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .mrt__list {
@@ -188,7 +188,7 @@
   margin: 0;
   white-space: nowrap;
   cursor: pointer;
-  width: max-content;
+  width: max-content; /* 內容等寬  */
 }
 .mrt__arrow{
   background: none;
@@ -284,10 +284,10 @@
     font-size: 14px;
   }
   .welcomeboard__line1 {
-    font-size: 22px;
+    font-size: 28px;
   }
   .welcomeboard__line2 {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
