@@ -39,7 +39,7 @@ body {
 .header__logo{
     color:#448899; 
     font-weight: bold;
-    font-size: 20px;   
+    font-size: 30px;   
 }
 
 .header__right{
@@ -129,6 +129,8 @@ body {
     background: #EEEEEE; /* 灰色 */
     cursor: pointer;
     height: 100%;
+    white-space: nowrap; /* 不能換行 */
+    display: flex; /* 文字+箭頭都在行 */
 }
 
 .category__popup{
@@ -301,6 +303,11 @@ body {
   }
   .welcomeboard__line2 {
     font-size: 16px;
+  }
+  .category__btn {
+    font-size: 14px;
+    width: auto;       
+    padding: 0 12px;
   }
 }
 
