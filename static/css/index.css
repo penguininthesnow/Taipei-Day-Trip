@@ -74,8 +74,14 @@
     position: relative;
     display: flex;
     height: 46px;
-    /* margin-top: 25px; */
+    margin-top: 25px;
     align-items: center;
+}
+
+.searchbar *,
+.searchbar *::before,
+.searchbar *::after {
+  box-sizing: border-box;
 }
 
 .search__input{
@@ -85,6 +91,7 @@
     width: 400px;
     border: none;
     padding: 0 10px;
+    height: 100%;
 }
 
 /* .hidden{
@@ -106,6 +113,7 @@
     border: none;
     background: #FFFFFF;
     cursor: pointer;
+    height: 100%;
 }
 
 .category__popup{
@@ -143,7 +151,7 @@
 }
 .search__btn {
   background-color: #448899;
-  height: 46px;
+  height: 100%;
   width: 60px;
   border: none;
 }
