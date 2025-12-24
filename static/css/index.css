@@ -19,7 +19,8 @@
   align-items: center;
 }
 .main{
-    padding-top: 54px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .header__logo{
@@ -42,20 +43,20 @@
     height: 320px;
     background-image: url("/static/images/101.png");
     background-size: cover;
-    background-position: center 10%;
+    background-position: center 5%;
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .welcomeboard {
-  width: 1200px;
+  max-width: 1200px;
   margin:0 auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  /* align-content: center;
-  align-items: center; */
+  justify-content: center;
+  height: 100%;
   color: white;
 }
 .welcomeboard__line1{
@@ -73,6 +74,8 @@
     position: relative;
     display: flex;
     height: 46px;
+    margin-top: 25px;
+    align-items: center;
 }
 
 .search__input{
@@ -149,10 +152,11 @@
 .mrt {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 50px;
   width: 100%;
   max-width: 1200px;
-  margin: 40px auto;
+  margin: 10px auto;
   padding: 0 15px;
 }
 

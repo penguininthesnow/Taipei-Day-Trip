@@ -152,11 +152,12 @@ categoryPopup.addEventListener("click", e => {
     if (!e.target.classList.contains("category-item")) return;
 
     const selectedCategory = e.target.textContent;
+    categoryBtn.textContent = `${selectedCategory} ▼ `;
 
     categoryPopup.classList.add("active");
 
     searchAttractions({
-        keyword: currentKeyword,
+        keyword: "",
         category: selectedCategory
     });
 });
