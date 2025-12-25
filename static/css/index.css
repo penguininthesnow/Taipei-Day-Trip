@@ -55,7 +55,7 @@ body {
     height: 320px;
     background-image: url("/static/images/101.png");
     background-size: cover;
-    background-position: center -90%;
+    background-position: center 10%;
 
     display: flex;
     align-items: center;
@@ -131,6 +131,8 @@ body {
     height: 100%;
     white-space: nowrap; /* 不能換行 */
     display: flex; /* 文字+箭頭都在行 */
+    text-align: center;
+    align-items: center;
 }
 
 .category__popup{
@@ -183,7 +185,7 @@ body {
   max-width: 1200px;
   margin: 10px auto;
   
-  padding: 13px 10px;
+  padding: 13px 10px 0 10px;
   text-align: center;
   justify-items: center;
 }
