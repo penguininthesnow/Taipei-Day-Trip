@@ -50,16 +50,18 @@ body {
     color: #666666;
 }
 
-/* 背景101圖片設計 */
+/* 背景101圖片設計 */ /*  藉由"section"去更改區塊距離 */
 .banner{
     height: 320px;
     background-image: url("/static/images/101.png");
     background-size: cover;
     background-position: center 10%;
+    background-repeat: no-repeat;
 
     display: flex;
     align-items: center;
     /* justify-content: center; */
+    margin-bottom: 40px;
 }
 .welcomeboard {
   max-width: 1200px;
@@ -89,7 +91,7 @@ body {
     position: relative;
     display: flex;
     height: 46px;
-    margin-top: 25px;
+    /* margin-top: 25px; */
     align-items: center;
 }
 
@@ -133,6 +135,7 @@ body {
     display: flex; /* 文字+箭頭都在行 */
     text-align: center;
     align-items: center;
+    justify-content: center;
 }
 
 .category__popup{
@@ -175,7 +178,7 @@ body {
   border: none;
 }
 
-/* 捷運區塊 */
+/* 捷運區塊 */ /*  藉由"section"去更改區塊距離 */
 .mrt {
   display: flex;
   align-items: center;
@@ -183,9 +186,11 @@ body {
   height: 50px;
   width: 100%;
   max-width: 1200px;
-  margin: 10px auto;
+  margin: 0 auto 40px auto;
+  padding: 0 10px;
+  /* margin: 10px auto; */
   
-  padding: 13px 10px 0 10px;
+  /* padding: 13px 10px 0 10px; */
   text-align: center;
   justify-items: center;
 }
