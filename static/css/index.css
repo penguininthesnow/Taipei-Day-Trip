@@ -71,6 +71,7 @@ body {
   flex-direction: column;
   gap: 14px; 
   justify-content: center;
+  align-items: center;
   /* height: 100%; */
   padding: 0 20px;
   box-sizing: border-box;
@@ -126,7 +127,7 @@ body {
     color: black;
     font-weight: 500;
     font-size: 16px;
-    width: 120px;
+    width: 100px;
     border: none;
     background: #EEEEEE; /* 灰色 */
     cursor: pointer;
