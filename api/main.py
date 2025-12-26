@@ -1,6 +1,7 @@
 
 from fastapi import FastAPI
-from app.routers import attraction, mrt, categories
+from api.routers import attraction, mrt, categories
+
 
 app = FastAPI()
 

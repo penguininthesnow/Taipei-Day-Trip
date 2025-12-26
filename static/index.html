@@ -1,11 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-hant">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Index</title>
+  <title>Taipei day trip</title>
+  <link rel="stylesheet" href="/static/css/index.css" />
 </head>
 <body>
-  
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">
+        <a href="/" style="text-decoration: none; color: inherit;">台北一日遊</a>
+      </div>
+      <div class="header__right">
+        <div class="booking">預定行程</div>
+        <div class="login">登入/註冊</div>
+      </div>
+    </div>
+  </header>
+
+  <!--welcome 及搜尋區塊-->
+  <section class="banner">
+    <div class="welcomeboard">
+      <div class="welcomeboard__line1">輕鬆享受台北一日悠閒</div>
+      <div class="welcomeboard__line2">探索每個角落，體驗城市的深度旅遊行程</div>
+
+      <div class="searchbar">
+        <!-- Category Button -->
+        <button class="category__btn">全部分類 ▼</button>
+
+        <!-- Category Popup -->
+        <div class="category__popup">
+        <!-- categories will be rendered here -->
+        </div>
+        <input type="text" class="search__input" placeholder="輸入景點名稱查詢"/>
+        <button class="search__btn">
+          <img src="/static/images/search.png" alt="放大鏡" width="30px" height="30px"/>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== MRT List ===== -->
+  <section class="mrt">
+    <button class="mrt__arrow mrt__arrow--left">
+      <img src="/static/images/left.png" alt="往左" width="32px" height="32px"/>
+    </button>
+
+
+    <div class="mrt__list-wrapper">
+      <ul class="mrt__list">
+        <!-- MRT items rendered by JS -->
+      </ul>
+    </div>
+
+
+    <button class="mrt__arrow mrt__arrow--right">
+      <img src="/static/images/right.png" alt="往右" width="32px" height="32px"/>
+    </button>
+  </section>
+
+
+  <!-- ===== Main Content 景點介紹區塊 ===== -->
+  <main class="main">
+    <section class="attractions">
+      <div class="attractions__grid">
+        <!-- Attraction cards rendered by JS -->
+      </div>
+
+      <!-- Infinite scroll observer target -->
+      <div class="observer"></div>
+    </section>
+  </main>
+
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <p>COPYRIGHT © 2025 台北一日遊</p>
+  </footer>
+
+
+  <script src="/static/js/index.js"></script>  
 </body>
 </html>

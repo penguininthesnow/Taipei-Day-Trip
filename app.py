@@ -1,6 +1,10 @@
 from fastapi import *
 from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 app=FastAPI()
+
+
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # Static Pages (Never Modify Code in this Block)
 @app.get("/", include_in_schema=False)
@@ -15,3 +19,11 @@ async def booking(request: Request):
 @app.get("/thankyou", include_in_schema=False)
 async def thankyou(request: Request):
 	return FileResponse("./static/thankyou.html", media_type="text/html")
+
+
+# main.py
+from api.routers import attraction, mrt, categories
+
+app.include_router(attraction.router)
+app.include_router(mrt.router)
+app.include_router(categories.router)
