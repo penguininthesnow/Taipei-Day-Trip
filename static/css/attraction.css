@@ -1,0 +1,28 @@
+.slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+}
+
+.slideshow img {
+    width: 100%;
+    display: block;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.arrow.left{
+    left: 10px;
+}
+.arrow.right{
+    right: 10px
+}
