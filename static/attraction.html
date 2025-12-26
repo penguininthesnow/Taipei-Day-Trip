@@ -6,17 +6,16 @@
   <title>景點介紹</title>
   <link rel="stylesheet" href="/static/css/attraction.css" />
 </head>
-<script src="/static/js/attraction.js"></script>
 
 <body>
   <div class="slideshow">
     <img id="attraction-image" src="" alt="attraction">
 
-    <button class="arrow left" >
+    <button class="arrow left" id="arrow-left">
       <img src="/static/images/btn_leftarrow.png" alt="上一張" width="36px" height="36px"/>
     </button>
 
-    <button class="arrow right" >
+    <button class="arrow right" id="arrow-right">
       <img src="/static/images/btn_rightarrow.png" alt="下一張" width="36px" height="36px"/>
     </button>
     
@@ -28,5 +27,6 @@
 
   <p id="attraction-description"></p>
   
+  <script src="/static/js/attraction.js"></script>
 </body>
 </html>

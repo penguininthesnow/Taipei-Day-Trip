@@ -4,6 +4,25 @@ let currentIndex = 0;
 document.addEventListener("DOMContentLoaded", () => {
     const attractionId = window.location.pathname.split("/").pop();
     fetchAttraction(attractionId);
+
+    // 加左右箭頭設定
+    document.getElementById("arrow-left").addEventListener("click", () => {
+        if (currentIndex === 0) {
+            currentIndex = images.length - 1;
+        } else {
+            currentIndex--;
+        }
+        updateImage();
+    });
+
+    document.getElementById("arrow-right").addEventListener("click", () => {
+        if (currentIndex === images.length - 1) {
+            currentIndex = 0;
+        } else {
+            currentIndex++;
+        }
+        updateImage();
+    });
 });
 
 function fetchAttraction(attractionId) {
@@ -18,7 +37,7 @@ function fetchAttraction(attractionId) {
 
             document.getElementById("attraction-description").textContent = attraction.description;
 
-            const images = attraction.images;
+            images = attraction.images;
 
             if (images && images.length> 0) {
                 currentIndex = 0;
@@ -42,22 +61,3 @@ function updateImage() {
     const imageElement = document.getElementById("attraction-image");
     imageElement.src = images[currentIndex];
 }
-
-// 加左右箭頭設定
-document.getElementById("arrow-left").addEventListener("click", () => {
-    if (currentIndex === 0) {
-        currentIndex = images.length - 1;
-    } else {
-        currentIndex--;
-    }
-    updateImage();
-});
-
-document.getElementById("arrow-right").addEventListener("click", () => {
-    if (currentIndex === images.length - 1) {
-        currentIndex = 0;
-    } else {
-        currentIndex++;
-    }
-    updateImage();
-});
