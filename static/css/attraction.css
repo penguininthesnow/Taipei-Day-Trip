@@ -41,6 +41,9 @@
     width: 80%;
     max-width: 540px;
     z-index: 10;
+
+    background: red !important;
+    height: 20px !important;
 }
 
 .indicator {
