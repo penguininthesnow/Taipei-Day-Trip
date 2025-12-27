@@ -58,6 +58,28 @@
 .indicator.active {
     background-color: black;
 }
+
+.booking-date {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+.booking-date label {
+    margin-right: 8px;
+    white-space: nowrap;
+}
+
+.booking-date input[type="date"] {
+    width: 193px;
+    height: 35px;
+    padding: 6px 10px;
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
 .booking {
     margin-top: 24px;
     color: #666666;
@@ -70,18 +92,53 @@
     margin: 12px 0;
     font-size: 16px;
     font-weight: 700;
+    cursor: pointer;
+
+    text-align: center;
 }
+
+/* 隱藏原生 radio */
+.time-select input[type="radio"] {
+  display: none;
+}
+
+/* 外圈（白色包覆） */
+.custom-radio {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  margin-right: 8px;
+  background-color: transparent;
+  position: relative;
+}
+
+/* 藍色實心圓 */
+.time-select input[type="radio"]:checked + .custom-radio::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #448899;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 .price {
     font-size: 16px;
     font-weight: 400;
+
+    text-align: center;
     
 }
 
 .booking-btn {
     color:#FFFFFF;
     background-color: #448899;
-    border-radius: 5px solid;
+    border-bottom: 5px solid #448899;
     padding: 10px 20px;
     font-weight: 400;
     font-size: 19px;
