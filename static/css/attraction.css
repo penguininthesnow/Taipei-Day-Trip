@@ -32,17 +32,18 @@
 }
 
 .indicators{
-    position: absolute;
+    /* position: absolute; */
     bottom: 12px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     gap: 4px;
-    width: 80%;
+    width: 100%;
     max-width: 600px;
     z-index: 10;
+    margin: 8px auto 0;
 
-    background: gray !important;
+    background: rgba(138, 138, 138, 0.516) !important;
     height: 20px !important;
 }
 
@@ -54,5 +55,5 @@
 }
 
 .indicator.active {
-    background-color: white;
+    background-color: black;
 }
