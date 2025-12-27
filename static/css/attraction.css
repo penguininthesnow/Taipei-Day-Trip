@@ -26,3 +26,25 @@
 .arrow.right{
     right: 10px
 }
+
+.indicators{
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 4px;
+    width: 80%;
+    max-width: 540px;
+}
+
+.indicator {
+    flex: 1; /* 讓水平線自動均分 */
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: white;
+}

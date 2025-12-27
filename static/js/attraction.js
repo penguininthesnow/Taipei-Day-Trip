@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
             currentIndex--;
         }
         updateImage();
+        updateIndicators(); // 點擊左右箭頭時下面分段線也會跟著一起動
     });
 
     document.getElementById("arrow-right").addEventListener("click", () => {
@@ -22,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
             currentIndex++;
         }
         updateImage();
+        updateIndicators(); // 點擊左右箭頭時下面分段線也會跟著一起動
     });
 });
 
@@ -38,6 +40,8 @@ function fetchAttraction(attractionId) {
             document.getElementById("attraction-description").textContent = attraction.description;
 
             images = attraction.images;
+            // 動態indicator
+            createIndicators();
 
             if (images && images.length> 0) {
                 currentIndex = 0;
@@ -60,4 +64,39 @@ function fetchAttraction(attractionId) {
 function updateImage() {
     const imageElement = document.getElementById("attraction-image");
     imageElement.src = images[currentIndex];
+}
+
+// 動態indicator設定
+function createIndicators() {
+    const indicatorsContainer = document.getElementById("indicators");
+    indicatorsContainer.innerHTML = "";
+
+    images.forEach((_, index) => {
+        const line = document.createElement("span"); // 線段
+        line.classList.add("indicator");
+
+        if (index === currentIndex) {
+            line.classList.add("active");
+        }
+
+        line.addEventListener("click", () => {
+            currentIndex = index;
+            updateImage();
+            updateIndicators();
+        });
+
+        indicatorsContainer.appendChild(line);
+    });
+}   
+
+// 同步更新 active 狀態
+function updateIndicators() {
+    const lines = document.querySelectorAll(".indicator");
+    lines.forEach((line, index) => {
+        if (index === currentIndex) {
+            line.classList.add("active");
+        } else {
+            line.classList.remove("active");
+        }
+    });
 }
