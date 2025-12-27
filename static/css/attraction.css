@@ -21,7 +21,6 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0,0,0,0.5);
     color: white;
     border: none;
     padding: 8px 12px;
@@ -39,15 +38,13 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    /* transform: translateX(-50%); */
     display: flex;
     gap: 0;
     width: 100%;
     max-width: 600px;
     z-index: 10;
-    /* margin: 8px auto 0 auto; */
 
-    /* background: rgba(138, 138, 138, 0.516) !important; */
+    
     height: 4px !important;
 }
 
@@ -60,4 +57,22 @@
 
 .indicator.active {
     background-color: black;
+}
+.booking {
+    margin-top: 24px;
+    color: #666666;
+}
+
+.time-select {
+    display: flex;
+    gap: 16px;
+    margin: 12px 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: 400;
+    
 }

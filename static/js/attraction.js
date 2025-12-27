@@ -25,6 +25,21 @@ document.addEventListener("DOMContentLoaded", () => {
         updateImage();
         updateIndicators(); // 點擊左右箭頭時下面分段線也會跟著一起動
     });
+
+    // 導覽價格設定
+    const priceElement = document.getElementById("price");
+    const timeRadios = document.querySelectorAll(`input[name="time]`)
+
+    timeRadios.forEach(radio => {
+        radio.addEventListener("change", () => {
+            if (radio.value === "morning") {
+                priceElement.textContent = "2000";
+            } else {
+                priceElement.textContent = "2500";
+            }
+        });
+    });
+    
 });
 
 function fetchAttraction(attractionId) {
