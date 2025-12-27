@@ -4,7 +4,11 @@
     max-width: 600px;
 }
 
-.slideshow img {
+/* .slideshow img {
+    width: 100%;
+    display: block;
+} */
+#attraction-image {
     width: 100%;
     display: block;
 }
