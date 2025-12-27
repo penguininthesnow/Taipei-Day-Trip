@@ -4,6 +4,10 @@
     max-width: 600px;
 }
 
+.image-wrapper{
+    position: relative;
+}
+
 /* .slideshow img {
     width: 100%;
     display: block;
@@ -32,19 +36,19 @@
 }
 
 .indicators{
-    /* position: absolute; */
-    bottom: 12px;
-    left: 50%;
-    transform: translateX(-50%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* transform: translateX(-50%); */
     display: flex;
-    gap: 4px;
+    gap: 0;
     width: 100%;
     max-width: 600px;
     z-index: 10;
-    margin: 8px auto 0;
+    /* margin: 8px auto 0 auto; */
 
-    background: rgba(138, 138, 138, 0.516) !important;
-    height: 20px !important;
+    /* background: rgba(138, 138, 138, 0.516) !important; */
+    height: 4px !important;
 }
 
 .indicator {
