@@ -4,6 +4,8 @@ let currentIndex = 0;
 document.addEventListener("DOMContentLoaded", () => {
     const attractionId = window.location.pathname.split("/").pop();
     fetchAttraction(attractionId);
+    const priceElement = document.getElementById("price");
+    const timeRadios = document.querySelectorAll(`input[name="time"]`);
 
     // 加左右箭頭設定
     document.getElementById("arrow-left").addEventListener("click", () => {
@@ -27,9 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // 導覽價格設定
-    const priceElement = document.getElementById("price");
-    const timeRadios = document.querySelectorAll(`input[name="time]`)
-
     timeRadios.forEach(radio => {
         radio.addEventListener("change", () => {
             if (radio.value === "morning") {
@@ -39,7 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
-    
 });
 
 function fetchAttraction(attractionId) {

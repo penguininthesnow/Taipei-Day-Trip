@@ -61,6 +61,7 @@
 .booking {
     margin-top: 24px;
     color: #666666;
+    display: flex;
 }
 
 .time-select {
@@ -75,4 +76,15 @@
     font-size: 16px;
     font-weight: 400;
     
+}
+
+.booking-btn {
+    color:#FFFFFF;
+    background-color: #448899;
+    border-radius: 5px solid;
+    padding: 10px 20px;
+    font-weight: 400;
+    font-size: 19px;
+
+    text-align: center;
 }
