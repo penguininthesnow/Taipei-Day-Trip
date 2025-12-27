@@ -39,10 +39,10 @@
     display: flex;
     gap: 4px;
     width: 80%;
-    max-width: 540px;
+    max-width: 600px;
     z-index: 10;
 
-    background: red !important;
+    background: gray !important;
     height: 20px !important;
 }
 
