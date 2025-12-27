@@ -1,3 +1,7 @@
+.body {
+    color: #666666;
+}
+
 .slideshow {
     position: relative;
     width: 100%;
@@ -22,6 +26,7 @@
     top: 50%;
     transform: translateY(-50%);
     color: white;
+    background-color: #8d8b8b2b;
     border: none;
     padding: 8px 12px;
     cursor: pointer;
@@ -32,6 +37,33 @@
 }
 .arrow.right{
     right: 10px
+}
+
+.booking {
+    width: 340px;
+    height: 300px;
+    border: 5px solid #E8E8E8;
+    margin-top: 24px;
+    /* color: #666666 */
+    display: flex;
+    background-color: #E8E8E8;
+    
+}
+
+.topic1 {
+   width: 560px;
+   height: 22px;
+   font-size: 16px;
+   font-weight: 700;
+   color: #666666;
+}
+
+.topic2 {
+   width: 560px;
+   height: 24px;
+   font-size: 16px;
+   font-weight: 400;
+   color: #666666;
 }
 
 .indicators{
@@ -64,6 +96,7 @@
     align-items: center;
     margin-bottom: 16px;
     font-size: 16px;
+    font-weight: 700;
 }
 
 .booking-date label {
@@ -80,10 +113,8 @@
     font-size: 16px;
 }
 
-.booking {
-    margin-top: 24px;
-    color: #666666;
-    display: flex;
+.time {
+    font-weight: 700;
 }
 
 .time-select {
@@ -138,7 +169,7 @@
 .booking-btn {
     color:#FFFFFF;
     background-color: #448899;
-    border-bottom: 5px solid #448899;
+    border: 5px solid #448899;
     padding: 10px 20px;
     font-weight: 400;
     font-size: 19px;
