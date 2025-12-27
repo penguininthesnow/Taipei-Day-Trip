@@ -2,6 +2,10 @@
     color: #666666;
 }
 
+.attraction-inform {
+    display: flex;
+}
+
 .slideshow {
     position: relative;
     width: 100%;
@@ -39,33 +43,6 @@
     right: 10px
 }
 
-.booking {
-    width: 340px;
-    height: 300px;
-    border: 5px solid #E8E8E8;
-    margin-top: 24px;
-    /* color: #666666 */
-    display: flex;
-    background-color: #E8E8E8;
-    
-}
-
-.topic1 {
-   width: 560px;
-   height: 22px;
-   font-size: 16px;
-   font-weight: 700;
-   color: #666666;
-}
-
-.topic2 {
-   width: 560px;
-   height: 24px;
-   font-size: 16px;
-   font-weight: 400;
-   color: #666666;
-}
-
 .indicators{
     position: absolute;
     bottom: 0;
@@ -89,6 +66,32 @@
 
 .indicator.active {
     background-color: black;
+}
+
+.booking {
+    width: 340px;
+    height: 300px;
+    border: 5px solid #E8E8E8;
+    margin-top: 24px;
+    /* color: #666666 */
+    background-color: #E8E8E8;
+    
+}
+
+.topic1 {
+   width: 560px;
+   height: 22px;
+   font-size: 16px;
+   font-weight: 700;
+   color: #666666;
+}
+
+.topic2 {
+   width: 560px;
+   height: 24px;
+   font-size: 16px;
+   font-weight: 400;
+   color: #666666;
 }
 
 .booking-date {
@@ -146,15 +149,15 @@
 
 /* 藍色實心圓 */
 .time-select input[type="radio"]:checked + .custom-radio::after {
-  content: "";
-  width: 12px;
-  height: 12px;
-  background-color: #448899;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #448899;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
