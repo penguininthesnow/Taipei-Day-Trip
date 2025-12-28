@@ -1,6 +1,44 @@
 body {
     color: #666666;
 }
+/*===== Header ===== */
+.header{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 54px;
+
+    background-color: white;
+    border-bottom: 1px solid #e8e8e8;
+    z-index: 1000;
+}
+.header__container{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo{
+    color:#448899; 
+    font-weight: bold;
+    font-size: 30px;   
+}
+
+.header__right{
+    display: flex;
+    gap: 20px;
+    font-size: 16px;
+    justify-content: space-between;
+    color: #666666;
+}
+
 
 .attraction-inform {
     display: flex;
@@ -228,6 +266,7 @@ body {
 .price2, h3{
     font-size: 16px;
     font-weight: 700;
+    margin-right: 8px;
 }
 
 .booking-btn {
@@ -264,6 +303,17 @@ body {
     font-weight: 700;
     margin-top: 24px;
     margin-bottom: 8px;
+}
+
+/* footer */
+.footer {
+  height: 100px;
+  background: #757575;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
