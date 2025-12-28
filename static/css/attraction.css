@@ -1,10 +1,13 @@
-.body {
+body {
     color: #666666;
 }
 
 .attraction-inform {
     display: flex;
     width: 1200px;
+    justify-content: center;
+
+    margin: 0 auto 0 auto;
 }
 
 .slideshow {
@@ -76,8 +79,8 @@
 }
 
 .booking {
-    width: 340px;
-    height: 300px;
+    width: 302px;
+    height: 600px;
     border: 5px solid #E8E8E8;
     margin-top: 24px;
     /* color: #666666 */
@@ -121,6 +124,10 @@
     border: 1px solid #E8E8E8;
     border-radius: 5px;
     font-size: 16px;
+
+    background-image: url("/static/images/icon_calendar_.png"); background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
 }
 
 .time {
@@ -141,6 +148,12 @@
 /* 隱藏原生 radio */
 .time-select input[type="radio"] {
   display: none;
+}
+
+.time-select label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 /* 外圈（白色包覆） */
