@@ -4,11 +4,12 @@
 
 .attraction-inform {
     display: flex;
+    width: 1200px;
 }
 
 .slideshow {
     position: relative;
-    width: 100%;
+    width: 50%;
     max-width: 600px;
 }
 
@@ -66,6 +67,12 @@
 
 .indicator.active {
     background-color: black;
+}
+
+/* 地點介紹及訂購行程區塊 */
+.info {
+    width: 50%;
+    max-width: 600px;
 }
 
 .booking {
