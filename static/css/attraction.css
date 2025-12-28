@@ -18,7 +18,7 @@ body {
 
     margin: 0 auto 0 auto;
     align-items: center;
-    /* padding-top: 100px; */
+    padding-top: 50px;
 }
 
 .image-wrapper{
@@ -158,6 +158,12 @@ body {
     background-position: right 10px center;
 }
 
+.date-hint {
+    font-size: 14px;
+    color: #666666;
+    margin-left: 8px;
+}
+
 .time {
     font-weight: 700;
 }
@@ -217,7 +223,7 @@ body {
     margin-bottom: 15px;
 }
 
-.price2{
+.price2, h3{
     font-size: 16px;
     font-weight: 700;
 }
@@ -227,7 +233,7 @@ body {
     background-color: #448899;
     border-radius: 5px;
     border: 5px solid #448899;
-    padding: 5px 15px;
+    padding: 2px 15px;
     font-weight: 400;
     font-size: 19px;
     height: 36px;
@@ -236,3 +242,34 @@ body {
     text-align: center;
     align-items: center;
 }
+
+.description {
+    width: 1200px;
+
+    justify-content: center;
+}
+
+
+/* RWD切版 360px 手機版 */
+@media (max-width: 360px) {
+    .attraction-inform {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .slideshow,
+    .info {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .booking {
+        width: 100%;
+        height: auto;
+    }
+
+    .description {
+        width: 100%;
+        padding: 16px;
+    }
+} 
