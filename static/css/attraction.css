@@ -6,7 +6,7 @@ body {
     display: flex;
     width: 1200px;
     justify-content: center;
-
+    align-items: stretch;
     margin: 20px auto 20px auto;
 }
 
@@ -194,15 +194,15 @@ body {
 
 .price {
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 400;
 
     align-items: center;
     margin-bottom: 15px;
 }
 
-.prices{
+.price2{
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .booking-btn {
@@ -217,4 +217,5 @@ body {
     width: 154px;
 
     text-align: center;
+    align-items: center;
 }
