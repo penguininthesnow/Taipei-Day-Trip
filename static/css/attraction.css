@@ -60,6 +60,9 @@ body {
 
 .image-wrapper{
     position: relative;
+    width: 100%;
+    height: 400px; /*統一高度*/
+    overflow: hidden;
 }
 
 /* .slideshow img {
@@ -68,8 +71,10 @@ body {
 } */
 #attraction-image {
     width: 100%;
+    height: 100%;
+    object-fit: cover; /*固定高度*/
     display: block;
-    height: auto;  /*讓內容自己撐高*/
+    /* height: auto;  讓內容自己撐高 */
 }
 
 .arrow {
@@ -171,6 +176,12 @@ body {
    margin-bottom: 15px;
 }
 
+.booking-date, .time-select, .price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
 .booking-label {
     width: 80px;        /* 對齊線 */
     font-weight: 700;
@@ -179,6 +190,7 @@ body {
 }
 
 .booking-date {
+    position: relative;
     display: flex;
     align-items: center;
     margin-bottom: 15px;
@@ -202,13 +214,20 @@ body {
     background-image: url("/static/images/icon_calendar_.png"); background-size: 24px 24px;
     background-repeat: no-repeat;
     background-position: right 10px center;
+
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .booking-date input[type="date"]::-webkit-calendar-picker-indicator {
     opacity: 0;
+    cursor: pointer;
 }
 
 .date-hint {
+    position: absolute;
+    left: 110px;
+    pointer-events: none;
     font-size: 14px;
     color: #666666;
     margin-left: 8px;
@@ -310,7 +329,7 @@ body {
 
     justify-content: center;
     justify-items: center;
-    text-align: center;
+    text-align: left;
 }
 
 .description h3 {
