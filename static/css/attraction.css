@@ -83,7 +83,8 @@ body {
 }
 
 .booking {
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
     height: 302px;
     border: 5px solid #E8E8E8;
     margin-top: 24px;
@@ -145,7 +146,7 @@ body {
 .time-select {
     display: flex;
     gap: 16px;
-    margin: 22px;
+    margin: 12px 0;
     font-size: 16px;
     font-weight: 700;
     cursor: pointer;
@@ -178,8 +179,8 @@ body {
 /* 藍色實心圓 */
 .time-select input[type="radio"]:checked + .custom-radio::after {
     content: "";
-    width: 15px;
-    height: 15px;
+    width: 18px;
+    height: 18px;
     background-color: #448899;
     border-radius: 50%;
     position: absolute;
