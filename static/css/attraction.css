@@ -12,7 +12,7 @@ body {
     height: 54px;
 
     background-color: white;
-    /* border-bottom: 1px solid #e8e8e8; */
+    border-bottom: 1px solid #e8e8e8;
     z-index: 1000;
 }
 .header__container{
@@ -52,11 +52,10 @@ body {
     position: relative;
     width: 50%;
     max-width: 600px;
-    height: 400px;
+    /* height: 400px; */
 
-    margin: 0 auto 0 auto;
-    align-items: center;
-    padding-top: 50px;
+    /* margin: 0 auto 0 auto;
+    align-items: center; */
 }
 
 .image-wrapper{
@@ -70,6 +69,7 @@ body {
 #attraction-image {
     width: 100%;
     display: block;
+    height: auto;  /*讓內容自己撐高*/
 }
 
 .arrow {
@@ -171,6 +171,13 @@ body {
    margin-bottom: 15px;
 }
 
+.booking-label {
+    width: 80px;        /* 對齊線 */
+    font-weight: 700;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
 .booking-date {
     display: flex;
     align-items: center;
@@ -197,15 +204,20 @@ body {
     background-position: right 10px center;
 }
 
+.booking-date input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
 .date-hint {
     font-size: 14px;
     color: #666666;
     margin-left: 8px;
+    white-space: nowrap;
 }
 
-.time {
+/* .time {
     font-weight: 700;
-}
+} */
 
 .time-select {
     display: flex;
@@ -264,11 +276,11 @@ body {
     margin-bottom: 10px;
 }
 
-.price2, h3{
+/* .price2, h3{
     font-size: 16px;
     font-weight: 700;
     margin-right: 8px;
-}
+} */
 
 .booking-btn {
     color:#FFFFFF;
@@ -298,6 +310,7 @@ body {
 
     justify-content: center;
     justify-items: center;
+    text-align: center;
 }
 
 .description h3 {
