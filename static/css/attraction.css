@@ -221,6 +221,7 @@ body {
     font-weight: 400;
 
     align-items: center;
+    text-align: center;
     margin-bottom: 10px;
 }
 
@@ -250,9 +251,19 @@ body {
 
 .description {
     width: 1200px;
+    margin: 40px auto;
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.8;
 
     justify-content: center;
     justify-items: center;
+}
+
+.description h3 {
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 8px;
 }
 
 
