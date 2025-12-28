@@ -14,6 +14,7 @@ body {
     position: relative;
     width: 50%;
     max-width: 600px;
+    height: 400px;
 
     margin: 0 auto 0 auto;
     align-items: center;
@@ -81,7 +82,22 @@ body {
     width: 50%;
     max-width: 600px;
 
-    padding: 16px;
+    padding-left: 16px;
+}
+
+.attraction-name {
+    font-size: 16px;
+    font-weight: 700;
+    
+    padding-bottom: 5px;
+    padding-top: 0;
+}
+.attraction-info {
+    font-size: 16px;
+    font-weight: 400;
+
+    padding-bottom: 5px;
+    padding-top: 0;
 }
 
 .booking {
