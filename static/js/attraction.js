@@ -52,6 +52,10 @@ function fetchAttraction(attractionId) {
 
             document.getElementById("attraction-description").textContent = attraction.description;
 
+            document.getElementById("attraction-address").textContent = attraction.address;
+
+            document.getElementById("attraction-transport").textContent = attraction.transport;
+
             images = attraction.images;
             // 動態indicator
             createIndicators();
