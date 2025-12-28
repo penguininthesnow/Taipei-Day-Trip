@@ -90,6 +90,7 @@ body {
     margin-top: 24px;
     /* color: #666666 */
     background-color: #E8E8E8;
+    padding: 10px;
     
 }
 
@@ -194,7 +195,7 @@ body {
     font-size: 16px;
     font-weight: 400;
 
-    text-align: center;
+    align-items: center;
     margin-bottom: 22px;
     
 }
@@ -206,6 +207,8 @@ body {
     padding: 10px 20px;
     font-weight: 400;
     font-size: 19px;
+    height: 32px;
+    width: 154px;
 
     text-align: center;
 }
