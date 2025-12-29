@@ -42,7 +42,7 @@ body {
 
 .attraction-inform {
     display: flex;
-    width: 1200px;
+    max-width: 1200px;
     justify-content: center;
     align-items: stretch; /* 同高 */
     margin: 20px auto 20px auto;
@@ -51,7 +51,7 @@ body {
 /*以左邊圖片作為參考*/
 .slideshow {
     position: relative;
-    width: 50%;
+    /* width: 50%; */
     max-width: 600px;
     display: flex;
 }
@@ -118,10 +118,14 @@ body {
 
 /* 地點介紹及訂購行程區塊 */
 .info {
-    width: 50%;
+    /* width: 50%; */
     max-width: 600px;
 
     padding-left: 16px;
+}
+.slideshow, .info {
+    flex: 1;
+    max-width: 600px;
 }
 
 .attraction-name {
@@ -154,8 +158,8 @@ body {
 }
 
 .topic1 {
-   width: 560px;
-   height: 22px;
+   /* width: 560px;
+   height: 22px; */
    font-size: 16px;
    font-weight: 700;
    color: #666666;
@@ -164,13 +168,18 @@ body {
 }
 
 .topic2 {
-   width: 560px;
-   height: 24px;
+   /* width: 560px;
+   height: 24px; */
    font-size: 16px;
    font-weight: 400;
    color: #666666;
+   line-height: 1.5;
+   word-break: break-word;
 
    margin-bottom: 15px;
+}
+.topic1, .topic2 {
+    width: 100%;
 }
 
 .booking-label {
@@ -302,7 +311,7 @@ body {
 
 .custom-line {
     width: 1200px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .description {
@@ -337,11 +346,31 @@ body {
 }
 
 
+/* 平板尺寸: 601~1200px */
+@media (max-width: 1200px) {
+  .header__logo{
+    padding-left: 10px;
+  }
+  .attraction-inform {
+    padding: 0 10px;
+  }
+  .info {
+    padding-left: 12px;
+  } 
+}
+
+
 /* RWD切版 360px 手機版 */
 @media (max-width: 360px) {
     .header__logo {
         font-size: 25px;
         flex: nowrap;
+    }
+    .header__logo{
+    padding-left: 10px;
+    }
+    .header__right{
+    padding-right: 10px;
     }
     .attraction-inform {
         flex-direction: column;
@@ -359,6 +388,13 @@ body {
         height: auto;
     }
 
+    .topic2 {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    .custom-line {
+        width: 100%;
+    }
     .description {
         width: 100%;
         padding: 16px;
