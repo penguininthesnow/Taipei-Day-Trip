@@ -203,10 +203,10 @@ body {
     font-weight: 700;
 }
 
-.booking-date label {
+/* .booking-date label {
     margin-right: 8px;
     white-space: nowrap;
-}
+} */
 
 .booking-date input[type="date"] {
     width: 193px;
@@ -248,7 +248,7 @@ body {
     gap: 16px;
     margin: 10px 0;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 400;
     cursor: pointer;
 
     text-align: center;
