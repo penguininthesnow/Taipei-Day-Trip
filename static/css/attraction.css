@@ -181,11 +181,11 @@ body {
    margin-bottom: 15px;
 }
 
-.booking-date, .time-select, .price {
+/* .booking-date, .time-select, .price {
     display: flex;
     align-items: center;
     margin-bottom: 12px;
-}
+} */
 
 .booking-label {
     width: 80px;        /* 對齊線 */
