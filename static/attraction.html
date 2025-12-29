@@ -52,28 +52,34 @@
 
         <div class="booking-row">
           <span class="booking-label">選擇日期: </span>
-          <input type="date" id="booking-date" name="booking-date"/>
+          <div class="booking-content">
+            <input type="date" id="booking-date" name="booking-date"/>
           <!-- <span class="date-hint">yyyy/mm/dd</span> -->
+          </div>
         </div>
         
-        <div class="booking-row time-select">
+        <div class="booking-row">
           <span class="booking-label">選擇時間:</span>
-          <label>
-            <input type="radio" name="time" value="morning" checked /> <!-- "checked" 讓上半天設定為預設-->
-            <span class="custom-radio"></span>
-            上半天
-          </label>
+          <div class="booking-content time-select">
+            <label>
+              <input type="radio" name="time" value="morning" checked /> <!-- "checked" 讓上半天設定為預設-->
+              <span class="custom-radio"></span>
+              上半天
+            </label> 
 
-          <label>
-            <input type="radio" name="time" value="afternoon" />
-            <span class="custom-radio"></span>
-            下半天
-          </label>
+            <label>
+              <input type="radio" name="time" value="afternoon" />
+              <span class="custom-radio"></span>
+              下半天
+            </label>
+          </div> 
         </div>
 
-        <div class="booking-row price">
+        <div class="booking-row">
           <span class="booking-label">導覽費用:</span> 
-          <span id="price">新台幣 2000 元</span>
+          <div class="booking-content">
+              <span id="price">新台幣 2000 元</span>
+          </div>
         </div>
 
         <button class="booking-btn">開始預約行程</button>

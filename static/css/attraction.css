@@ -180,6 +180,13 @@ body {
     flex-shrink: 0;
 }
 
+.booking-content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    outline: 1px solid red;
+}
+
 .booking-row {
     display: flex;
     align-items: center;
@@ -296,6 +303,7 @@ body {
 
 .custom-line {
     width: 1200px;
+    margin-top: 20px;
 }
 
 .description {
@@ -332,6 +340,10 @@ body {
 
 /* RWD切版 360px 手機版 */
 @media (max-width: 360px) {
+    .header__logo {
+        font-size: 25px;
+        flex: nowrap;
+    }
     .attraction-inform {
         flex-direction: column;
         width: 100%;
