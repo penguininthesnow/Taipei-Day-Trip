@@ -65,14 +65,16 @@
 
   <!-- ===== Main Content 景點介紹區塊 ===== -->
   <main class="main">
-    <section class="attractions">
-      <div class="attractions__grid">
-        <!-- Attraction cards rendered by JS -->
-      </div>
+    <a href="/attraction/${attraction.id}" class="attraction-link"> <!-- link of index into attractionid -->
+      <section class="attractions">
+        <div class="attractions__grid">
+          <!-- Attraction cards rendered by JS -->
+        </div>
 
-      <!-- Infinite scroll observer target -->
-      <div class="observer"></div>
-    </section>
+        <!-- Infinite scroll observer target -->
+        <div class="observer"></div>
+      </section>
+    </a>
   </main>
 
 
