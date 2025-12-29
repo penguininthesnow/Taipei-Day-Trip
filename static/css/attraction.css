@@ -200,7 +200,7 @@ body {
     align-items: center;
     margin-bottom: 15px;
     font-size: 16px;
-    font-weight: 700;
+    /* font-weight: 700; */
 }
 
 /* .booking-date label {
@@ -208,7 +208,7 @@ body {
     white-space: nowrap;
 } */
 
-.booking-date input[type="date"] {
+.booking-row input[type="date"] {
     width: 193px;
     height: 35px;
     padding: 6px 10px;
@@ -224,7 +224,7 @@ body {
     -webkit-appearance: none;
 }
 
-.booking-date input[type="date"]::-webkit-calendar-picker-indicator {
+.booking-row input[type="date"]::-webkit-calendar-picker-indicator {
     opacity: 0;
     cursor: pointer;
 }
@@ -246,7 +246,7 @@ body {
 .time-select {
     display: flex;
     gap: 16px;
-    margin: 10px 0;
+    /* margin: 10px 0; */
     font-size: 16px;
     font-weight: 400;
     cursor: pointer;
