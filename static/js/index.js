@@ -24,12 +24,9 @@ function renderAttractionCards(attractions){
         const link = document.createElement("a");
         link.href = `/attraction/${attraction.id}`;
         link.className = "attraction-link";
-
+        // 卡片本體
         const card = document.createElement("div");
         card.className = "attraction-card";
-
-        link.appendChild(card);
-        container.appendChild(link);
 
         card.innerHTML = `
            <div class="attraction-card__image">
@@ -43,7 +40,10 @@ function renderAttractionCards(attractions){
            </div>
         `;  
 
-        fragment.appendChild(card);
+        // 組裝link 
+        link.appendChild(card);
+        fragment.appendChild(link);
+        
     });
 
     attractionsGrid.appendChild(fragment);

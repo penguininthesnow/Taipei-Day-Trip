@@ -273,6 +273,12 @@ body {
   color: #757575;
 }
 
+.attraction-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 /* 平板尺寸: 601~1200px */
 @media (max-width: 1200px) {
   .welcomeboard {
