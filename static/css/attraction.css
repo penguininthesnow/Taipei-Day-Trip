@@ -310,16 +310,19 @@ body {
 }
 
 .custom-line {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin-top: 40px;
 }
 
 .description {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 40px auto;
     color: #666666;
     font-size: 16px;
     line-height: 1.8;
+    padding: 0 16px;
 
     text-align: left;
 }
@@ -362,9 +365,12 @@ body {
 
 /* RWD切版 360px 手機版 */
 @media (max-width: 360px) {
+    .header {
+        height: auto;
+    }
     .header__logo {
-        font-size: 25px;
-        flex: nowrap;
+        /* font-size: 25px; */
+        white-space: nowrap;
     }
     .header__logo{
     padding-left: 10px;
@@ -387,6 +393,17 @@ body {
         width: 100%;
         height: auto;
     }
+    .booking-row{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    .booking-label {
+        width: auto;
+    }
+    .booking-row input[type="date"] {
+        width: 100%;
+    }
 
     .topic2 {
         font-size: 14px;
@@ -395,8 +412,8 @@ body {
     .custom-line {
         width: 100%;
     }
-    .description {
+    /* .description {
         width: 100%;
         padding: 16px;
-    }
+    } */
 } 
