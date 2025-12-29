@@ -268,13 +268,13 @@ body {
 
 
 .price {
-    display: flex;
+    /* display: flex; */
     font-size: 16px;
     font-weight: 400;
 
     align-items: center;
     text-align: center;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .booking-btn {
