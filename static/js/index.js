@@ -20,8 +20,16 @@ function renderAttractionCards(attractions){
     const fragment = document.createDocumentFragment();
 
     attractions.forEach(attraction => {
+        // index首頁連結特定/attraction/{attractionId}
+        const link = document.createElement("a");
+        link.href = `/attraction/${attraction.id}`;
+        link.className = "attraction-link";
+
         const card = document.createElement("div");
         card.className = "attraction-card";
+
+        link.appendChild(card);
+        container.appendChild(link);
 
         card.innerHTML = `
            <div class="attraction-card__image">
