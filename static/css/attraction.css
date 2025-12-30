@@ -186,6 +186,7 @@ body {
     width: 80px;        /* 對齊線 */
     font-weight: 700;
     font-size: 16px;
+    margin-right: 12px; /*統一右邊有一定間距*/
     flex-shrink: 0;
 }
 
@@ -213,6 +214,7 @@ body {
     background-image: url("/static/images/icon_calendar_.png"); background-size: 24px 24px;
     background-repeat: no-repeat;
     background-position: right 10px center;
+    align-self: center;
 
     appearance: none;
     -webkit-appearance: none;
@@ -381,16 +383,23 @@ body {
 
     .booking-row {
         flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
         align-items: flex-start;
     }
 
     .booking-label {
+        margin-right: 12px;
         width: auto;
         margin-bottom: 8px;
     }
 
     .time-select {
         flex-wrap: wrap;
+    }
+
+    .price {
+        line-height: 1.5;
     }
 } 
 

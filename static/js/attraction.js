@@ -29,16 +29,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // 導覽價格設定
-    // timeRadios.forEach(radio => {
-    //     radio.addEventListener("change", () => {
-    //         if (radio.value === "morning") {
-    //             priceElement.textContent = "新台幣 2000 元";
-    //         } else {
-    //             priceElement.textContent = "新台幣 2500 元";
-    //         }
-    //     });
-    // });
-    priceElement.textContent = time === "morning" ? 2000 : 2500;
+    timeRadios.forEach(radio => {
+        radio.addEventListener("change", () => {
+            if (radio.value === "morning") {
+                priceElement.textContent = 2000;
+            } else {
+                priceElement.textContent = 2500;
+            }
+        });
+    });
 });
 
 function fetchAttraction(attractionId) {
