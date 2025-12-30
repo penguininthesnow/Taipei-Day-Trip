@@ -32,9 +32,9 @@ document.addEventListener("DOMContentLoaded", () => {
     timeRadios.forEach(radio => {
         radio.addEventListener("change", () => {
             if (radio.value === "morning") {
-                priceElement.textContent = "2000";
+                priceElement.textContent = "新台幣 2000 元";
             } else {
-                priceElement.textContent = "2500";
+                priceElement.textContent = "新台幣 2500 元";
             }
         });
     });

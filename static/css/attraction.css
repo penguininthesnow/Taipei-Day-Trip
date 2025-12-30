@@ -362,6 +362,38 @@ body {
   } 
 }
 
+/* 額外添加(中)尺寸: 將booking內容改直排 */
+@media (max-width: 800px) {
+    .attraction-inform {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .slideshow, .info {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .info {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .booking-row {
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .booking-label {
+        width: auto;
+        margin-bottom: 8px;
+    }
+
+    .time-select {
+        flex-wrap: wrap;
+    }
+} 
+
 
 /* RWD切版 360px 手機版 */
 @media (max-width: 360px) {
