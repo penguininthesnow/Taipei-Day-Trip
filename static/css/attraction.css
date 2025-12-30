@@ -1,5 +1,6 @@
 body {
     color: #666666;
+    overflow: hidden; /*防止橫向爆版*/
 }
 /*===== Header ===== */
 .header{
@@ -33,19 +34,29 @@ body {
 
 .header__right{
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 8px;
     font-size: 16px;
-    justify-content: space-between;
+    justify-content: flex-end;
     color: #666666;
 }
 
 
 .attraction-inform {
     display: flex;
+    flex-wrap: wrap;
     max-width: 1200px;
+
     justify-content: center;
     align-items: stretch; /* 同高 */
     margin: 20px auto 20px auto;
+}
+
+/*父容器自己適應介面大小*/
+.attraction-inform, .description {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /*以左邊圖片作為參考*/
@@ -124,7 +135,7 @@ body {
     padding-left: 16px;
 }
 .slideshow, .info {
-    flex: 1;
+    flex: 1 1 500px; /**/
     max-width: 600px;
 }
 
@@ -314,7 +325,7 @@ body {
 .custom-line {
     max-width: 1200px;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 40px auto;
 }
 
 .description {
@@ -410,14 +421,17 @@ body {
         height: auto;
     }
     .header__logo {
-        /* font-size: 25px; */
+        font-size: 25px;
         white-space: nowrap;
+        padding-left: 8px;
     }
-    .header__logo{
-    padding-left: 10px;
-    }
+    
     .header__right{
-    padding-right: 10px;
+        white-space: nowrap;
+        padding-right: 10px;
+        font-size: 12px;
+        gap: 6px;
+
     }
     .attraction-inform {
         flex-direction: column;
