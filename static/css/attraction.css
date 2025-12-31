@@ -53,8 +53,17 @@ body {
     align-items: stretch; /* 同高 */
     padding-top: 20px;
     margin: 20px auto 0;
-    border-bottom: 1px solid #e8e8e8;
+    /* border-bottom: 1px solid #e8e8e8; */
     padding-bottom: 40px;
+}
+
+/* 中間線 */
+.section-divider {
+    max-width: 1200px;
+    width: 100%;
+    height: 1px;
+    background-color: #e8e8e8;
+    margin: 40px auto;
 }
 
 /*父容器自己適應介面大小*/
@@ -329,15 +338,6 @@ body {
     cursor: pointer;
 }
 
-/* 中間線
-.section-divider {
-    max-width: 1200px;
-    width: 100%;
-    height: 1px;
-    background-color: #e8e8e8;
-    margin: 40px auto;
-} */
-
 .description {
     max-width: 1200px;
     width: 100%;
@@ -390,6 +390,8 @@ body {
     .attraction-inform {
         flex-direction: column;
         width: 100%;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .attraction-inform, .description, .section-divider {
@@ -401,9 +403,8 @@ body {
 
     .slideshow {
         width: 100vw;
-        max-width: none;
-        margin-left: calc(50% - 50vw);
-        margin-right: calc(50% - 50vw);
+        max-width: 100vw;
+        margin: 0;
     }
 
     .slideshow, .info {
@@ -419,6 +420,7 @@ body {
     .image-wrapper, #attraction-image {
         width: 100%;
         max-width: 100%;
+        display: block;
     }
 
     .indicators {
@@ -469,6 +471,10 @@ body {
     .attraction-inform {
         flex-direction: column;
         width: 100%;
+        margin-top: 20px;
+    }
+    .section-divider {
+        margin: 24px auto;
     }
 
     .slideshow,
