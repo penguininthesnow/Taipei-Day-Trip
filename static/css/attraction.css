@@ -88,8 +88,8 @@ body {
 .image-wrapper{
     position: relative;
     width: 100%;
-    height: auto;
-    /* height: 400px; 統一高度 */
+    height: 400px;
+    
     overflow: hidden;
     flex: 1;
 }
@@ -100,7 +100,7 @@ body {
     object-fit: cover; /*固定高度，裁切不變形*/
     display: block;
     /* aspect-ratio: 16 / 9; */
-    height: auto;  /*讓內容自己撐高*/
+    /* height: auto;  讓內容自己撐高 */
 }
 
 .arrow {
@@ -443,6 +443,10 @@ body {
         width: 100%;
         max-width: 100%;
         display: block;
+    }
+
+    .image-wrapper {
+        height: 50vw;
     }
 
     .indicators {
