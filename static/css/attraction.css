@@ -518,6 +518,9 @@ body {
         max-width: 100%;
     }
     .attraction-name, .attraction-info {
+        width: 100%;
+        max-width: 95%;
+
         margin-left: 15px;
     }
 
