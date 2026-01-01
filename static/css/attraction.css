@@ -150,7 +150,7 @@ body {
     padding-left: 16px;
 }
 .slideshow, .info {
-    flex: 1 1 500px; /**/
+    flex: 1 1 500px; /* 不管畫面多小，都設定要有500px*/
     max-width: 600px;
 }
 
@@ -399,13 +399,14 @@ body {
     .attraction-inform, .description, .section-divider {
         width: 100%;
         max-width: 100%;
-        overflow-x: hidden;
-        overflow-y: auto;
+        /* overflow-x: hidden; */
     }
 
     .slideshow {
+        flex: none;
         width: 100vw;
         max-width: none;
+
         margin-left: calc(50% - 50vw);
         margin-right: calc(50% - 50vw);
     }
