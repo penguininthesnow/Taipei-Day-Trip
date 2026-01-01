@@ -446,7 +446,7 @@ body {
     }
 
     .image-wrapper {
-        height: 50vw;
+        /* height: 50vw; */
         aspect-ratio: 1 / 1;
     }
 
