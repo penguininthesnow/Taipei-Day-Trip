@@ -1,7 +1,7 @@
 body {
     margin: 0;
     color: #666666;
-    /* overflow-x: hidden; 防止橫向爆版 */
+    overflow-x: hidden; /* 防止橫向爆版 */
     overflow-y: auto;
 }
 /*===== Header ===== */
@@ -51,7 +51,7 @@ body {
     max-width: 1200px;
 
     justify-content: center;
-    align-items: stretch; /* 同高 */
+    align-items: flex-start; /* 同高 */
     padding-top: 20px;
     margin: 20px auto 0;
     /* border-bottom: 1px solid #e8e8e8; */
@@ -391,7 +391,7 @@ body {
 @media (max-width: 800px) {
     .attraction-inform {
         flex-direction: column;
-        width: 100%;
+        max-width: 100%;
         padding-left: 0;
         padding-right: 0;
         margin-top: 20px;
@@ -400,7 +400,7 @@ body {
     .attraction-inform, .description, .section-divider {
         width: 100%;
         max-width: 100%;
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
     }
 
     .slideshow-wrapper {
