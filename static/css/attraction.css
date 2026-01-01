@@ -517,6 +517,9 @@ body {
         width: 100%;
         max-width: 100%;
     }
+    .attraction-name, .attraction-info {
+        margin-left: 15px;
+    }
 
     .booking {
         width: 100%;
