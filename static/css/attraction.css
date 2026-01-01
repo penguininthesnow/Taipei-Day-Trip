@@ -517,11 +517,11 @@ body {
         width: 100%;
         max-width: 100%;
     }
-    .attraction-name, .attraction-info {
-        width: 100%;
-        max-width: 95%;
 
-        margin-left: 15px;
+    .info {
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
     }
 
     .booking {
