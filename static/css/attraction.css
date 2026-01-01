@@ -1,6 +1,7 @@
 body {
+    margin: 0;
     color: #666666;
-    overflow-x: hidden; /*防止橫向爆版*/
+    /* overflow-x: hidden; 防止橫向爆版 */
     overflow-y: auto;
 }
 /*===== Header ===== */
