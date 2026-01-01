@@ -144,11 +144,12 @@ body {
 }
 
 /* 地點介紹及訂購行程區塊 */
-.info {
+.info >* {
     /* width: 50%; */
     max-width: 600px;
 
     padding-left: 16px;
+    margin-top: 0;
 }
 .slideshow, .info {
     flex: 1 1 500px; /* 不管畫面多小，都設定要有500px*/
@@ -159,16 +160,17 @@ body {
     font-size: 16px;
     font-weight: 700;
     
-    padding-bottom: 5px;
+    margin-bottom: 8px;
     padding-top: 0;
 }
 .attraction-info {
     font-size: 16px;
     font-weight: 400;
 
-    padding-bottom: 5px;
+    /* padding-bottom: 5px; */
     padding-top: 0;
-    margin-top: 50px;
+    margin-top: 12px;
+    margin-bottom: 16px;
 }
 
 .booking {
