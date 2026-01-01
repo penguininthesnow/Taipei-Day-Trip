@@ -543,7 +543,7 @@ body {
 
     /* 按鈕自己置中 */
     .booking-btn {
-        margin: 12px auto 0;
+        margin: 12px 0;
     }
 
     .booking-row{
