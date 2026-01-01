@@ -454,6 +454,13 @@ body {
         max-width: 100%;
     }
 
+    .booking{
+        width: 100%;
+        max-width: 95%;
+        height: auto;
+        margin: 0 auto;
+    }
+
     .booking-row {
         flex-wrap: wrap;
         align-items: center;
