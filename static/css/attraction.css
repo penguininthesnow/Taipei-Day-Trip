@@ -535,6 +535,16 @@ body {
         box-sizing: border-box;
     }
 
+    .booking > *:not(.booking-btn) {
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+    }
+
+    /* 按鈕自己置中 */
+    .booking-btn {
+        margin: 12px auto 0;
+    }
 
     .booking-row{
         flex-direction: column;
