@@ -99,7 +99,7 @@ body {
     object-fit: cover; /*固定高度，裁切不變形*/
     display: block;
     /* aspect-ratio: 16 / 9; */
-    /* height: auto;  讓內容自己撐高 */
+    height: auto;  /*讓內容自己撐高*/
 }
 
 .arrow {
