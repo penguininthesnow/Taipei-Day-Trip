@@ -537,4 +537,7 @@ body {
         width: 100%;
         padding: 16px;
     } */
+    .description {
+        padding-top: 0;
+    }
 } 
