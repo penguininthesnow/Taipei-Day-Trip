@@ -512,9 +512,9 @@ body {
 
     .booking {
         width: 100%;
+        max-width: 95%;
         height: auto;
-        margin-left: 5px;
-        margin-right: 5px;
+        margin: 0 auto;
     }
     .booking-row{
         flex-direction: column;
