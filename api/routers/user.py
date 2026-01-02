@@ -1,5 +1,5 @@
-from api.utils.jwt import create_jwt
-from fastapi import APIRouter
+from api.utils.jwt import create_jwt, decode_jwt
+from fastapi import APIRouter, Request
 from pydantic import BaseModel
 import bcrypt
 from api.db_connect import get_connection
@@ -90,3 +90,26 @@ def signin(user: UserSignIn):
     finally:
         cursor.close()
         db.close()
+
+@router.get("/api/user/auth")
+def get_current_user(request: Request):
+    auth = request.headers.get("Authorization")
+
+    # 如果沒有 token
+    if not auth or not auth.startswith("Bearer "):
+        return {"data": None}
+    
+    token = auth.split("")[1]
+
+    try:
+        payload = decode_jwt(token)
+    except Exception:
+        return {"data": None}
+    
+    return {
+        "data": {
+            "id": payload.get("id"),
+            "name": payload.get("name"),
+            "email": payload.get("email")
+        }
+    }
