@@ -60,7 +60,6 @@ body {
 
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     margin-bottom: 40px;
 }
 .welcomeboard {
@@ -272,6 +271,12 @@ body {
   padding: 10px;
   font-size: 14px;
   color: #757575;
+}
+
+.attraction-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 /* 平板尺寸: 601~1200px */

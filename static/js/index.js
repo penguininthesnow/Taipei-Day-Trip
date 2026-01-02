@@ -20,6 +20,11 @@ function renderAttractionCards(attractions){
     const fragment = document.createDocumentFragment();
 
     attractions.forEach(attraction => {
+        // index首頁連結特定/attraction/{attractionId}
+        const link = document.createElement("a");
+        link.href = `/attraction/${attraction.id}`;
+        link.className = "attraction-link";
+        // 卡片本體
         const card = document.createElement("div");
         card.className = "attraction-card";
 
@@ -35,7 +40,10 @@ function renderAttractionCards(attractions){
            </div>
         `;  
 
-        fragment.appendChild(card);
+        // 組裝link 
+        link.appendChild(card);
+        fragment.appendChild(link);
+        
     });
 
     attractionsGrid.appendChild(fragment);

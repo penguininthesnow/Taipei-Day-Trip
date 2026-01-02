@@ -1,11 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Attraction</title>
+  <title>景點介紹</title>
+  <link rel="stylesheet" href="/static/css/attraction.css" />
 </head>
+
 <body>
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">
+        <a href="/" style="text-decoration: none; color: inherit;">台北一日遊</a>
+      </div>
+      <div class="header__right">
+        <div class="header__booking">預定行程</div>
+        <div class="login">登入/註冊</div>
+      </div>
+    </div>
+  </header>
+
+  <section class="attraction-inform">
+    <div class="slideshow-wrapper">
+      <div class="slideshow">
+        <div class="image-wrapper">
+          <img id="attraction-image" src="" alt="attraction"/>
+          
+
+          <button class="arrow left" id="arrow-left">
+            <img src="/static/images/btn_leftarrow.png" alt="上一張" width="36px" height="36px"/>
+          </button>
+
+          <button class="arrow right" id="arrow-right">
+            <img src="/static/images/btn_rightarrow.png" alt="下一張" width="36px" height="36px"/>
+          </button>
+
+          <div class="indicators" id="indicators"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="info">
+      <h2 id="attraction-name"></h2>
+
+      <div id="attraction-info"></div>
+      
+
+      <div class="booking">
+        <div class="topic1">訂購導覽行程</div>
+        <div class="topic2">以此景點為中心的一日行程，帶您探索城市角落故事</div>
+
+        <div class="booking-row">
+          <span class="booking-label">選擇日期: </span>
+          <div class="booking-content">
+            <input type="date" id="booking-date" name="booking-date"/>
+          <!-- <span class="date-hint">yyyy/mm/dd</span> -->
+          </div>
+        </div>
+        
+        <div class="booking-row">
+          <span class="booking-label">選擇時間:</span>
+          <div class="booking-content time-select">
+            <label>
+              <input type="radio" name="time" value="morning" checked /> <!-- "checked" 讓上半天設定為預設-->
+              <span class="custom-radio"></span>
+              上半天
+            </label> 
+
+            <label>
+              <input type="radio" name="time" value="afternoon" />
+              <span class="custom-radio"></span>
+              下半天
+            </label>
+          </div> 
+        </div>
+
+        <div class="booking-row">
+          <span class="booking-label">導覽費用:</span> 
+          <div class="booking-content">
+            <span class="currency">新台幣</span>
+            <span id="price">2000</span>
+            <span class="unit">元</span>
+          </div>
+        </div>
+
+        <button class="booking-btn">開始預約行程</button>
+      
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
   
+  <div class="description">
+    <p id="attraction-description"></p>
+
+    <div class="address">
+      <h3>景點地址：</h3>
+      <p id="attraction-address"></p>
+    </div>
+
+    <div class="transport">
+      <h3>交通方式：</h3>
+      <p id="attraction-transport"></p>
+    </div>
+  </div>
+
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <p>COPYRIGHT © 2025 台北一日遊</p>
+  </footer>
+
+  
+
+  <script src="/static/js/attraction.js"></script>
 </body>
 </html>
