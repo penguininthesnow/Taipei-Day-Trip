@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>景點介紹</title>
   <link rel="stylesheet" href="/static/css/attraction.css" />
+  <link rel="stylesheet" href="/static/css/common.css" />
 </head>
 
 <body>
@@ -108,6 +109,26 @@
     </div>
   </div>
 
+  <!-- 登入 Modal (新增) -->
+  <div id="login-modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="close-login" class="close-btn">
+        <img src="/static/images/dialog.png" width="16px" height="16px"/>
+      </span>
+      <h3>登入會員帳戶</h3>
+
+      <input id="login-email" type="email" placeholder="輸入電子信箱" />
+      <input id="login-password" type="password" placeholder="輸入密碼" />
+
+      <button id="login-submit">登入帳戶</button>
+
+      <p>
+        還沒有帳戶?
+        <span id="to-signup" class="link">點此註冊</span>
+      </p>
+    </div>
+  </div>
+
 
   <!-- ===== Footer ===== -->
   <footer class="footer">
@@ -115,7 +136,7 @@
   </footer>
 
   
-
+  <script src="/static/js/auth.js"></script>
   <script src="/static/js/attraction.js"></script>
 </body>
 </html>
