@@ -99,7 +99,7 @@ def get_current_user(request: Request):
     if not auth or not auth.startswith("Bearer "):
         return {"data": None}
     
-    token = auth.split("")[1]
+    token = auth.split(" ")[1]
 
     try:
         payload = decode_jwt(token)
