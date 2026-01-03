@@ -43,3 +43,25 @@
   float: right;
   cursor: pointer;
 }
+
+.link {
+  color: #448899;
+  cursor: pointer;
+}
+
+.message {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* 當帳號輸入錯誤正確時，切換字 */
+/* 成功 */
+.message.success {
+  color: #2ecc71;
+}
+
+/* 錯誤 */
+.message.error {
+  color: #e74c3c;
+}
