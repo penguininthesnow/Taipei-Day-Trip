@@ -33,10 +33,7 @@ loginBtn?.addEventListener("click", () => {
 // 關閉視窗鈕的設定 "X"
 closeLogin?.addEventListener("click", closeAllModals);
 closeAuth?.addEventListener("click", closeAllModals);
-// 按叉叉可以關
-document.querySelectorAll(".modal-content").forEach(el => {
-  el.addEventListener("click", e => e.stopPropagation());
-});
+
 // 按遮罩可以關
 loginModal.addEventListener("click", closeAllModals);
 authModal.addEventListener("click", closeAllModals);
@@ -165,6 +162,14 @@ logoutBtn?.addEventListener("click", () => {
 
 // ===== 初始化檢查登入狀態 =====
 document.addEventListener("DOMContentLoaded", () => {
+  // 按叉叉可以關
+  document.querySelectorAll(".modal-content").forEach(el => {
+    el.addEventListener("click", e => e.stopPropagation());
+  });
+
+  loginModal.classList.add("hidden");
+  authModal.classList.add("hidden");
+
   closeAllModals();
   checkLoginStatus();
 });
