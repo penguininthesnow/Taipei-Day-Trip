@@ -20,7 +20,7 @@ const authName = document.getElementById("auth-name");
 const authEmail = document.getElementById("auth-email");
 const authPassword = document.getElementById("auth-password");
 const authSubmit = document.getElementById("auth-submit");
-const toLogin = document.getElementById("switch-to-signup");
+const toLogin = document.getElementById("switch-to-login");
 const authMessage = document.getElementById("auth-message");
 const loginMessage = document.getElementById("login-message");
 
@@ -33,6 +33,13 @@ loginBtn?.addEventListener("click", () => {
 // 關閉視窗鈕的設定 "X"
 closeLogin?.addEventListener("click", closeAllModals);
 closeAuth?.addEventListener("click", closeAllModals);
+// 按叉叉可以關
+document.querySelectorAll(".modal-content").forEach(el => {
+  el.addEventListener("click", e => e.stopPropagation());
+});
+// 按遮罩可以關
+loginModal.addEventListener("click", closeAllModals);
+authModal.addEventListener("click", closeAllModals);
 
 function openLoginModal() {
   closeAllModals();
@@ -158,5 +165,6 @@ logoutBtn?.addEventListener("click", () => {
 
 // ===== 初始化檢查登入狀態 =====
 document.addEventListener("DOMContentLoaded", () => {
+  closeAllModals();
   checkLoginStatus();
 });
