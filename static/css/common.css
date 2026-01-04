@@ -110,3 +110,16 @@ p {
 .message.error {
   color: #e74c3c;
 }
+
+/* 讓 button 看起來像原本的 div */
+.login {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  font: inherit;
+  color: inherit;
+
+  cursor: pointer;
+}
