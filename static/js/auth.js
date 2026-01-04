@@ -26,7 +26,8 @@ const loginMessage = document.getElementById("login-message");
 
 
 // ===== Modal 控制 =====
-loginBtn?.addEventListener("click", () => {
+loginBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
   openLoginModal();
 });
 
@@ -35,7 +36,7 @@ closeLogin?.addEventListener("click", closeAllModals);
 closeAuth?.addEventListener("click", closeAllModals);
 
 // 按遮罩可以關
-loginModal.addEventListener("click", closeAllModals);
+loginModal.addEventListener("click", closeAllModals); //
 authModal.addEventListener("click", closeAllModals);
 
 function openLoginModal() {
