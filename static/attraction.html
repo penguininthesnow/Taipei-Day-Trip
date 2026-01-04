@@ -17,7 +17,7 @@
       </div>
       <div class="header__right">
         <div class="header__booking">預定行程</div>
-        <div class="login">登入/註冊</div>
+        <button id="login" class="login">登入/註冊</button>
 
         <button id="logout-btn" style="display: none;">登出系統</button>
       </div>
@@ -117,7 +117,7 @@
       <span id="close-login" class="close-btn">
         <img src="/static/images/dialog.png" width="16px" height="16px"/>
       </span>
-      <h3>登入會員帳戶</h3>
+      <h3 class="login-title">登入會員帳戶</h3>
 
       <input id="login-email" type="email" placeholder="輸入電子信箱" />
       <input id="login-password" type="password" placeholder="輸入密碼" />
@@ -129,6 +129,33 @@
       <p>
         還沒有帳戶?
         <span id="to-signup" class="link">點此註冊</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Auth Modal -->
+  <div id="auth-modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="close-auth" class="close-btn">
+        <img src="/static/images/dialog.png" width="16px" height="16px"/>
+      </span>
+
+      <h3 id="auth-title" class="auth-title">註冊會員帳號</h3>
+
+      <!-- 註冊用 -->
+      <input id="auth-name" type="text" placeholder="輸入姓名" class="hidden">
+
+      <input id="auth-email" type="email" placeholder="輸入電子郵件">
+      <input id="auth-password" type="password" placeholder="輸入密碼">
+
+      <button id="auth-submit">註冊新帳戶</button>
+      
+      <!-- 當帳號輸入錯誤正確時，切換字 -->
+      <div id="auth-message" class="message"></div>
+
+      <p id="auth-switch">
+        已經有帳戶了？
+        <span id="switch-to-signup" class="link">點此登入</span>
       </p>
     </div>
   </div>
