@@ -26,7 +26,6 @@
 }
 
 .modal-content {
-  box-sizing: border-box;
   position: absolute;
   top: 80px;
   left: 50%;
@@ -36,7 +35,8 @@
   height: 275px;
 
   background: white;
-  padding: 20px;
+  padding: 15px;
+  box-sizing: border-box;
   border-radius: 6px;
   text-align: center;
 
@@ -160,9 +160,10 @@
     width: 340px;
     height: 275px;
 
-    position: relative;
+    /* position: relative; */
     top: 80px;
     /* left: 10px; */
+    box-sizing: border-box;
 
     border-radius: 5px;
     opacity: 1;
