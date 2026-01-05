@@ -71,6 +71,8 @@
   font-size: 16px;
   color: rgba(117, 117, 117, 1);
   box-sizing: border-box;
+
+  z-index: 999;
 }
 
 .modal-content > button {
