@@ -62,13 +62,14 @@
 }
 
 .modal-content input {
-  width: 100%;
-  margin: 8px 2px;
+  width: calc(100% - 16px);
+  margin: 8px 0px;
   padding: 8px;
 
   font-weight: 500;
   font-size: 16px;
   color: rgba(117, 117, 117, 1);
+  box-sizing: border-box;
 }
 
 .modal-content > button {
@@ -157,7 +158,7 @@
 
 @media (max-width: 360px) {
   .modal-content {
-    width: 340px;
+    width: 90%;
     min-height: 275px;
 
     /* position: relative; */
