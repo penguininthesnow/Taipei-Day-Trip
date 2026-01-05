@@ -15,6 +15,13 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 def read_index():
     return FileResponse(os.path.join("static", "index.html"))
 
+#連結景點頁面
+@app.get("attraction/{attractionId}")
+def attraction_page(attractionId: int):
+    return FileResponse(os.path.join("static", "attraciton.html"))
+
+
+# API routers
 app.include_router(attraction.router)
 app.include_router(mrt.router)
 app.include_router(categories.router)

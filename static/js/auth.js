@@ -143,9 +143,8 @@ function checkLoginStatus() {
   });
 }
 
-/* 登入系統右上方顯示內容 */
-function showLoggedInUI(user) {
-  userNameSpan.textContent = user.name;
+// ===== 登入系統右上方顯示內容 =====
+function showLoggedInUI() {
   loginBtn.style.display = "none";
   logoutBtn.style.display = "block";
 }
