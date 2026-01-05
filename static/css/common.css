@@ -116,7 +116,7 @@
 }
 
 /* 讓 button 看起來像原本的 div */
-button.login {
+.login {
   background: transparent !important;
   border: none !important;
   padding: 0 !important;
@@ -125,7 +125,7 @@ button.login {
   font: inherit;
   color: inherit;
 
-  cursor: pointer;
+  cursor: pointer !important;
 
   appearance: none !important;
   -webkit-appearance: none !important;
