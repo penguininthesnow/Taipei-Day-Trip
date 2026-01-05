@@ -18,7 +18,7 @@ def read_index():
 #連結景點頁面
 @app.get("/attraction/{attractionId}")
 def attraction_page(attractionId: int):
-    return FileResponse(os.path.join("static", "attraciton.html"))
+    return FileResponse(os.path.join("static", "attraction.html"))
 
 
 # API routers
