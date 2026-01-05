@@ -17,7 +17,7 @@ def read_index():
 
 #連結景點頁面
 @app.get("/attraction/{id}")
-def attraction_page(attractionId: int):
+def attraction_page(id: int):
     return FileResponse(os.path.join("static", "attraciton.html"))
 
 
