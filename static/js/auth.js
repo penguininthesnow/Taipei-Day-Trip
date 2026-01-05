@@ -89,7 +89,7 @@ loginSubmit?.addEventListener("click", async () => {
     const data = await res.json();
 
   // 只要不是成功，一律顯示錯誤
-  if (res.ok && data.token) {
+  if ( !res.ok || !data.token) {
     loginMessage.textContent = "電子郵件或密碼錯誤";
     loginMessage.classList.add("error");
     return;
@@ -100,10 +100,10 @@ loginSubmit?.addEventListener("click", async () => {
     checkLoginStatus(); // 更新 headers
 
   } catch (err) {
-    loginMessage.textContent = data.message || "電子郵件或密碼錯誤";
+    loginMessage.textContent = "電子郵件或密碼錯誤";
     loginMessage.className = "message error"; // 確保 class 加上
-    loginMessage.style.display = "block"; // 確保可見
     loginMessage.classList.add("error");
+    loginMessage.style.display = "block"; // 確保可見
   }
 });
 
