@@ -28,7 +28,7 @@
 .modal-content {
   position: absolute;
   top: 80px;
-  
+  left: 50%;
   transform: translateX(-50%);
 
   width: 340px;
@@ -64,7 +64,7 @@
 .modal-content input {
   width: 100%;
   margin: 8px 0;
-  padding: 8px;
+  padding: 10px;
 
   font-weight: 500;
   font-size: 16px;
