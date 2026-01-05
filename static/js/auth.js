@@ -41,19 +41,19 @@ authModal.addEventListener("click", closeAllModals);
 
 function openLoginModal() {
   closeAllModals();
-  loginModal.classList.remove("hidden"); // 按登入/註冊 時，先打開登入頁面
+  loginModal.classList.add("show"); // 按登入/註冊 時，先打開登入頁面
   authName.classList.add("hidden")
 }
 
 function openSignupModal() {
   closeAllModals();
-  authModal.classList.remove("hidden");
+  authModal.classList.add("show");
   authName.classList.remove("hidden")
 }
 
 function closeAllModals() {
-  loginModal?.classList.add("hidden");
-  authModal?.classList.add("hidden");
+  loginModal.classList.remove("show");
+  authModal.classList.remove("show");
 }
 
 // ===== modal 之間切換 =====
