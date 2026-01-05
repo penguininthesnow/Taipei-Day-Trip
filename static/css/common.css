@@ -116,22 +116,22 @@
 }
 
 /* 讓 button 看起來像原本的 div */
-.login {
-  background: transparent;
-  border: none;
-  padding: 0;
-  margin: 0;
+button.login {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
 
   font: inherit;
   color: inherit;
 
   cursor: pointer;
 
-  appearance: none;
-  -webkit-appearance: none;
-  border-radius: 0;
-  box-shadow: none;
-  outline: none;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  outline: none !important;
 }
 
 .login:focus,
