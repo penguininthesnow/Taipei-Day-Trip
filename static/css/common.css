@@ -26,6 +26,7 @@
 }
 
 .modal-content {
+  box-sizing: border-box;
   position: absolute;
   top: 80px;
   left: 50%;
