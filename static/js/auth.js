@@ -79,21 +79,30 @@ loginSubmit?.addEventListener("click", async () => {
     return;
   }
 
-  const res = await fetch("/api/user/auth", {
-    method: "PUT",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ email, password })
-  });
+  try {
+    const res = await fetch("/api/user/auth", {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email, password })
+    });
 
-  const data = await res.json();
+    const data = await res.json();
 
-  if (data.token) {
+  // 只要不是成功，一律顯示錯誤
+  if (res.ok && data.token) {
+    loginMessage.textContent = "電子郵件或密碼錯誤";
+    loginMessage.classList.add("error");
+    return;
+  }
+  // 登入成功
     localStorage.setItem("token", data.token);
-
     closeAllModals(); // 關 modal
     checkLoginStatus(); // 更新 headers
-  } else {
+
+  } catch (err) {
     loginMessage.textContent = data.message || "電子郵件或密碼錯誤";
+    loginMessage.className = "message error"; // 確保 class 加上
+    loginMessage.style.display = "block"; // 確保可見
     loginMessage.classList.add("error");
   }
 });
@@ -103,23 +112,35 @@ authSubmit.addEventListener("click", async () => {
   authMessage.textContent = "";
   authMessage.className = "message";
 
-  const name = authName.value;
-  const email = authEmail.value;
-  const password = authPassword.value;
+  const name = authName.value.trim();
+  const email = authEmail.value.trim();
+  const password = authPassword.value.trim();
 
-  const res = await fetch("/api/user", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ name, email, password })
-  });
+  // 前端檢查欄位
+  if (!name || !email || !password) {
+    authMessage.textContent = "請填寫所有欄位";
+    authMessage.classList.add("error");
+    return;
+  }
 
-  const data = await res.json();
+  try {
+    const res = await fetch("/api/user", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, email, password })
+    });
 
-  if (data.ok) {
-    authMessage.textContent = "註冊成功，請登入系統";
-    authMessage.classList.add("success");
-  } else {
-    authMessage.textContent = data.message || "註冊失敗";
+    const data = await res.json();
+
+    if (res.ok && data.ok) {
+      authMessage.textContent = "註冊成功，請登入系統";
+      authMessage.classList.add("success");
+    } else {
+      authMessage.textContent = data.message || "註冊失敗";
+      authMessage.classList.add("error");
+    }
+  } catch (err) {
+    authMessage.textContent = "註冊失敗";
     authMessage.classList.add("error");
   }
 });
