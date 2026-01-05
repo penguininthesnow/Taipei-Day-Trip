@@ -94,7 +94,7 @@
 }
 
 .link {
-  color: #448899;
+  color: rgb(102, 102, 102, 1);
   cursor: pointer;
 }
 
@@ -117,7 +117,7 @@
 
 /* 讓 button 看起來像原本的 div */
 .login {
-  background: none;
+  background: transparent;
   border: none;
   padding: 0;
   margin: 0;
@@ -126,4 +126,16 @@
   color: inherit;
 
   cursor: pointer;
+
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+}
+
+.login:focus,
+.login:active {
+  outline: none;
+  box-shadow: none;
 }
