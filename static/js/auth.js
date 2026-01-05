@@ -70,8 +70,14 @@ loginSubmit?.addEventListener("click", async () => {
   loginMessage.textContent = "";
   loginMessage.className = "message";
 
-  const email = loginEmail.value;
-  const password = loginPassword.value;
+  const email = loginEmail.value.trim();
+  const password = loginPassword.value.trim();
+
+  if (!email || !password) {
+    loginMessage.textContent = "電子郵件或密碼錯誤";
+    loginMessage.classList.add("error");
+    return;
+  }
 
   const res = await fetch("/api/user/auth", {
     method: "PUT",
