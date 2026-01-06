@@ -1,5 +1,6 @@
 from api.utils.jwt import create_jwt, decode_jwt
-from fastapi import APIRouter, Request
+from fastapi import APIRouter, Request, Depends
+from api.deps import get_current_user
 from pydantic import BaseModel
 import bcrypt
 from api.db_connect import get_connection
@@ -92,24 +93,43 @@ def signin(user: UserSignIn):
         db.close()
 
 @router.get("/api/user/auth")
-def get_current_user(request: Request):
-    auth = request.headers.get("Authorization")
-
-    # 如果沒有 token
-    if not auth or not auth.startswith("Bearer "):
-        return {"data": None}
-    
-    token = auth.split(" ")[1]
-
-    try:
-        payload = decode_jwt(token)
-    except Exception:
-        return {"data": None}
-    
+def auth_status(user=Depends(get_current_user)):
     return {
         "data": {
-            "id": payload.get("id"),
-            "name": payload.get("name"),
-            "email": payload.get("email")
+            "id": user["id"],
+            "name": user.get("name"),
+            "email": user.get("email")
         }
     }
+
+# @router.get("/api/user/auth")
+# def get_current_user(request: Request):
+#     auth = request.headers.get("Authorization")
+
+#     # 如果沒有 token
+#     if not auth or not auth.startswith("Bearer "):
+#         return {"data": None}
+    
+#     token = auth.split(" ")[1]
+
+#     try:
+#         payload = decode_jwt(token)
+#     except Exception:
+#         return {"data": None}
+    
+#     return {
+#         "data": {
+#             "id": payload.get("id"),
+#             "name": payload.get("name"),
+#             "email": payload.get("email")
+#         }
+#     }
+
+# def check_auth(user=Depends(get_current_user)):
+#     return {
+#         "data": {
+#             "id": user["id"],
+#             "name": user.get("name"),
+#             "email":user.get("email")
+#         }
+#     }
