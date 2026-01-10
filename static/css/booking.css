@@ -207,6 +207,13 @@ hr {
 /*========================
 RWD
 ========================*/
+@media (max-width: 400px) {
+  body {
+    outline: 5px solid red;
+  }
+}
+
+
 @media (max-width: 360px) {
   .header__container {
     padding-left: 4px;
