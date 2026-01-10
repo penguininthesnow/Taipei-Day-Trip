@@ -1,11 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-hant">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Booking</title>
+  <title>預定行程</title>
+  <link rel="stylesheet" href="/static/css/common.css" />
+  <link rel="stylesheet" href="/static/css/booking.css" />
 </head>
 <body>
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">
+        <a href="/" style="text-decoration: none; color: inherit;">台北一日遊</a>
+      </div>
+      <div class="header__right">
+        <div class="header__booking">預定行程</div>
+        <div id="login" class="login">登入/註冊</div>
+
+        <div id="logout-btn" style="display: none;" class="login hidden">登出系統</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="booking">
+    <h3 class="booking__headline">您好，
+      <span id="user-name"></span>，待預訂的行程如下:
+    </h3>
+
+    <!-- 沒有行程 -->
+    <div id="no-booking" class="booking__empty hidden">目前沒有任何待預訂的行程</div>
+
+    <!-- 有行程 -->
+    <section id="booking-info" class="booking__info hidden">
+      <div class="booking__image">
+        <img id="booking-image" src="" alt="attraction"/>
+      </div>
+
+      <div class="booking__detail">
+        <div class="booking_detail_image"></div>
+        <div class="booking__title">
+          <span class="booking__title-label">台北一日遊:</span> <span id="booking-name"></span>
+        </div>
+        <p><span class="booking__label">日期: </span><span id="booking-date"></span></p>
+        <p><span class="booking__label">時間: </span><span id="booking-time"></span></p>
+        <p><span class="booking__label">費用: </span>新台幣 <span id="booking-price"></span> 元 </p>
+        <p><span class="booking__label">地點: </span><span id="booking-address"></span></p>
+      
+        <!-- 刪除按鈕 -->
+        <button id="delete-booking" class="booking__delete">
+          <img src="/static/images/trash.png" width="30px" height="30px" style = "text-decoration: none ; color: inherit; " >
+        </button>
+      </div>
+    </section>
+
+  <!----------------------------- 分隔線 ----------------------------->
+  <hr class="booking-divider" />
+    
+  
+
+    <section class="booking_contact">
+      <h3 class="booking_contact_title">您的聯絡資訊</h3>
+      <div class="booking_contact_name">聯絡姓名:
+        <input id="auth-name" type="text" />
+      </div>
+      <div class="booking_contact_email">連絡信箱:
+        <input id="auth-email" type="email" />
+      </div>
+      <div class="booking_contact_phone">手機號碼:
+        <input type="tel" />
+      </div>
+      <span>請保持手機暢通，準時到達，導覽人員將用手機與您聯繫，務必留下正確的聯絡方式。</span>
+    </section>
+
+  <!------------------------------ 分隔線 --------------------------------->
+  <hr class="booking-divider" />
+
+    <section class="booking_payment">
+      <h3 class="booking_payment_title">信用卡付款資訊</h3>
+      <div class="booking_payment_number">卡片號碼:
+        <input placeholder="**** **** **** ****"/>
+      </div>
+      <div class="booking_payment_invaild">過期時間:
+        <input placeholder="MM / YY"/>
+      </div>
+      <div class="booking_payment_cvv">驗證密碼:
+        <input placeholder="CVV"/>
+      </div>
+    </section>
+
+  <!----------------------- 分隔線 -------------------------------->
+  <hr class="booking-divider" />
+
+    <section class="booking_finalcheck">
+      <div class="booking_price">總價:
+              <span class="currency">新台幣</span>
+              <span id="price">2000</span>
+              <span class="unit">元</span>
+      </div>
+      <button class="booking_submit">確認訂購並付款</button>
+    </section>
+
+  </main>  
+
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <p>COPYRIGHT © 2025 台北一日遊</p>
+  </footer>
+
+  <script src="/static/js/auth.js"></script>
+  <script src="/static/js/booking.js"></script>
   
 </body>
 </html>
