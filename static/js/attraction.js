@@ -38,6 +38,49 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
+
+    // "開始預約行程" 按鈕設定
+    const bookingBtn = document.querySelector(".booking-btn");
+    if (!bookingBtn) return;
+
+    bookingBtn.addEventListener("click", async () => {
+        const token = localStorage.getItem("token");
+
+        // 未登入 => 先登入modal
+       if (!token) {
+            document.getElementById("login-modal")?.classList.add("show");
+            return;
+        }
+
+        const attractionId = window.location.pathname.split("/").pop();
+        const date = document.getElementById("booking-date").value;
+        const time = document.querySelector('input[name="time"]:checked')?.value;
+        const price = time === "morning" ? 2000 : 2500;
+
+        if (!date || !time) {
+            alert("請選擇日期與時間");
+            return;
+        }
+
+        const res = await fetch("/api/booking", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Authorization: `Bearer ${token}`
+            },
+            body: JSON.stringify({
+                attractionId: Number(attractionId),
+                date, time, price
+            })
+        });
+        const result = await res.json();
+
+        if (result.ok) {
+            // 已登入 => 前往"/booking"
+            window.location.href = "/booking";
+        }
+    });
+
 });
 
 function fetchAttraction(attractionId) {

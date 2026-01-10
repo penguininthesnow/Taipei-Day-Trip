@@ -1,0 +1,273 @@
+/*===== Header ===== */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 54px;
+
+    background-color: white;
+    border-bottom: 1px solid #e8e8e8;
+    z-index: 1000;
+
+}
+.header__container{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo{
+    color:#448899; 
+    font-weight: bold;
+    font-size: 30px;   
+}
+
+.header__right{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 16px;
+    justify-content: flex-end;
+    color: #666666;
+}
+
+/*===== Booking ===== */
+
+.booking {
+  max-width: 1200px;
+  width: 980px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  color: #666666;
+  font-size: 16px;
+
+  flex: 1;
+  /* align-items: flex-start; */
+}
+
+.booking__headline {
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-weight: bold 700px;
+  font-size: 19px;
+}
+
+.booking__empty {
+  margin: 40px 0;
+  color: #666;
+  font-size: 16px;
+  text-align: left;
+  align-self: flex-start;
+
+}
+
+.booking__info {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.booking__image img{
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.booking__detail {
+  flex: 1;
+  position: relative;
+}
+
+.booking__title {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  font-size: 16px;
+  font-weight: 700;
+  color: #448899;
+}
+
+.booking__title-label {
+  white-space: nowrap;
+}
+
+.booking__label {
+  font-weight: 700;
+}
+
+.booking__detail p {
+  margin: 10px 0;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.booking__delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e8e8e8;
+  margin: 40px 0;
+}
+
+/* ===================聯絡資訊區塊 + 付款區塊=================== */
+.booking_contact, .booking_payment {
+  max-width: 600px;
+}
+
+.booking_contact__title, .booking_payment__title {
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.booking_contact > div, .booking_payment > div {
+  margin-bottom: 15px;
+}
+
+.booking_contact input, .booking_payment input {
+  width: 200px;
+  height: 38px;
+  margin-left: 10px;
+  padding: 0 10px;
+  border: 1px solid #E8E8E8;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.booking_contact span {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #666666;
+}
+
+/* ==========確認區塊======== */
+.booking_finalcheck {
+  display: flex;
+  flex-direction: column;
+  
+  align-items: flex-end;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.booking_price {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.booking_submit {
+  width: 173px;
+  height: 36px;
+  background-color: #448899;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.booking_submit:hover {
+  opacity: 0.9;
+}
+
+/*========================
+RWD
+========================*/
+@media (max-width: 360px) {
+  .header__container {
+    padding-left: 4px;
+    padding-right: 8px;
+  }
+
+  .header__logo {
+    font-size: 25px;
+    margin-left: 0;
+  }
+  .booking {
+    padding: 8px;
+    padding-bottom: 40px;
+  }
+  .booking__info {
+    position: relative;
+    flex-direction: column;
+  }
+  .booking__image img {
+    width: 100%;
+    height: auto;
+  }
+  .booking__detail {
+    position: relative;
+    padding-bottom: 40px;
+  }
+
+  .booking__delete {
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .booking_finalcheck {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .footer {
+    height: 425px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* footer */
+.footer {
+  min-height: 100px;
+  background: #757575;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: flex-start;
+  padding-top: 40px;
+}
