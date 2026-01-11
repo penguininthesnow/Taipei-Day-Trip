@@ -95,6 +95,7 @@ h3 {
   height: 200px;
   object-fit: cover;
   border-radius: 5px;
+  justify-content: center;
 }
 
 .booking__detail {
@@ -182,6 +183,7 @@ hr {
   align-items: flex-end;
   gap: 20px;
   margin-top: 40px;
+  margin-right: 10px;
 }
 
 .booking_price {
