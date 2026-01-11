@@ -95,9 +95,7 @@ h3 {
   height: 200px;
   object-fit: cover;
   border-radius: 5px;
-  justify-content: center;
 }
-
 .booking__detail {
   flex: 1;
   position: relative;
@@ -300,6 +298,10 @@ RWD
     position: relative;
     flex-direction: column;
     box-sizing: border-box;
+  }
+  .booking__image {
+    display: flex;
+    justify-content: center;
   }
   .booking__image img {
     width: 100%;
