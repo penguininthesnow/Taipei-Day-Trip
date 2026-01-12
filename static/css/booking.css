@@ -96,7 +96,6 @@ h3 {
   object-fit: cover;
   border-radius: 5px;
 }
-
 .booking__detail {
   flex: 1;
   position: relative;
@@ -182,6 +181,7 @@ hr {
   align-items: flex-end;
   gap: 20px;
   margin-top: 40px;
+  margin-right: 10px;
 }
 
 .booking_price {
@@ -207,6 +207,140 @@ hr {
 /*========================
 RWD
 ========================*/
+@media (max-width: 1200px) {
+  .header__container {
+    padding-left: 4px;
+    padding-right: 8px;
+  }
+
+  .header__logo {
+    font-size: 25px;
+    margin-left: 0;
+  }
+  .booking {
+    width: 100%;
+    /* height: 100%; */
+    flex: 1 0 auto;
+    padding: 8px;
+    padding-bottom: 40px;
+  }
+  .booking__info {
+    position: relative;
+    /* flex-direction: column; */
+    box-sizing: border-box;
+  }
+
+  .booking__image img {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    min-height: 200px;
+  }
+  .booking__detail {
+    position: relative;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+  }
+
+  .booking_contact{
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .booking_contact span {
+    display: block;
+    white-space: normal; /* 默認值，確保能換行 */
+    word-wrap: break-word; /* 強制單詞換行 */
+    max-width: 100%;
+
+  }
+
+  .booking_finalcheck {
+    flex-direction: column;
+    align-items: flex-end;
+    box-sizing: border-box;
+  }
+
+  .footer {
+    position: relative;
+    flex-shrink: 0;
+    max-height: 425px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header__container {
+    padding-left: 4px;
+    padding-right: 8px;
+  }
+
+  .header__logo {
+    font-size: 25px;
+    margin-left: 0;
+  }
+  .booking {
+    width: 100%;
+    /* height: 100%; */
+    flex: 1 0 auto;
+    padding: 8px;
+    padding-bottom: 40px;
+  }
+  .booking__info {
+    position: relative;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  .booking__image {
+    display: flex;
+    justify-content: center;
+  }
+  .booking__image img {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    min-height: 200px;
+  }
+  .booking__detail {
+    position: relative;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+  }
+
+  .booking__delete {
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .booking_contact{
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .booking_contact span {
+    display: block;
+    white-space: normal; /* 默認值，確保能換行 */
+    word-wrap: break-word; /* 強制單詞換行 */
+    max-width: 100%;
+
+  }
+
+  .booking_finalcheck {
+    flex-direction: column;
+    align-items: flex-end;
+    box-sizing: border-box;
+  }
+
+  .footer {
+    position: relative;
+    flex-shrink: 0;
+    max-height: 425px;
+  }
+}
+
 
 @media (max-width: 360px) {
   .header__container {
@@ -229,6 +363,10 @@ RWD
     position: relative;
     flex-direction: column;
     box-sizing: border-box;
+  }
+  .booking__image {
+    display: flex;
+    justify-content: center;
   }
   .booking__image img {
     width: 100%;
