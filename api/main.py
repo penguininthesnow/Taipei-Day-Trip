@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 import os
-from api.routers import attraction, mrt, categories,user,booking
+from api.routers import attraction, mrt, categories,user,booking, orders
 from fastapi.middleware.cors import CORSMiddleware
 
 
@@ -32,6 +32,7 @@ app.include_router(mrt.router)
 app.include_router(categories.router)
 app.include_router(user.router)
 app.include_router(booking.router) # from booking.py
+app.include_router(orders.router)
 
 
 app.add_middleware(

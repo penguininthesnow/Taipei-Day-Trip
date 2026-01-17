@@ -1,6 +1,42 @@
 document.addEventListener("DOMContentLoaded", async () => {
     const token = localStorage.getItem("token");
 
+    // Tappay 初始化
+    TPDirect.setupSDK(
+        166513,
+        "app_gmFxqwVoGjoT3njpM1FQofmTKmZhO5ncW1ypsy6PkaMG0fYApm6O6wIeSg6I",
+        "sandbox"
+    );
+
+    // 設定信用卡欄位(card field)
+    TPDirect.card.setup({
+        fields: {
+            number:{
+                element: "#card-number",
+                placeholder: "**** **** **** ****"
+            },
+            expirationDate: {
+                element: "#card-exp-date",
+                placeholder: "MM / YY"
+            },
+            ccv: {
+                element: "#card-ccv",
+                placeholder: "CCV"
+            }
+        },
+        styles: {
+            input: {
+                color: "gray"
+            },
+            ".valid": {
+                color: "green"
+            },
+            ".invalid": {
+                color: "red"
+            }
+        }
+    });
+
     // 如果沒登入，要預訂，要請使用者先登入會員
     if (!token) {
         window.location.href = "/?from=booking";
@@ -28,6 +64,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         // 聯絡資訊 (input)
         document.getElementById("auth-name").value = userData.data.name;
         document.getElementById("auth-email").value = userData.data.email;
+        document.getElementById("auth-phone").value;
 
         // 取得 booking 資料
         const bookingRes = await fetch("/api/booking", {
@@ -53,6 +90,81 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         // render booking === 預約確認區塊
         const booking = bookingData.data;
+
+// 付款
+// ===== 確認訂購並付款 =====
+const submitBtn = document.getElementById("booking_submit");
+
+if (submitBtn) {
+    submitBtn.addEventListener("click", () => {
+        const token = localStorage.getItem("token");
+        if (!token) {
+            alert("請先登入");
+            return;
+        }
+
+        const contactName = document.getElementById("auth-name").value;
+        const contactEmail = document.getElementById("auth-email").value;
+        const contactPhone = document.getElementById("auth-phone").value;
+
+        if (!contactName || !contactEmail || !contactPhone) {
+            alert("請填寫完整聯絡資訊!");
+            return;
+        }
+
+        // 建立 TapPay 卡片資訊
+        TPDirect.card.getPrime(async (result) => {
+            if (result.status !==0) {
+                alert("信用卡資訊有誤，請重新輸入");
+                return;
+            }
+
+            const prime = result.card.prime;
+
+            const orderData = {
+                prime,
+                order: {
+                    price: booking.price,
+                    trip: {
+                        attraction: booking.attraction,
+                        date: booking.date,
+                        time: booking.time
+                    },
+                    contact: { 
+                        name: contactName, 
+                        email: contactEmail, 
+                        phone: contactPhone 
+                    }
+                }
+            };
+
+            try {
+                const res = await fetch("/api/orders", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Authorization": `Bearer ${token}`
+                    },
+                    body: JSON.stringify(orderData)
+                });
+
+                const data = await res.json();
+                console.log("Order result:", data);
+
+                if (data.data) {
+                    // 付款成功 => 導向 thankyou.html
+                    window.location.href = `/thankyou.html?number=${data.data.number}`
+                } else {
+                    // 付款失敗，留在 booking 頁
+                    alert("付款失敗");
+                }
+            } catch (err) {
+                console.error(err);
+                alert("系統錯誤");
+            }
+        });
+    });
+}
 
         document.getElementById("booking-image").src = booking.attraction.image;
         document.getElementById("booking-name").textContent = booking.attraction.name;
@@ -85,11 +197,6 @@ document.addEventListener("DOMContentLoaded", async () => {
                 // 刪除成功，就可以重新載入頁面
                 window.location.reload();
             }
-            // if (result.ok) {
-            //     bookingInfoEl.classList.add("hidden");
-            //     noBookingEl.classList.remove("hidden");
-            //     document.getElementById("price").textContent = "0";
-            // }
         });
     } catch (err) {
         console.error("Booking page error:", err);

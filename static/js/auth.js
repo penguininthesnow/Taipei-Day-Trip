@@ -230,24 +230,3 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 console.log("header js loaded");
-// document.addEventListener("DOMContentLoaded", () => {
-//     const bookingBtn = document.querySelector(".header__booking");
-//     console.log("bookingBtn =", bookingBtn);
-
-//     if (!bookingBtn) {
-//         console.error("❌ 找不到 .header__booking");
-//         return;
-//     }
-
-//     bookingBtn.addEventListener("click", () => {
-//         console.log("🔥 booking clicked");
-
-//         const token = localStorage.getItem("token");
-
-//         if (!token) {
-//             document.getElementById("login-modal").classList.remove("hidden");
-//         } else {
-//             window.location.href = "/booking";
-//         }
-//     });
-// });
