@@ -153,7 +153,7 @@ if (submitBtn) {
 
                 if (data.data) {
                     // 付款成功 => 導向 thankyou.html
-                    window.location.href = `/thankyou.html?number=${data.data.number}`
+                    window.location.href = `/thankyou?number=${data.data.number}`
                 } else {
                     // 付款失敗，留在 booking 頁
                     alert("付款失敗");
