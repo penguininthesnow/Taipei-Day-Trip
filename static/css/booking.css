@@ -10,6 +10,23 @@ body {
   flex-direction: column;
 }
 
+/* =========thankyou page頁面=================== */
+main {
+  max-height: 190px;
+}
+footer {
+  display: flex;
+  flex: 1 0 auto;
+  flex-shrink: 0;
+}
+footer p {
+  display: flex;
+  margin: 0;
+  padding-top: 20px;
+  align-self: flex-start;
+  justify-content: center;
+}
+
 
 .header{
     display: flex;
