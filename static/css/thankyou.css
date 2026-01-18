@@ -1,13 +1,47 @@
-.thankyou {
-  min-height: calc(100vh - 104px); /* header + footer */
+/* 將 body 設成整頁容器 */
+html, body {
+  height: 100%;
+}  
+
+body {
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
+}
+
+/* =========thankyou page頁面=================== */
+main {
+  max-height: 190px;
+}
+footer {
+  display: flex;
+  flex: 1 0 auto;
+  flex-shrink: 0;
+}
+footer p {
+  display: flex;
+  margin: 0;
+  padding-top: 20px;
+  align-self: flex-start;
   justify-content: center;
-  align-items: center;
+}
+
+.thankyou {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 40px;
 }
 
 .thankyou__container {
   text-align: center;
   color: #666666;
+  max-width: 360px;
+  width: 100%;
 }
 
 .thankyou__title {
@@ -19,13 +53,13 @@
 .thankyou__subtitle {
   font-size: 16px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .thankyou__number {
   font-size: 16px;
   font-weight: 400;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .thankyou__hint {
@@ -33,19 +67,29 @@
   font-weight: 400;
 }
 
-.tappay-field {
-  width: 200px;
-  height: 40px;
-  border: 1px solid #cccccc;
-  border-radius: 5px;
-  padding: 8px 10px;
-  background-color: #ffffff;
+@media (max-width: 1200px) {
+  .thankyou {
+    width: 100%;
+    /* height: 100%; */
+    flex: 1 0 auto;
+    padding: 40px 8px;
+  }
 }
 
-.booking_payment_number,
-.booking_payment_invaild,
-.booking_payment_cvv {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+@media (max-width: 600px) {
+  .thankyou {
+    width: 100%;
+    /* height: 100%; */
+    flex: 1 0 auto;
+    padding: 40px 8px;
+  }
+}
+
+@media (max-width: 360px) {
+  .thankyou {
+    width: 100%;
+    /* height: 100%; */
+    flex: 1 0 auto;
+    padding: 20px 8px;
+  }
 }
