@@ -82,6 +82,9 @@ document.addEventListener("DOMContentLoaded", async () => {
             noBookingEl.classList.remove("hidden");
             bookingInfoEl.classList.add("hidden");
             hideBookingFormSections();
+
+            document.body.classList.add("booking-empty");
+
             return;
         }
 

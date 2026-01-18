@@ -10,22 +10,32 @@ body {
   flex-direction: column;
 }
 
-/* =========thankyou page頁面=================== */
+/* =========booking page頁面=================== */
 main {
-  max-height: 190px;
+  /* flex-shrink: 0; main 正常吃內容高度 */
+  flex: 0 0 auto;
 }
 footer {
-  display: flex;
-  flex: 1 0 auto;
-  flex-shrink: 0;
+  flex: 0 0 auto;
 }
-footer p {
-  display: flex;
-  margin: 0;
-  padding-top: 20px;
-  align-self: flex-start;
-  justify-content: center;
+
+/* =========no booking page頁面=================== */
+/* 只有 empty 狀態 */
+body.booking-empty main {
+  flex: 0 0 auto;
 }
+body.booking-empty .booking__finalcheck {
+  display: none;
+}
+
+
+body.booking-empty footer {
+  flex: 1;
+  display: flex;
+  align-items: flex-start; /* 文字靠上 */
+  justify-content: center; /* 水平置中 */
+}
+
 
 
 .header{
