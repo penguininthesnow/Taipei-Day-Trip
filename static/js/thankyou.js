@@ -5,7 +5,29 @@ document.addEventListener("DOMContentLoaded", async () => {
         window.location.href = "/";
         return;
     }
+// =================== 檢查登入狀態 =============
+    const authRes = await fetch("/api/user/auth", {
+        headers: {
+            Authorization: `Bearer ${token}`
+        }
+    });
 
+    if (!authRes.ok) {
+        window.location.href = "/";
+        return;
+    }
+
+    const authData = await authRes.json();
+
+    if (!authData.data) {
+        window.location.href = "/";
+        return;
+    }
+
+    document.getElementById("login")?.classList.add("hidden");
+    document.getElementById("logout-btn")?.classList.remove("hidden");
+
+// =============== 取得訂單編號 ================
     const params = new URLSearchParams(window.location.search);
     const orderNumber = params.get("number");
 
@@ -22,13 +44,20 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     try {
-        const res = await fetch(`/api/order/${orderNumber}`, {
+        const orderRes = await fetch(`/api/order/${orderNumber}`, {
             headers: {
                 "Authorization": `Bearer ${token}`
             }
         });
 
-        const result = await res.json();
+
+        if (!orderRes.ok) {
+            console.error("訂單 API回傳錯誤:", orderRes.status);
+            alert("訂單資料讀取錯誤失敗");
+            return;
+        }
+
+        const result = await orderRes.json();
 
         if (!result.data) {
             alert("查無此訂單");
