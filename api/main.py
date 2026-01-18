@@ -32,7 +32,6 @@ app.include_router(mrt.router)
 app.include_router(categories.router)
 app.include_router(user.router)
 app.include_router(booking.router) # from booking.py
-# app.include_router(orders.router)
 app.include_router(orders.router, prefix="/api")
 
 

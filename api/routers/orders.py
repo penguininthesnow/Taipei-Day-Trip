@@ -35,7 +35,7 @@ class OrderRequest(BaseModel):
 # Order API
 router = APIRouter()
 
-@router.post("/api/orders")
+@router.post("/orders")
 def create_order(
     order_req: OrderRequest,
     user = Depends(get_current_user)    
@@ -117,7 +117,7 @@ def create_order(
 
     
 # 訂單查詢:根據訂單編號取得訂單資訊
-@router.get("/api/order/{order_number}")
+@router.get("/order/{order_number}")
 def get_order(order_number: str, user=Depends(get_current_user)):
     db = get_connection()
     cursor = db.cursor(dictionary=True)
