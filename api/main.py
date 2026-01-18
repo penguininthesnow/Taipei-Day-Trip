@@ -26,6 +26,11 @@ def attraction_page(attractionId: int):
 def booking_page():
     return FileResponse(os.path.join("static", "booking.html"))
 
+# 連結 thankyou 頁面
+@app.get("/thankyou")
+def thankyou_page():
+    return FileResponse(os.path.join("static", "thankyou.html"))
+
 # API routers
 app.include_router(attraction.router)
 app.include_router(mrt.router)
