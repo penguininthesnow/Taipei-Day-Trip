@@ -1,10 +1,14 @@
+# ============== .env =====================
+from dotenv import load_dotenv
+load_dotenv()
 
 from fastapi import FastAPI
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 import os
-from api.routers import attraction, mrt, categories,user,booking, orders
 from fastapi.middleware.cors import CORSMiddleware
+
+from api.routers import attraction, mrt, categories,user,booking, orders
 
 
 app = FastAPI()
