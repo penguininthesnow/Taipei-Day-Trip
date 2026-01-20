@@ -56,75 +56,77 @@ def create_order(
 
     # 建立訂單
     # 產生訂單編號
-    order_number = datetime.now().strftime('%Y%m%d') + uuid.uuid4().hex[:6]
+    try:
+        order_number = datetime.now().strftime('%Y%m%d') + uuid.uuid4().hex[:6]
 
-    # 建立 UNPAID 訂單
-    cursor.execute("""
-        INSERT INTO orders (order_number, user_id, price, status) VALUES (%s, %s, %s, 'UNPAID')
-    """,(
-        order_number,
-        user["id"], # "user_id"已經轉換
-        order_req.order.price,
-        # order_req.order.contact.name,
-        # order_req.order.contact.email,
-        # order_req.order.contact.phone
-    ))
-    conn.commit()
-
-    order_id = cursor.lastrowid
-
-    # 如果prime 是測試用就不用真的呼叫TapPay
-    tappay_payload = {
-        "prime": order_req.prime,
-        "partner_key": TAPPAY_PARTNER_KEY,
-        "merchant_id": TAPPAY_MERCHANT_ID,
-        "details": f"Order {order_number}",
-        "amount": order_req.order.price,
-        "cardholder": {
-            "phone_number": order_req.order.contact.phone,
-            "name": order_req.order.contact.name,
-            "email": order_req.order.contact.email
-        },
-        "remember": True
-    }
-    headers = {
-        "Content-Type":"application/json",
-        "x-api-key": TAPPAY_PARTNER_KEY
-    }
-    
-    resp = requests.post(
-        TAPPAY_ENDPOINT,
-        json=tappay_payload,
-        headers=headers
-    )
-    tappay_res = resp.json()
-
-    # 根據結果更新 order
-    if tappay_res.get("status") == 0:
+        # 建立 UNPAID 訂單
         cursor.execute("""
-            UPDATE orders SET status='PAID' WHERE id=%s
-        """,(order_id,)
+            INSERT INTO orders (order_number, user_id, price, status) VALUES (%s, %s, %s, 'UNPAID')
+        """,(
+            order_number,
+            user["id"], # "user_id"已經轉換
+            order_req.order.price
+        ))
+        conn.commit()
+
+        order_id = cursor.lastrowid
+
+        # 如果prime 是測試用就不用真的呼叫TapPay
+        tappay_payload = {
+            "prime": order_req.prime,
+            "partner_key": TAPPAY_PARTNER_KEY,
+            "merchant_id": TAPPAY_MERCHANT_ID,
+            "details": f"Order {order_number}",
+            "amount": order_req.order.price,
+            "cardholder": {
+                "phone_number": order_req.order.contact.phone,
+                "name": order_req.order.contact.name,
+                "email": order_req.order.contact.email
+            },
+            "remember": True
+        }
+        headers = {
+            "Content-Type":"application/json",
+            "x-api-key": TAPPAY_PARTNER_KEY
+        }
+    
+        resp = requests.post(
+            TAPPAY_ENDPOINT,
+            json=tappay_payload,
+            headers=headers
         )
-        # 訂單付款完後刪除原本訂單
-        cursor.execute("""
-            DELETE FROM booking WHERE user_id=%s
-        """, (user["id"],))
+        tappay_res = resp.json()
 
-        print("AFTER DELETE booking rows =", cursor.fetchall())
-        
-    else:
-        # 失敗也記錄 payment message
-        cursor.execute("""
-            INSERT INTO payments (order_id, status, message) VALUES (%s, %s, %s)
-        """, (order_id, tappay_res.get("status"), tappay_res.get("msg")))
-    conn.commit()
+        # 根據結果更新 order
+        if tappay_res.get("status") == 0:
+            cursor.execute("""
+                UPDATE orders SET status='PAID' WHERE id=%s
+            """,(order_id,)
+            )
+            # 訂單付款完後刪除原本訂單
+            cursor.execute("""
+                DELETE FROM booking WHERE user_id=%s
+            """, (user["id"],))
 
-    print("Delete booking for user_id =",user["id"])
+            print("Deleted booking rows =", cursor.rowcount)
+            
+        else:
+            # 失敗也記錄 payment message
+            cursor.execute("""
+                INSERT INTO payments (order_id, status, message) VALUES (%s, %s, %s)
+            """, (order_id, tappay_res.get("status"), tappay_res.get("msg")))
+        conn.commit()
+
+        print("Delete booking for user_id =",user["id"])
     
-    # 回傳給前端
-    return {
-        "data": { "number": order_number }
-    }
+        # 回傳給前端
+        return {
+            "data": { "number": order_number }
+        }
+    finally:
+        cursor.close()
+        conn.close()
+
 
 
     
@@ -136,30 +138,12 @@ def get_order(order_number: str, user=Depends(get_current_user)):
 
     try:
         cursor.execute("""
-            SELECT 
-                o.order_number,
-                o.price,
-                o.status,
-                b.date,
-                b.time,
-                a.id AS attraction_id,
-                a.name AS attraction_name,
-                a.address AS attraction_address,
-                GROUP_CONCAT(i.url) AS attraction_images
-            FROM orders o
-            JOIN booking b ON o.user_id = b.user_id
-            JOIN attraction a ON b.attraction_id = a.id
-            LEFT JOIN image i ON a.id = i.attraction_id
-            WHERE o.order_number = %s AND o.user_id = %s
-            GROUP BY 
-                o.order_number,
-                o.price,
-                o.status,
-                b.date,
-                b.time,
-                a.id,
-                a.name,
-                a.address;
+            SELECT
+                order_number,
+                price,
+                status
+            FROM orders
+            WHERE order_number = %s AND user_id = %s           
         """,(order_number, user["id"]))
 
         result = cursor.fetchone()
@@ -196,3 +180,29 @@ def get_order(order_number: str, user=Depends(get_current_user)):
     finally:
         cursor.close()
         db.close()
+
+
+# SELECT 
+#                 o.order_number,
+#                 o.price,
+#                 o.status,
+#                 b.date,
+#                 b.time,
+#                 a.id AS attraction_id,
+#                 a.name AS attraction_name,
+#                 a.address AS attraction_address,
+#                 GROUP_CONCAT(i.url) AS attraction_images
+#             FROM orders o
+#             JOIN booking b ON o.user_id = b.user_id
+#             JOIN attraction a ON b.attraction_id = a.id
+#             LEFT JOIN image i ON a.id = i.attraction_id
+#             WHERE o.order_number = %s AND o.user_id = %s
+#             GROUP BY 
+#                 o.order_number,
+#                 o.price,
+#                 o.status,
+#                 b.date,
+#                 b.time,
+#                 a.id,
+#                 a.name,
+#                 a.address;
