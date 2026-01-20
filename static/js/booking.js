@@ -117,6 +117,8 @@ if (submitBtn) {
 
         // 建立 TapPay 卡片資訊
         TPDirect.card.getPrime(async (result) => {
+            console.log("TapPay result:", result);
+
             if (result.status !==0) {
                 alert("信用卡資訊有誤，請重新輸入");
                 return;
@@ -129,7 +131,12 @@ if (submitBtn) {
                 order: {
                     price: booking.price,
                     trip: {
-                        attraction: booking.attraction,
+                        attraction: {
+                            id: booking.attraction.id,
+                            name: booking.attraction.name,
+                            address: booking.attraction.address,
+                            image: booking.attraction.image || null
+                        },
                         date: booking.date,
                         time: booking.time
                     },
@@ -150,19 +157,27 @@ if (submitBtn) {
                     },
                     body: JSON.stringify(orderData)
                 });
+                
 
-                const data = await res.json();
-                console.log("Order result:", data);
+            const responseText = await res.text();
+            let responseData = null;
 
-                if (data.data) {
-                    // 付款成功 => 導向 thankyou.html
-                    window.location.href = `/thankyou?number=${data.data.number}`
+                try {
+                    responseData = JSON.parse(responseText);
+                } catch {
+                    console.warn("Response is not JSON:", responseText);
+                }
+
+                console.log("Order response:", responseData);
+
+                if (res.ok && responseData?.data) {
+                    window.location.href = `/thankyou?number=${responseData.data.number}`;
                 } else {
-                    // 付款失敗，留在 booking 頁
+                    console.error("Order API error:", responseData);
                     alert("付款失敗");
                 }
             } catch (err) {
-                console.error(err);
+                console.error("Fetch failed:", err);
                 alert("系統錯誤");
             }
         });

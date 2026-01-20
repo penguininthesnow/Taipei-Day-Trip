@@ -18,8 +18,14 @@ class Contact(BaseModel) :
     email: str
     phone: str
 
+class Attraction(BaseModel):
+    id: int
+    name: str
+    address: str
+    image: Optional[str]    
+
 class Trip(BaseModel):
-    attraction: dict
+    attraction: Attraction
     date: str
     time: str
 
@@ -31,6 +37,8 @@ class OrderData(BaseModel):
 class OrderRequest(BaseModel):
     prime: str
     order: OrderData
+
+
 
 # Order API
 router = APIRouter()
@@ -97,6 +105,13 @@ def create_order(
             UPDATE orders SET status='PAID' WHERE id=%s
         """,(order_id,)
         )
+        # 訂單付款完後刪除原本訂單
+        cursor.execute("""
+            DELETE FROM booking WHERE user_id=%s
+        """, (user["id"],))
+
+        print("AFTER DELETE booking rows =", cursor.fetchall())
+        
     else:
         # 失敗也記錄 payment message
         cursor.execute("""
@@ -104,10 +119,7 @@ def create_order(
         """, (order_id, tappay_res.get("status"), tappay_res.get("msg")))
     conn.commit()
 
-
-    # if resp.status_code != 200:
-    #     raise HTTPException(status_code=500, detail="TapPay service error")
-
+    print("Delete booking for user_id =",user["id"])
     
     # 回傳給前端
     return {

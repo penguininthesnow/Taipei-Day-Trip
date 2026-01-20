@@ -69,6 +69,8 @@ def create_booking(
 ):
     user_id = user["id"]
 
+    print("CREATE booking for user", user_id)
+
     db = get_connection()
     cursor = db.cursor()
 
@@ -92,6 +94,7 @@ def create_booking(
 
         db.commit()
         return {"ok": True}
+    
     
     finally:
         cursor.close()
