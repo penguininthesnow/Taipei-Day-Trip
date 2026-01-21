@@ -71,6 +71,11 @@ def create_order(
 
         order_id = cursor.lastrowid
 
+        cursor.execute("""
+            UPDATE booking SET order_id = %s WHERE user_id = %s AND order_id IS NULL
+        """, (order_id, user["id"]))
+        conn.commit()
+
         # 如果prime 是測試用就不用真的呼叫TapPay
         tappay_payload = {
             "prime": order_req.prime,
@@ -99,14 +104,14 @@ def create_order(
 
         # 根據結果更新 order
         if tappay_res.get("status") == 0:
-            cursor.execute("""
-                UPDATE orders SET status='PAID' WHERE id=%s
-            """,(order_id,)
+            cursor.execute(
+                "UPDATE orders SET status='PAID' WHERE id=%s", (order_id,)
             )
             # 訂單付款完後刪除原本訂單
-            cursor.execute("""
-                DELETE FROM booking WHERE user_id=%s
-            """, (user["id"],))
+            cursor.execute(
+                "DELETE FROM booking WHERE order_id=%s", (order_id,)
+            )
+            conn.commit()
 
             print("Deleted booking rows =", cursor.rowcount)
             
@@ -115,9 +120,9 @@ def create_order(
             cursor.execute("""
                 INSERT INTO payments (order_id, status, message) VALUES (%s, %s, %s)
             """, (order_id, tappay_res.get("status"), tappay_res.get("msg")))
-        conn.commit()
+            conn.commit()
 
-        print("Delete booking for user_id =",user["id"])
+        
     
         # 回傳給前端
         return {
@@ -139,12 +144,30 @@ def get_order(order_number: str, user=Depends(get_current_user)):
     try:
         cursor.execute("""
             SELECT
-                order_number,
-                price,
-                status
-            FROM orders
-            WHERE order_number = %s AND user_id = %s           
-        """,(order_number, user["id"]))
+                o.order_number AS number,
+                o.price,
+                o.status,
+                b.date,
+                b.time,
+                a.id AS attraction_id,
+                a.name AS attraction_name,
+                a.address AS attraction_address,
+                GROUP_CONCAT(i.url) AS attraction_images
+            FROM orders o
+            LEFT JOIN booking b ON b.order_id = o.id AND b.user_id = o.user_id
+            LEFT JOIN attraction a ON b.attraction_id = a.id
+            LEFT JOIN image i ON a.id = i.attraction_id
+            WHERE o.order_number = %s  AND o.user_id = %s 
+            GROUP BY
+                o.order_number,
+                o.price,
+                o.status,
+                b.date,
+                b.time,
+                a.id,
+                a.name,
+                a.address; 
+        """, (order_number, user["id"]))
 
         result = cursor.fetchone()
 
@@ -152,12 +175,12 @@ def get_order(order_number: str, user=Depends(get_current_user)):
             return {"data": None}
         
         images = []
-        if result["attraction_images"]:
+        if result.get("attraction_images"):
             images = result["attraction_images"].split(",")
         
         return {
             "data": {
-                "number": result["order_number"],
+                "number": result["number"],
                 "price": result["price"],
                 "status": result["status"],
                 "trip": {
@@ -180,29 +203,3 @@ def get_order(order_number: str, user=Depends(get_current_user)):
     finally:
         cursor.close()
         db.close()
-
-
-# SELECT 
-#                 o.order_number,
-#                 o.price,
-#                 o.status,
-#                 b.date,
-#                 b.time,
-#                 a.id AS attraction_id,
-#                 a.name AS attraction_name,
-#                 a.address AS attraction_address,
-#                 GROUP_CONCAT(i.url) AS attraction_images
-#             FROM orders o
-#             JOIN booking b ON o.user_id = b.user_id
-#             JOIN attraction a ON b.attraction_id = a.id
-#             LEFT JOIN image i ON a.id = i.attraction_id
-#             WHERE o.order_number = %s AND o.user_id = %s
-#             GROUP BY 
-#                 o.order_number,
-#                 o.price,
-#                 o.status,
-#                 b.date,
-#                 b.time,
-#                 a.id,
-#                 a.name,
-#                 a.address;
