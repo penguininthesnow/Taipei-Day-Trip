@@ -1,11 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-hant">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Thank You</title>
+  <link rel="stylesheet" href="/static/css/common.css" />
+  <link rel="stylesheet" href="/static/css/thankyou.css" />
 </head>
+
 <body>
-  
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">
+        <a href="/" style="text-decoration: none; color: inherit;">台北一日遊</a>
+      </div>
+      <div class="header__right">
+        <div class="header__booking">預定行程</div>
+        <div id="login" class="login">登入/註冊</div>
+
+        <div id="logout-btn" style="display: none;" class="login hidden">登出系統</div>
+      </div>
+    </div>
+  </header>
+
+<!-- =============== Main =============== -->
+ <!-- 有預定行程時 -->
+  <main class="thankyou">
+    <div class="thankyou__container">
+      <div class="thankyou__title">行程預定成功</div>
+      <div class="thankyou__subtitle">您的訂單編號如下</div>
+      <div id="order-number" class="thankyou__number"></div>
+      <div class="thankyou__hint">
+        請記住此編號，或會員中心查詢裡使訂單
+      </div>
+    </div>
+
+    <!-- 沒有行程 -->
+    <div id="no-booking" class="booking__empty hidden">目前沒有任何待預訂的行程</div>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <p>COPYRIGHT © 2025 台北一日遊</p>
+  </footer>
+
+  <script src="/static/js/thankyou.js"></script>
+  <script src="/static/js/auth.js"></script>
 </body>
 </html>

@@ -1,10 +1,14 @@
+# ============== .env =====================
+from dotenv import load_dotenv
+load_dotenv()
 
 from fastapi import FastAPI
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 import os
-from api.routers import attraction, mrt, categories,user,booking
 from fastapi.middleware.cors import CORSMiddleware
+
+from api.routers import attraction, mrt, categories,user,booking, orders
 
 
 app = FastAPI()
@@ -26,12 +30,18 @@ def attraction_page(attractionId: int):
 def booking_page():
     return FileResponse(os.path.join("static", "booking.html"))
 
+# 連結 thankyou 頁面
+@app.get("/thankyou")
+def thankyou_page():
+    return FileResponse(os.path.join("static", "thankyou.html"))
+
 # API routers
 app.include_router(attraction.router)
 app.include_router(mrt.router)
 app.include_router(categories.router)
 app.include_router(user.router)
 app.include_router(booking.router) # from booking.py
+app.include_router(orders.router, prefix="/api")
 
 
 app.add_middleware(

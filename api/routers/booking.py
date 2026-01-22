@@ -28,6 +28,7 @@ def get_booking(user=Depends(get_current_user)):
             JOIN attraction a ON b.attraction_id = a.id
             LEFT JOIN image i ON a.id = i.attraction_id
             WHERE b.user_id = %s
+                AND b.order_id IS NULL 
             LIMIT 1                       
         """, (user_id,))
 
@@ -68,6 +69,7 @@ def create_booking(
     user=Depends(get_current_user)
 ):
     user_id = user["id"]
+    print("CREATE booking for user", user_id)
 
     db = get_connection()
     cursor = db.cursor()
@@ -75,23 +77,25 @@ def create_booking(
     try:
         # 如果有舊的就先刪掉，確保只有一筆
         cursor.execute(
-            "DELETE FROM booking WHERE user_id = %s",
+            "DELETE FROM booking WHERE user_id = %s AND order_id IS NULL",
             (user_id,)
         )
 
         # 新增 booking
         cursor.execute("""
-            INSERT INTO booking (user_id, attraction_id, date, time, price) VALUES (%s, %s, %s, %s, %s)
+            INSERT INTO booking (user_id, attraction_id, date, time, price, order_id) VALUES (%s, %s, %s, %s, %s, %s)
         """, (
             user_id,
             booking.attractionId,
             booking.date,
             booking.time,
-            booking.price
+            booking.price,
+            None
         ))
 
         db.commit()
         return {"ok": True}
+    
     
     finally:
         cursor.close()

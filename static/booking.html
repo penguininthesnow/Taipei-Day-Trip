@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="/static/css/common.css" />
   <link rel="stylesheet" href="/static/css/booking.css" />
 </head>
+
 <body>
   <!-- ===== Header ===== -->
   <header class="header">
@@ -68,7 +69,7 @@
         <input id="auth-email" type="email" />
       </div>
       <div class="booking_contact_phone">手機號碼:
-        <input type="tel" />
+        <input id="auth-phone" type="tel" />
       </div>
       <span>請保持手機暢通，準時到達，導覽人員將用手機與您聯繫，務必留下正確的聯絡方式。</span>
     </section>
@@ -78,27 +79,32 @@
 
     <section class="booking_payment">
       <h3 class="booking_payment_title">信用卡付款資訊</h3>
-      <div class="booking_payment_number">卡片號碼:
-        <input placeholder="**** **** **** ****"/>
+      <div class="booking_payment_number" >
+        <span>卡片號碼 : </span>
+        <div id="card-number" class="tappay-field"></div>
       </div>
-      <div class="booking_payment_invaild">過期時間:
-        <input placeholder="MM / YY"/>
+
+      <div class="booking_payment_invaild">
+        <span>過期時間 :</span>
+        <div id="card-exp-date" class="tappay-field"></div>
       </div>
-      <div class="booking_payment_cvv">驗證密碼:
-        <input placeholder="CVV"/>
+
+      <div class="booking_payment_cvv">
+        <span>驗證密碼:</span>
+        <div id="card-ccv" class="tappay-field"></div>
       </div>
     </section>
 
   <!----------------------- 分隔線 -------------------------------->
   <hr class="booking-divider" />
 
-    <section class="booking_finalcheck">
-      <div class="booking_price">總價:
+    <section class="booking__finalcheck">
+      <div class="booking__price">總價:
               <span class="currency">新台幣</span>
               <span id="price">2000</span>
               <span class="unit">元</span>
       </div>
-      <button class="booking_submit">確認訂購並付款</button>
+      <button class="booking_submit" id="booking_submit">確認訂購並付款</button>
     </section>
 
   </main>  
@@ -109,8 +115,10 @@
     <p>COPYRIGHT © 2025 台北一日遊</p>
   </footer>
 
-  <script src="/static/js/auth.js"></script>
+  <script src="https://js.tappaysdk.com/tpdirect/v5.5.0"></script>
+  <!-- 使用 Tappay SDK 取得prime -->
   <script src="/static/js/booking.js"></script>
+  <script src="/static/js/auth.js"></script>
   
 </body>
 </html>

@@ -10,6 +10,33 @@ body {
   flex-direction: column;
 }
 
+/* =========booking page頁面=================== */
+main {
+  /* flex-shrink: 0; main 正常吃內容高度 */
+  flex: 0 0 auto;
+}
+footer {
+  flex: 0 0 auto;
+}
+
+/* =========no booking page頁面=================== */
+/* 只有 empty 狀態 */
+body.booking-empty main {
+  flex: 0 0 auto;
+}
+body.booking-empty .booking__finalcheck {
+  display: none;
+}
+
+
+body.booking-empty footer {
+  flex: 1;
+  display: flex;
+  align-items: flex-start; /* 文字靠上 */
+  justify-content: center; /* 水平置中 */
+}
+
+
 
 .header{
     display: flex;
@@ -138,6 +165,7 @@ hr {
   border: none;
   border-top: 1px solid #e8e8e8;
   margin: 40px 0;
+  width: 100%;
 }
 
 /* ===================聯絡資訊區塊 + 付款區塊=================== */
@@ -155,7 +183,7 @@ hr {
   margin-bottom: 15px;
 }
 
-.booking_contact input, .booking_payment input {
+.booking_contact input {
   width: 200px;
   height: 38px;
   margin-left: 10px;
@@ -173,8 +201,34 @@ hr {
   color: #666666;
 }
 
+.booking_payment span {
+  display: inline-block;
+  min-width: 80px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #666666;
+}
+
+.tappay-field {
+  width: 200px;
+  height: 38px;
+  border: 1px solid #E8E8E8;
+  border-radius: 5px;
+  padding: 0px 10px;
+  background-color: #ffffff;
+}
+
+.booking_payment_number,
+.booking_payment_invaild,
+.booking_payment_cvv {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
 /* ==========確認區塊======== */
-.booking_finalcheck {
+.booking__finalcheck {
   display: flex;
   flex-direction: column;
   
@@ -184,7 +238,9 @@ hr {
   margin-right: 10px;
 }
 
-.booking_price {
+.booking__price {
+  white-space: nowrap;
+  flex-shrink: 0;
   font-size: 16px;
   font-weight: 700;
 }
