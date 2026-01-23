@@ -1,3 +1,11 @@
+from dotenv import load_dotenv
+from pathlib import Path
+
+# .env # "parent":退一層的意思
+env_path = Path(__file__).resolve().parent.parent
+ENV_path = env_path / ".env"
+load_dotenv(dotenv_path=ENV_path)
+
 import os
 from pydantic import BaseModel
 from typing import Optional
