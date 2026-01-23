@@ -1,9 +1,15 @@
+import os
+from dotenv import load_dotenv
+from pathlib import Path
 import jwt
 from datetime import datetime, timedelta
 
-SECRET_KEY = "wehelp"
+SECRET_KEY = os.getenv("JWT_SECRET_KEY")
 ALGORITHM = "HS256"
 EXPIRE_MINUTES = 60 * 24
+
+if not SECRET_KEY:
+    raise RuntimeError("JWT_SECRET_KEY is not set in environment vairables")
 
 def create_jwt(payload: dict):
     payload = payload.copy()

@@ -1,3 +1,11 @@
+from dotenv import load_dotenv
+from pathlib import Path
+
+# .env # "parent":退一層的意思
+env_path = Path(__file__).resolve().parent
+ENV_path = env_path / ".env"
+load_dotenv(dotenv_path=ENV_path)
+
 from fastapi import *
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles

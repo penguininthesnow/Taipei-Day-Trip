@@ -1,3 +1,4 @@
+import os
 from pydantic import BaseModel
 from typing import Optional
 from fastapi import APIRouter, Depends, HTTPException
@@ -7,10 +8,14 @@ import requests
 from api.deps import get_current_user
 from api.db_connect import get_connection
 
+
 # TapPay 設定
-TAPPAY_PARTNER_KEY = "partner_xxx"
-TAPPAY_MERCHANT_ID = "merchant_xxx"
+TAPPAY_PARTNER_KEY = os.getenv("TAPPAY_PARTNER_KEY")
+TAPPAY_MERCHANT_ID = os.getenv("TAPPAY_MERCHANT_ID")
 TAPPAY_ENDPOINT = "https://sandbox.tappaysdk.com/tpc/payment/pay-by-prime"
+
+if not TAPPAY_PARTNER_KEY or not TAPPAY_MERCHANT_ID:
+    raise RuntimeError("Tappay keys are not  set in enviroment variables")
 
 # 定義名稱
 class Contact(BaseModel) :
