@@ -62,11 +62,11 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
         // 日期選擇設定:不可往前選時間
-        const selectorDate = new Date(date);
-        const today = new Date();
-        today.setHours(0,0,0,0);
+        const todayStr = new Date().toISOString().split("T")[0];
+        // const today = new Date();
+        // today.setHours(0,0,0,0);
 
-        if (selectorDate < today) {
+        if (date < todayStr) {
             alert("選擇日期不可為過去的日期");
             return;
         }
