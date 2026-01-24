@@ -1,9 +1,10 @@
 # GET /api/booking
+import datetime
 from fastapi import APIRouter, Depends, HTTPException, status
 from api.deps import get_current_user
 from api.db_connect import get_connection
 from api.utils.jwt import decode_jwt
-from pydantic import BaseModel # POST /api/booking
+from pydantic import BaseModel, field_validator # POST /api/booking
 
 router = APIRouter()
 
@@ -59,9 +60,16 @@ def get_booking(user=Depends(get_current_user)):
 # POST /api/booking
 class BookingCreate(BaseModel):
     attractionId: int
-    date: str
+    date: datetime.date # 用 "date" 型別，而非"str"
     time: str
     price: int
+
+    @field_validator("date")
+    @classmethod
+    def validate_date(cls, v: datetime.date):
+        if v < datetime.date.today():
+            raise ValueError("預定日期不可為過去日期!")
+        return v
 
 @router.post("/api/booking")
 def create_booking(

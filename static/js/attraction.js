@@ -61,6 +61,15 @@ document.addEventListener("DOMContentLoaded", () => {
             alert("請選擇日期與時間");
             return;
         }
+        // 日期選擇設定:不可往前選時間
+        const selectorDate = new Date(date);
+        const today = new Date();
+        today.setHours(0,0,0,0);
+
+        if (selectorDate < today) {
+            alert("選擇日期不可為過去的日期");
+            return;
+        }
 
         const res = await fetch("/api/booking", {
             method: "POST",
@@ -106,8 +115,6 @@ function fetchAttraction(attractionId) {
             if (images && images.length> 0) {
                 currentIndex = 0;
                 updateImage();
-                // const imageElement = document.getElementById("attraction-image");
-                // imageElement.src = images[0];
             }
         })
         

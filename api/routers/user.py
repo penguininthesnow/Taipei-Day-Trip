@@ -1,7 +1,8 @@
 from api.utils.jwt import create_jwt, decode_jwt
 from fastapi import APIRouter, Request, Depends
 from api.deps import get_current_user
-from pydantic import BaseModel
+from pydantic import BaseModel, EmailStr, field_validator
+import re
 import bcrypt
 from api.db_connect import get_connection
 
@@ -10,12 +11,31 @@ router = APIRouter()
 
 # 定義登入、註冊資料格式
 class UserSignUp(BaseModel):
-    name:str
-    email:str
-    password:str
+    name: str
+    email: EmailStr
+    password: str 
+    
+    @field_validator("password")
+    @classmethod
+    def validate_password(cls, v: str):
+        if len(v) < 6:
+            raise ValueError("密碼至少6碼")
+        if not re.search(r"[a-z]", v):
+            raise ValueError("密碼需包含小寫英文字母")
+        if not re.search(r"[A-Z]", v):
+            raise ValueError("密碼需包含大寫英文字母")
+        if not re.search(r"\d", v):
+            raise ValueError("密碼需包含數字")
+        if not re.search(r"[^A-Za-z0-9]", v):
+            raise ValueError("密碼需包含特殊符號")
+        
+        return v
+        # = Field(
+        # min_length=6,
+        # pattern=r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).+$'
 
 class UserSignIn(BaseModel):
-    email: str
+    email: EmailStr
     password: str
 
 @router.post("/api/user")
@@ -101,35 +121,3 @@ def auth_status(user=Depends(get_current_user)):
             "email": user.get("email")
         }
     }
-
-# @router.get("/api/user/auth")
-# def get_current_user(request: Request):
-#     auth = request.headers.get("Authorization")
-
-#     # 如果沒有 token
-#     if not auth or not auth.startswith("Bearer "):
-#         return {"data": None}
-    
-#     token = auth.split(" ")[1]
-
-#     try:
-#         payload = decode_jwt(token)
-#     except Exception:
-#         return {"data": None}
-    
-#     return {
-#         "data": {
-#             "id": payload.get("id"),
-#             "name": payload.get("name"),
-#             "email": payload.get("email")
-#         }
-#     }
-
-# def check_auth(user=Depends(get_current_user)):
-#     return {
-#         "data": {
-#             "id": user["id"],
-#             "name": user.get("name"),
-#             "email":user.get("email")
-#         }
-#     }

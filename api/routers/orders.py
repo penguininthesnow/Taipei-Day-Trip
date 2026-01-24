@@ -1,13 +1,6 @@
-from dotenv import load_dotenv
-from pathlib import Path
-
-# .env # "parent":退一層的意思
-env_path = Path(__file__).resolve().parent.parent
-ENV_path = env_path / ".env"
-load_dotenv(dotenv_path=ENV_path)
-
 import os
-from pydantic import BaseModel
+from pydantic import BaseModel, EmailStr, field_validator
+import re
 from typing import Optional
 from fastapi import APIRouter, Depends, HTTPException
 from datetime import datetime
@@ -23,13 +16,20 @@ TAPPAY_MERCHANT_ID = os.getenv("TAPPAY_MERCHANT_ID")
 TAPPAY_ENDPOINT = "https://sandbox.tappaysdk.com/tpc/payment/pay-by-prime"
 
 if not TAPPAY_PARTNER_KEY or not TAPPAY_MERCHANT_ID:
-    raise RuntimeError("Tappay keys are not  set in enviroment variables")
+    raise RuntimeError("Tappay keys are not set in enviroment variables")
 
 # 定義名稱
 class Contact(BaseModel) :
     name: str
-    email: str
+    email: EmailStr
     phone: str
+
+    @field_validator("phone")
+    @classmethod
+    def validate_phone(cls, v: str):
+        if not re.fullmatch(r"09\d{8}", v):
+            raise ValueError("手機號碼格式錯誤!")
+        return v
 
 class Attraction(BaseModel):
     id: int
@@ -62,6 +62,21 @@ def create_order(
     user = Depends(get_current_user)    
 ):
     print("Current USER:", user)
+
+    # =============== 後端驗證 =================
+    if not order_req.prime:
+        raise HTTPException(
+            status_code=400,
+            detail="缺少信用卡付款資訊~"
+        )
+    
+    contact = order_req.order.contact
+    if not contact.name or not contact.email or not contact.phone:
+        raise HTTPException(
+            status_code=400,
+            detail="聯絡資訊不完整!"
+        )
+    # =======================================
 
     db = get_connection()
     conn = db
