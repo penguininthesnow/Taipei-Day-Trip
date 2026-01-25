@@ -126,6 +126,15 @@ authSubmit?.addEventListener("click", async () => {
     return;
   }
 
+  // 根據註冊內容設定有關資安限制
+  const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{6,}$/;
+  if (!passwordRegex.test(password)) {
+    alert(
+      "密碼需至少6碼，且包含大小寫英文字母、數字與特殊符號"
+    );
+    return;
+  }
+
   try {
     const res = await fetch("/api/user", {
       method: "POST",
