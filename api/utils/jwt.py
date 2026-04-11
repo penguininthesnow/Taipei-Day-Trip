@@ -4,6 +4,10 @@ from pathlib import Path
 import jwt
 from datetime import datetime, timedelta
 
+env_path = Path(__file__).resolve().parents[2] / ".env"
+load_dotenv(dotenv_path=env_path)
+
+
 SECRET_KEY = os.getenv("JWT_SECRET_KEY")
 ALGORITHM = "HS256"
 EXPIRE_MINUTES = 60 * 24
@@ -19,3 +23,5 @@ def create_jwt(payload: dict):
 
 def decode_jwt(token: str):
     return jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+
+# print("JWT_SECRET_KEY =", os.getenv("JWT_SECRET_KEY"))
