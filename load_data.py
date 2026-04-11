@@ -4,12 +4,14 @@ import re
 
 #  連線 MySQL
 db=mysql.connector.connect(
-    host="localhost",
-    user="root",
+    host="127.0.0.1",
+    user="taipei",
     password="12345678",
-    database="taipei_day_trip"
+    database="taipei_day_trip",
+    charset="utf8mb4"
 )
 cursor=db.cursor()
+cursor.execute("SET NAMES utf8mb4")
 
 # 讀取 JSON
 with open("data/taipei-attractions.json", "r", encoding="utf-8") as file:
@@ -17,8 +19,9 @@ with open("data/taipei-attractions.json", "r", encoding="utf-8") as file:
 
 # 過濾JPG/PNG的圖片 url
 def filter_image_urls(file_str):
-    urls =re.findall(r'https://[^"]+?\.(?:jpg|png|JPG|PNG)', file_str)
-    return [url for url in urls if url.lower().endswith(("jpg", "png", "JPG", "PNG"))]
+    return re.findall(r'https://.*?\.(?:jpg|jpeg|png|JPG|JPEG|PNG)', file_str)
+    # urls =re.findall(r'https://[^"]+?\.(?:jpg|png|JPG|PNG)', file_str)
+    # return [url for url in urls if url.lower().endswith(("jpg", "png", "JPG", "PNG"))]
 
 # 匯入資料
 for item in data:

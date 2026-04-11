@@ -1,6 +1,11 @@
 # ============== .env =====================
 from dotenv import load_dotenv
 load_dotenv()
+from pathlib import Path
+
+env_path = Path(__file__).resolve().parent
+ENV_path = env_path / ".env"
+load_dotenv(dotenv_path=ENV_path)
 
 from fastapi import FastAPI
 from fastapi.responses import FileResponse
