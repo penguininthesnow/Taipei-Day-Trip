@@ -13,10 +13,6 @@ load_dotenv(dotenv_path=ENV_path)
 # load_dotenv() # 載入 .env
 
 dbconfig={
-    # "host":"localhost",
-    # "user":"root",
-    # "password":"12345678",
-    # "database": "taipei_day_trip"
     "host": os.getenv("DB_HOST"),  # 127.0.0.1
     "user": os.getenv("DB_USER"),
     "password": os.getenv("DB_PASSWORD"),
